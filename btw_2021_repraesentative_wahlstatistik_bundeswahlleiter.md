@@ -1,18 +1,9 @@
----
-title: "Repraesentative Wahlstatistik - BTW, 2021"
-author: "Jacob Edenhofer"
-date: "`r format(Sys.time(), '%d %b %Y')`"
-output: github_document
-fig_caption: yes
-pandoc_args: --webtex
----
+Repraesentative Wahlstatistik - BTW, 2021
+================
+Jacob Edenhofer
+09 Jan 2023
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, fig.align = "center", fig.width = 6, fig.height = 4, message = F, warning = F)
-```
-
-
-```{r preliminaries}
+``` r
 # packages 
 library(tidyverse)
 library(readr)
@@ -38,13 +29,11 @@ time <- read_delim("https://www.bundeswahlleiter.de/dam/jcr/0c8deca8-4030-419c-9
 save(time, file = "Data/time.RData")
 ```
 
+# Plots
 
-# Plots 
+## Turnout by Age in 2021
 
-
-## Turnout by Age in 2021 
-
-```{r turnout-age-2021}
+``` r
 # turnout variable
 bwl_bund <- bwl %>%
   filter(grepl("Bund", land), !grepl("Summe", geburtsjahresgruppe)) %>%
@@ -61,9 +50,11 @@ bwl_bund %>%
   theme_bw()
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/turnout-age-2021-1.png" style="display: block; margin: auto;" />
+
 ## Turnout by Age and Gender in 2021
 
-```{r turnout-age-gender-2021}
+``` r
 bwl_bund %>%
   filter(!grepl("Summe", geschlecht)) %>%
   ggplot(aes(x = as.factor(geburtsjahresgruppe), y = turnout)) +
@@ -76,11 +67,11 @@ bwl_bund %>%
   theme_bw()
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/turnout-age-gender-2021-1.png" style="display: block; margin: auto;" />
 
+## Turnout by Age over Time
 
-## Turnout by Age over Time 
-
-```{r turnout-age-over-time}
+``` r
 # variables
 zte$age_coarse <- fct_collapse(zte$altersgruppe_etwa_von_bis_jahren, 
                                "18_24" = c("18 - 20", "21 - 24"),
@@ -116,9 +107,11 @@ zte %>%
   theme(legend.position = "bottom")
 ```
 
-## Turnout by Bundesland 2021 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/turnout-age-over-time-1.png" style="display: block; margin: auto;" />
 
-```{r turnout-bundesland-2021}
+## Turnout by Bundesland 2021
+
+``` r
 bwl %>%
   filter(!grepl("Bund", land), grepl("Summe", geschlecht), grepl("Summe", geburtsjahresgruppe), !grepl("^BE-", land)) %>%
   mutate(turnout = (wahler_innen/wahlberechtigte)*100) %>%
@@ -132,9 +125,11 @@ bwl %>%
   theme_bw()
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/turnout-bundesland-2021-1.png" style="display: block; margin: auto;" />
+
 ## Veraenderung der Wahlbeteiligung
 
-```{r turnout-change-2021-2017}
+``` r
 zte %>%
   filter(!grepl("Summe", altersgruppe_etwa_von_bis_jahren),
           grepl("Summe", geschlecht), bundestagswahl %in% c(2017, 2021)) %>%
@@ -152,11 +147,11 @@ zte %>%
   theme_bw() 
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/turnout-change-2021-2017-1.png" style="display: block; margin: auto;" />
 
+## Plots - Parties
 
-## Plots - Parties 
-
-```{r parties-wrangling}
+``` r
 btw2 <- btw %>% filter(grepl("Bund", land), grepl("Summe", geschlecht), 
                        !grepl("Summe", geburtsjahresgruppe), erst_zweitstimme == 2) %>%
   mutate(union = cdu + csu)
@@ -170,9 +165,9 @@ for(k in names(btw2)){
 }
 ```
 
-## Parties by Age 
+## Parties by Age
 
-```{r parties-age-plot}
+``` r
 btw2 %>% 
   select(geburtsjahresgruppe, ends_with("share")) %>%
   pivot_longer(cols = !c(geburtsjahresgruppe), 
@@ -194,9 +189,11 @@ btw2 %>%
   theme(axis.text.x = element_text(angle = 25, vjust = 0.5))
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/parties-age-plot-1.png" style="display: block; margin: auto;" />
+
 ## Parties by Age (alternative)
 
-```{r parties-age-alternative}
+``` r
 # data wrangling
 btw_bund_age <- btw %>%
   filter(grepl("Bund", land), grepl("Summe", geschlecht), 
@@ -229,9 +226,11 @@ btw_bund_age %>%
   theme(legend.position = "bottom") 
 ```
 
-## Parties: Change in Support 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/parties-age-alternative-1.png" style="display: block; margin: auto;" />
 
-```{r parties-change-zweit}
+## Parties: Change in Support
+
+``` r
 # data 
 time1 <- read_delim("https://www.bundeswahlleiter.de/dam/jcr/0c8deca8-4030-419c-9fa8-5ab770cfa123/btw_rws_zwst-1953.csv",
                    skip = 12, col_names = T, locale = locale(decimal_mark = ",")) %>% 
@@ -276,9 +275,11 @@ time1 %>%
   theme(legend.position = "bottom")
 ```
 
-## Parties: Differences in Support 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/parties-change-zweit-1.png" style="display: block; margin: auto;" />
 
-```{r parties-diff-support}
+## Parties: Differences in Support
+
+``` r
 time1 %>% 
   filter(bundestagswahl %in% c(2017, 2021), grepl("Summe", geschlecht), 
          !grepl("Summe", age_coarse)) %>%
@@ -305,11 +306,11 @@ time1 %>%
   theme(legend.position = "bottom")
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/parties-diff-support-1.png" style="display: block; margin: auto;" />
 
+## Parties by Coarse Age Group
 
-## Parties by Coarse Age Group 
-
-```{r parties-by-age-group}
+``` r
 time1 %>%
   filter(bundestagswahl == 2021, grepl("Summe", geschlecht), 
          !grepl("Summe", altersgruppe_etwa_von_bis_jahren)) %>%
@@ -338,9 +339,11 @@ time1 %>%
   theme_bw()
 ```
 
-## Parties by Gender 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/parties-by-age-group-1.png" style="display: block; margin: auto;" />
 
-```{r parties-by-gender}
+## Parties by Gender
+
+``` r
 btw_gender <- btw %>% 
   filter(grepl("Bund", land), 
          !grepl("Summe", geschlecht),
@@ -378,11 +381,11 @@ btw_gender %>%
   theme(legend.position = "bottom")
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/parties-by-gender-1.png" style="display: block; margin: auto;" />
 
+## Parties by Gender and Age
 
-## Parties by Gender and Age 
-
-```{r parties-gender-age-plot}
+``` r
 # data 
 btw_young <- btw %>% filter(grepl("Bund", land), !grepl("Summe", geschlecht), erst_zweitstimme == 2,
                             !grepl("Summe", geburtsjahresgruppe)) %>%
@@ -417,8 +420,9 @@ btw_young %>%
   theme(legend.position = "bottom")
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/parties-gender-age-plot-1.png" style="display: block; margin: auto;" />
 
-```{r part-gen-age-alt}
+``` r
 time1 %>%
   dplyr::filter(!grepl("Summe", geschlecht), !grepl("Summe", altersgruppe_etwa_von_bis_jahren),
          bundestagswahl == 2021) %>%
@@ -446,3 +450,4 @@ time1 %>%
   theme(legend.position = "bottom")
 ```
 
+<img src="btw_2021_repraesentative_wahlstatistik_bundeswahlleiter_files/figure-gfm/part-gen-age-alt-1.png" style="display: block; margin: auto;" />
