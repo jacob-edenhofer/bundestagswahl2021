@@ -1,6 +1,6 @@
 Bundestagswahl-Kandidaten
 ================
-13 February 2023
+21 February 2023
 
 # Preliminaries
 
@@ -115,10 +115,223 @@ Finally, here are some useful summary statistics:
 
 ``` r
 datasummary_skim(btwkandidierende2021, 
-                 output = "Figures/Candidates/sum.png")
+                 histogram = F, 
+                 output = "kableExtra")
 ```
 
-![](Figures/Candidates/sum.png)
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Unique (#)
+</th>
+<th style="text-align:right;">
+Missing (%)
+</th>
+<th style="text-align:right;">
+Mean
+</th>
+<th style="text-align:right;">
+SD
+</th>
+<th style="text-align:right;">
+Min
+</th>
+<th style="text-align:right;">
+Median
+</th>
+<th style="text-align:right;">
+Max
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+geburtsjahr
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1975.2
+</td>
+<td style="text-align:right;">
+14.3
+</td>
+<td style="text-align:right;">
+1929.0
+</td>
+<td style="text-align:right;">
+1975.0
+</td>
+<td style="text-align:right;">
+2003.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+listenplatz
+</td>
+<td style="text-align:right;">
+97
+</td>
+<td style="text-align:right;">
+21
+</td>
+<td style="text-align:right;">
+15.8
+</td>
+<td style="text-align:right;">
+17.0
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+<td style="text-align:right;">
+9.0
+</td>
+<td style="text-align:right;">
+96.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WKR_NR
+</td>
+<td style="text-align:right;">
+300
+</td>
+<td style="text-align:right;">
+46
+</td>
+<td style="text-align:right;">
+152.7
+</td>
+<td style="text-align:right;">
+86.3
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+<td style="text-align:right;">
+154.0
+</td>
+<td style="text-align:right;">
+299.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+direct
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.5
+</td>
+<td style="text-align:right;">
+0.5
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+direct_plus_list
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.3
+</td>
+<td style="text-align:right;">
+0.5
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+direct_no_list
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:right;">
+0.4
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+list_only
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.5
+</td>
+<td style="text-align:right;">
+0.5
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+</tr>
+</tbody>
+</table>
 
 # Data Sets
 
@@ -170,10 +383,6 @@ direkt %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/map-cdu-direct-candidates-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_direct_candidates_cdu_csu.png")
-```
 
 Lessons:
 
@@ -348,10 +557,6 @@ direkt %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/map-spd-direct-candidates-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_direct_candidates_spd.png")
-```
-
 Lessons:
 
 - There are only 11 SPD candidates without a Listenplatz. Some of them
@@ -391,10 +596,6 @@ direkt %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/map-fdp-direct-candidates-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_direct_candidates_fdp.png")
-```
-
 Lessons:
 
 - The FDP is fielding 35 no-list direct candidates.
@@ -420,10 +621,6 @@ direkt %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/map-green-direct-candidates-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_direct_candidates_green.png")
-```
 
 Lessons:
 
@@ -451,10 +648,6 @@ direkt %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/map-afd-direct-candidates-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_direct_candidates_afd.png")
-```
-
 Lessons:
 
 - There are 161 no-list direct candidates - more than half of all AfD
@@ -480,10 +673,6 @@ direkt %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/map-linke-direct-candidates-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_direct_candidates_linke.png")
-```
 
 Lessons:
 
@@ -530,11 +719,409 @@ table_east_west <- constituencies21 %>%
 # summary stats
 datasummary_skim(table_east_west,
                  fmt = 2, 
+                 histogram = F,
                  title = "Summary Statistics",
-                 output = "Figures/Candidates/sum_eastwest.png") 
+                 output = "kableExtra") 
 ```
 
-![](Figures/Candidates/sum_eastwest.png)
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Summary Statistics
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Unique (#)
+</th>
+<th style="text-align:right;">
+Missing (%)
+</th>
+<th style="text-align:right;">
+Mean
+</th>
+<th style="text-align:right;">
+SD
+</th>
+<th style="text-align:right;">
+Min
+</th>
+<th style="text-align:right;">
+Median
+</th>
+<th style="text-align:right;">
+Max
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Population per 1000 Inhabitants
+</td>
+<td style="text-align:right;">
+261
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+243.37
+</td>
+<td style="text-align:right;">
+28.97
+</td>
+<td style="text-align:right;">
+184.40
+</td>
+<td style="text-align:right;">
+241.70
+</td>
+<td style="text-align:right;">
+300.70
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ausländeranteil in Prozent
+</td>
+<td style="text-align:right;">
+166
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+12.01
+</td>
+<td style="text-align:right;">
+5.76
+</td>
+<td style="text-align:right;">
+1.90
+</td>
+<td style="text-align:right;">
+11.20
+</td>
+<td style="text-align:right;">
+33.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bevölkerungsdichte (Einwohner je km2)
+</td>
+<td style="text-align:right;">
+292
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+925.30
+</td>
+<td style="text-align:right;">
+1517.18
+</td>
+<td style="text-align:right;">
+36.80
+</td>
+<td style="text-align:right;">
+265.10
+</td>
+<td style="text-align:right;">
+13153.30
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Zu-/Abnahme d. Bevölkerung (Wanderungssaldo)
+</td>
+<td style="text-align:right;">
+95
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+3.88
+</td>
+<td style="text-align:right;">
+2.75
+</td>
+<td style="text-align:right;">
+-2.50
+</td>
+<td style="text-align:right;">
+3.70
+</td>
+<td style="text-align:right;">
+15.70
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Anteil, 18-24 Jahre in Prozent
+</td>
+<td style="text-align:right;">
+59
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+7.46
+</td>
+<td style="text-align:right;">
+1.36
+</td>
+<td style="text-align:right;">
+4.20
+</td>
+<td style="text-align:right;">
+7.50
+</td>
+<td style="text-align:right;">
+15.10
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Anteil, 60-74 Jahre in Prozent
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+17.25
+</td>
+<td style="text-align:right;">
+2.22
+</td>
+<td style="text-align:right;">
+12.70
+</td>
+<td style="text-align:right;">
+17.20
+</td>
+<td style="text-align:right;">
+23.40
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Anteil, +75 Jahre in Prozent
+</td>
+<td style="text-align:right;">
+65
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+11.61
+</td>
+<td style="text-align:right;">
+1.61
+</td>
+<td style="text-align:right;">
+7.90
+</td>
+<td style="text-align:right;">
+11.40
+</td>
+<td style="text-align:right;">
+16.70
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Unternehmen je 1000 Einwohner
+</td>
+<td style="text-align:right;">
+139
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+41.64
+</td>
+<td style="text-align:right;">
+7.08
+</td>
+<td style="text-align:right;">
+22.80
+</td>
+<td style="text-align:right;">
+40.60
+</td>
+<td style="text-align:right;">
+76.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Schulabgänger ohne Hauptschulabschluss in Prozent
+</td>
+<td style="text-align:right;">
+82
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6.81
+</td>
+<td style="text-align:right;">
+1.97
+</td>
+<td style="text-align:right;">
+2.50
+</td>
+<td style="text-align:right;">
+6.30
+</td>
+<td style="text-align:right;">
+13.40
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Verfügbares Einkommen, Euro je Einwohner
+</td>
+<td style="text-align:right;">
+259
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+22778.59
+</td>
+<td style="text-align:right;">
+2586.93
+</td>
+<td style="text-align:right;">
+16450.00
+</td>
+<td style="text-align:right;">
+22568.00
+</td>
+<td style="text-align:right;">
+32766.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbeitslosenquote, insgesamt
+</td>
+<td style="text-align:right;">
+76
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6.39
+</td>
+<td style="text-align:right;">
+2.29
+</td>
+<td style="text-align:right;">
+2.80
+</td>
+<td style="text-align:right;">
+5.90
+</td>
+<td style="text-align:right;">
+15.80
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbeitslosenquote, Frauen
+</td>
+<td style="text-align:right;">
+75
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+5.87
+</td>
+<td style="text-align:right;">
+2.19
+</td>
+<td style="text-align:right;">
+2.50
+</td>
+<td style="text-align:right;">
+5.50
+</td>
+<td style="text-align:right;">
+15.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbeitslosenquote, Männer
+</td>
+<td style="text-align:right;">
+81
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6.85
+</td>
+<td style="text-align:right;">
+2.42
+</td>
+<td style="text-align:right;">
+3.00
+</td>
+<td style="text-align:right;">
+6.50
+</td>
+<td style="text-align:right;">
+16.10
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbeitslosenquote, 55-64 Jahre
+</td>
+<td style="text-align:right;">
+71
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6.78
+</td>
+<td style="text-align:right;">
+1.93
+</td>
+<td style="text-align:right;">
+3.30
+</td>
+<td style="text-align:right;">
+6.50
+</td>
+<td style="text-align:right;">
+13.10
+</td>
+</tr>
+</tbody>
+</table>
 
 Now, we are in a position to create a table comparing Eastern and
 Western German constituencies.
@@ -544,11 +1131,388 @@ datasummary_balance(~east_dummy,
                     fmt = 2,
                     dinm_statistic = "p.value",
                     data = table_east_west,
+                    histogram = F,
                     title = "Comparing Eastern and Western Constituencies",
-                    output = "Figures/Candidates/balance.png")
+                    output = "kableExtra")
 ```
 
-![](Figures/Candidates/balance.png)
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>
+Comparing Eastern and Western Constituencies
+</caption>
+<thead>
+<tr>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+
+East Germany (N=49)
+
+</div>
+
+</th>
+<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+
+West Germany (N=250)
+
+</div>
+
+</th>
+<th style="empty-cells: hide;border-bottom:hidden;" colspan="2">
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:right;">
+Mean
+</th>
+<th style="text-align:right;">
+Std. Dev.
+</th>
+<th style="text-align:right;">
+Mean
+</th>
+<th style="text-align:right;">
+Std. Dev.
+</th>
+<th style="text-align:right;">
+Diff. in Means
+</th>
+<th style="text-align:right;">
+p
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Population per 1000 Inhabitants
+</td>
+<td style="text-align:right;">
+242.85
+</td>
+<td style="text-align:right;">
+27.39
+</td>
+<td style="text-align:right;">
+243.48
+</td>
+<td style="text-align:right;">
+29.33
+</td>
+<td style="text-align:right;">
+0.62
+</td>
+<td style="text-align:right;">
+0.89
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ausländeranteil in Prozent
+</td>
+<td style="text-align:right;">
+4.91
+</td>
+<td style="text-align:right;">
+2.08
+</td>
+<td style="text-align:right;">
+13.40
+</td>
+<td style="text-align:right;">
+5.20
+</td>
+<td style="text-align:right;">
+8.48
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Bevölkerungsdichte (Einwohner je km2)
+</td>
+<td style="text-align:right;">
+340.50
+</td>
+<td style="text-align:right;">
+651.80
+</td>
+<td style="text-align:right;">
+1039.92
+</td>
+<td style="text-align:right;">
+1610.10
+</td>
+<td style="text-align:right;">
+699.43
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Zu-/Abnahme d. Bevölkerung (Wanderungssaldo)
+</td>
+<td style="text-align:right;">
+3.97
+</td>
+<td style="text-align:right;">
+4.07
+</td>
+<td style="text-align:right;">
+3.86
+</td>
+<td style="text-align:right;">
+2.42
+</td>
+<td style="text-align:right;">
+-0.11
+</td>
+<td style="text-align:right;">
+0.85
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Anteil, 18-24 Jahre in Prozent
+</td>
+<td style="text-align:right;">
+5.55
+</td>
+<td style="text-align:right;">
+1.35
+</td>
+<td style="text-align:right;">
+7.84
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+2.29
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Anteil, 60-74 Jahre in Prozent
+</td>
+<td style="text-align:right;">
+20.01
+</td>
+<td style="text-align:right;">
+2.43
+</td>
+<td style="text-align:right;">
+16.71
+</td>
+<td style="text-align:right;">
+1.72
+</td>
+<td style="text-align:right;">
+-3.30
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Anteil, +75 Jahre in Prozent
+</td>
+<td style="text-align:right;">
+14.11
+</td>
+<td style="text-align:right;">
+1.43
+</td>
+<td style="text-align:right;">
+11.12
+</td>
+<td style="text-align:right;">
+1.11
+</td>
+<td style="text-align:right;">
+-2.99
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Unternehmen je 1000 Einwohner
+</td>
+<td style="text-align:right;">
+37.92
+</td>
+<td style="text-align:right;">
+3.14
+</td>
+<td style="text-align:right;">
+42.36
+</td>
+<td style="text-align:right;">
+7.41
+</td>
+<td style="text-align:right;">
+4.44
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Schulabgänger ohne Hauptschulabschluss in Prozent
+</td>
+<td style="text-align:right;">
+9.09
+</td>
+<td style="text-align:right;">
+1.87
+</td>
+<td style="text-align:right;">
+6.36
+</td>
+<td style="text-align:right;">
+1.66
+</td>
+<td style="text-align:right;">
+-2.73
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Verfügbares Einkommen, Euro je Einwohner
+</td>
+<td style="text-align:right;">
+20018.27
+</td>
+<td style="text-align:right;">
+799.81
+</td>
+<td style="text-align:right;">
+23319.61
+</td>
+<td style="text-align:right;">
+2468.31
+</td>
+<td style="text-align:right;">
+3301.35
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbeitslosenquote, insgesamt
+</td>
+<td style="text-align:right;">
+7.15
+</td>
+<td style="text-align:right;">
+1.39
+</td>
+<td style="text-align:right;">
+6.24
+</td>
+<td style="text-align:right;">
+2.41
+</td>
+<td style="text-align:right;">
+-0.92
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbeitslosenquote, Frauen
+</td>
+<td style="text-align:right;">
+6.38
+</td>
+<td style="text-align:right;">
+1.27
+</td>
+<td style="text-align:right;">
+5.77
+</td>
+<td style="text-align:right;">
+2.32
+</td>
+<td style="text-align:right;">
+-0.61
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbeitslosenquote, Männer
+</td>
+<td style="text-align:right;">
+7.86
+</td>
+<td style="text-align:right;">
+1.54
+</td>
+<td style="text-align:right;">
+6.65
+</td>
+<td style="text-align:right;">
+2.51
+</td>
+<td style="text-align:right;">
+-1.20
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Arbeitslosenquote, 55-64 Jahre
+</td>
+<td style="text-align:right;">
+7.89
+</td>
+<td style="text-align:right;">
+1.39
+</td>
+<td style="text-align:right;">
+6.56
+</td>
+<td style="text-align:right;">
+1.95
+</td>
+<td style="text-align:right;">
+-1.32
+</td>
+<td style="text-align:right;">
+\<0.01
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Population Density
 
@@ -565,10 +1529,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/population-density-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_population_density.png")
-```
-
 ## Density of Non-Germans
 
 ``` r
@@ -583,10 +1543,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/density-non-Germans-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_share_foreigners.png")
-```
-
 ## Change in Population per 1000 Inhabitants
 
 ``` r
@@ -599,10 +1555,6 @@ constituencies21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/change-populaton-wanderungssaldo-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_wanderungssaldo.png")
-```
 
 ## Share of 18-24 Year Olds
 
@@ -618,10 +1570,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/age-composition-young-people-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_share_18_24.png")
-```
-
 ## Share of 25-34 Year Olds
 
 ``` r
@@ -635,10 +1583,6 @@ constituencies21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/age-composition-young-people-25-34-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_share_25_34.png")
-```
 
 ## Share of 35-59 Year Olds
 
@@ -654,10 +1598,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/middle-age-35-59-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_share_35_59.png")
-```
-
 ## Share of 60-74 Year Olds
 
 ``` r
@@ -671,10 +1611,6 @@ constituencies21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/oldies-60-74-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_share_60_74.png")
-```
 
 ## Share of +75 Year Olds
 
@@ -690,10 +1626,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/heavy-olides-75-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_share_75_over.png")
-```
-
 ## Density of Companies
 
 ``` r
@@ -707,10 +1639,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/company-density-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_density_companies.png")
-```
-
 ## Density of Handwerksunternehmen
 
 ``` r
@@ -723,10 +1651,6 @@ constituencies21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/density-of-handwerk-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_density_handwerk.png")
-```
 
 ## Schulabgänger ohne Hauptschulabschluss
 
@@ -742,10 +1666,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/share-without-hauptschulabschluss-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_ohne_hauptschulabschluss.png")
-```
-
 ## Schulabgänger mit allgemeiner Reifer (Abitur)
 
 ``` r
@@ -760,10 +1680,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/share-with-abitur-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_abitur.png")
-```
-
 ## Disposable Income
 
 ``` r
@@ -777,10 +1693,6 @@ constituencies21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/disposable-income-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_disposable_income.png")
-```
 
 ## Regional BIP
 
@@ -811,10 +1723,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/unemployment-general-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_arbeitslosenquote.png")
-```
-
 ## Unemployment Rate Among 55-64 Year Olds
 
 ``` r
@@ -829,10 +1737,6 @@ constituencies21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/unemployment-oldies-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_arbeitslosenquote_55_64.png")
-```
 
 ## Arbeitslosengeld-II-Empfänger
 
@@ -849,10 +1753,6 @@ constituencies21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/jsa-2-recipients-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_arbeitslosengeld_ii_empfaenger.png")
-```
-
 ## Ausländische Arbeitslosengeld-II-Empfänger
 
 ``` r
@@ -867,10 +1767,6 @@ constituencies21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/foreign-jsa-2-recipients-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_wahlkreise_foreign_arbeitslosengeld_ii_empfaenger.png")
-```
 
 ## From Candidates to Representatives
 
@@ -908,7 +1804,6 @@ mps21 %>%
 ![](btwkandidierende2021_some_code_files/figure-gfm/gender-balance-1.png)<!-- -->
 
 ``` r
-ggsave("Figures/Candidates/btw_21_candidates_gender_balance_absolute.png")
 # plot 2, relative  
 mps21 %>%
   group_by(geschlecht) %>%
@@ -927,10 +1822,6 @@ mps21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/gender-balance-2.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_gender_balance_relative.png")
-```
 
 ### Gender Balance by Status
 
@@ -958,10 +1849,6 @@ mps21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/gender-balance-by-candidate-status-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_by_gender_candidate_type.png")
-```
 
 We can see that, among those who entered the Bundestag by winning their
 constituencies directly, roughly 75% are men. Those who entered via the
@@ -995,10 +1882,6 @@ mps21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/candidate-status-by-gender-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_by_candidate_type_and_gender.png")
-```
-
 ### Gender Balance by Party
 
 ``` r
@@ -1024,7 +1907,6 @@ mps21 %>%
 ![](btwkandidierende2021_some_code_files/figure-gfm/gender-by-party-1.png)<!-- -->
 
 ``` r
-ggsave("Figures/Candidates/btw_21_candidates_by_gender_and_party_absolute.png")
 # relative 
 mps21 %>%
   filter(!gruppenname == "SSW") %>%
@@ -1043,10 +1925,6 @@ mps21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/gender-by-party-2.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_by_gender_and_party_relative.png")
-```
 
 ### Gender Balance by Party and Type of Candidate
 
@@ -1074,10 +1952,6 @@ mps21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/gender-bal-cand-stat-party-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_by_gender_candidate_type_and_party.png")
-```
-
 ### Geburtjahr
 
 ``` r
@@ -1104,10 +1978,6 @@ mps21 %>%
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/age-mps-1.png)<!-- -->
 
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_age_distribution.png")
-```
-
 Let us try to create separate histograms for each party:
 
 ``` r
@@ -1127,10 +1997,6 @@ mps21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/age-distribution-by-party-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_age_distribution_by_party.png")
-```
 
 The information in this graph can be expressed in a table:
 
@@ -1260,7 +2126,6 @@ mps21 %>%
 ![](btwkandidierende2021_some_code_files/figure-gfm/age-in-general-1.png)<!-- -->
 
 ``` r
-ggsave("Figures/Candidates/btw_21_candidates_age_groups_absolute.png")
 # proportions
 mps21 %>%
   ggplot(aes(x = factor(age_category), group = 1)) +
@@ -1275,10 +2140,6 @@ mps21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/age-in-general-2.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_age_groups_relative.png")
-```
 
 Next, let us look at Altersgruppe by type of candidacy:
 
@@ -1303,10 +2164,6 @@ mps21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/age-type-candidacy-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_age_groups_candidate_type.png")
-```
 
 Do this plot by party:
 
@@ -1335,10 +2192,6 @@ mps21 %>%
 ```
 
 ![](btwkandidierende2021_some_code_files/figure-gfm/age-type-candidacy-by-party-1.png)<!-- -->
-
-``` r
-ggsave("Figures/Candidates/btw_21_candidates_age_groups_candidate_type_and_party.png")
-```
 
 ## Academic MPs
 

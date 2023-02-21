@@ -140,10 +140,33 @@ save(btws17_21_merged_plot, file = "Data/bundestagswahlen_17_21_merged_plot_data
 
 ```{r summary-stats-skimr}
 btws17_21_merged_plot %>%
-  select(-c(WKR_Name, WKR_NR), "CDU/CSU Zweitstimmenanteil 2017" = union_zweitstimmen_share, "SPD Zweitstimmenanteil 2017" = spd_zweitstimmen_share, "AfD Zweitstimmenanteil 2017" = afd_zweitstimmen_share, "FDP Zweitstimmenanteil 2017" = fdp_zweitstimmen_share, "Grüne B90 Zweitstimmenanteil 2017" = green_zweitstimmen_share, "LINKE Zweitstimmenanteil 2017" = linke_zweitstimmen_share, "CDU/CSU Zweitstimmenanteil 2021" = CDU_CSU_Zweitstimmen_Share, "SPD Zweitstimmenanteil 2021" = SPD_Zweitstimmen_Share, "FDP Zweitstimmenanteil 2021" = FDP_Zweitstimmen_Share, "AfD Zweitstimmenanteil 2021" = AfD_Zweitstimmen_Share, "Grüne B90 Zweitstimmenanteil 2021" = Gruene_B90_Zweitstimmen_Share, "LINKE Zweitstimmenanteil 2021" = LINKE_Zweitstimmen_Share, "Veränderung des CDU/CSU Zweitstimmenanteils" = CDU_CSU_delta_21_17, "Veränderung des SPD Zweitstimmenanteils" = SPD_delta_21_17, "Veränderung des AfD Zweitstimmenanteils" = AfD_delta_21_17, "Veränderung des Grüne Zweitstimmenanteils" = Gruene_B90_delta_21_17, "Veränderung des FDP Zweitstimmenanteils" = FDP_delta_21_17, "Veränderung des LINKE Zweitstimmenanteils" = LINKE_delta_21_17) %>%
-  datasummary_skim(fmt = "%.3f", output = "kableExtra") %>%
+  select(-c(WKR_Name, WKR_NR, geometry_btw21, LAND_NAME_btw21), 
+         "CDU/CSU Zweitstimmenanteil 2017" = union_zweitstimmen_share, 
+         "SPD Zweitstimmenanteil 2017" = spd_zweitstimmen_share,
+         "AfD Zweitstimmenanteil 2017" = afd_zweitstimmen_share,
+         "FDP Zweitstimmenanteil 2017" = fdp_zweitstimmen_share,
+         "Grüne B90 Zweitstimmenanteil 2017" = green_zweitstimmen_share, 
+         "LINKE Zweitstimmenanteil 2017" = linke_zweitstimmen_share, 
+         "CDU/CSU Zweitstimmenanteil 2021" = CDU_CSU_Zweitstimmen_Share, 
+         "SPD Zweitstimmenanteil 2021" = SPD_Zweitstimmen_Share,
+         "FDP Zweitstimmenanteil 2021" = FDP_Zweitstimmen_Share,
+         "AfD Zweitstimmenanteil 2021" = AfD_Zweitstimmen_Share,
+         "Grüne B90 Zweitstimmenanteil 2021" = Gruene_B90_Zweitstimmen_Share,
+         "LINKE Zweitstimmenanteil 2021" = LINKE_Zweitstimmen_Share,
+         "Veränderung des CDU/CSU Zweitstimmenanteils" = CDU_CSU_delta_21_17,
+         "Veränderung des SPD Zweitstimmenanteils" = SPD_delta_21_17,
+         "Veränderung des AfD Zweitstimmenanteils" = AfD_delta_21_17,
+         "Veränderung des Grüne Zweitstimmenanteils" = Gruene_B90_delta_21_17,
+         "Veränderung des FDP Zweitstimmenanteils" = FDP_delta_21_17,
+         "Veränderung des LINKE Zweitstimmenanteils" = LINKE_delta_21_17) %>%
+  mutate(across(.cols = everything(),
+                .fns = ~ . * 100)) %>%
+  datasummary_skim(fmt = "%.3f", 
+                   output = "kableExtra", 
+                   histogram = F) %>%
   landscape() %>%
-  add_footnote(c("Die Veränderung der Zweitstimmenanteile beschreibt die Differenz der Zweitstimmenanteile der Bundestagswahl 2021 im Vergleich zu 2017."), notation = "number")
+  add_footnote(c("Die Veränderung der Zweitstimmenanteile beschreibt die Differenz der Zweitstimmenanteile der Bundestagswahl 2021 im Vergleich zu 2017."), 
+               notation = "number")
 ```
 
 
@@ -213,13 +236,14 @@ btws17_21_merged %>%
   select(Wahlkreis, CDU_CSU_Zweitstimmen_Share, 
          SPD_Zweitstimmen_Share, Gruene_B90_Zweitstimmen_Share,
          FDP_Zweitstimmen_Share, AfD_Zweitstimmen_Share, LINKE_Zweitstimmen_Share) %>%
+  mutate(across(.cols = grep("Share", names(.)),
+                .fns = ~ . * 100)) %>%
   kable(col.names = c("Wahlkreis", "CDU/CSU", "SPD",
                       "Grüne/B90", "FDP", "AfD", "LINKE"),
-    booktabs = T, digits = 3, longtable = TRUE) %>%
+    booktabs = T, digits = 3) %>%
   add_header_above(c(" " = 1, "Zweitstimmenanteile" = 6)) %>%
   kable_styling(full_width = F) %>%
-  landscape() %>%
-  save_kable("Figures/all_constituencies.png")
+  landscape() 
 ```
 
 

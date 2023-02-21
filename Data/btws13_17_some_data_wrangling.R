@@ -1,4 +1,7 @@
 
+# preliminaries 
+
+## packages 
 library(tidyverse)
 library(readr)
 library(scales)
@@ -6,8 +9,8 @@ library(stringr)
 library(janitor)
 library(sf)
 
-# 2013 in 2017 constituencies 
-btw13_header <- read_csv2("Literature/Graphs_Overview/Bundestagswahl2021_anaylsis/Data/btw13_ergebnisse_umgerechnet_auf_wahlkreise_btw2017.csv",
+## import data for 2013 in 2017 constituencies 
+btw13_header <- read_csv2("Data/btw13_ergebnisse_umgerechnet_auf_wahlkreise_btw2017.csv",
                    skip = 4, col_names = F, n_max = 2) 
 
 btw13_header <- btw13_header %>%
@@ -17,7 +20,7 @@ btw13_header <- btw13_header %>%
 btw13_header <- sapply(btw13_header, paste, "_btw13")
 
 
-btw13 <- read_csv2("Literature/Graphs_Overview/Bundestagswahl2021_anaylsis/Data/btw13_ergebnisse_umgerechnet_auf_wahlkreise_btw2017.csv",
+btw13 <- read_csv2("Data/btw13_ergebnisse_umgerechnet_auf_wahlkreise_btw2017.csv",
                    skip = 6, col_names = F)
 names(btw13) <- btw13_header
 
@@ -27,7 +30,7 @@ btw13_pruned <- btw13 %>%
   select(1:25)
 
 # 2017
-btw17_header <- read_csv2("Literature/Graphs_Overview/Bundestagswahl2021_anaylsis/Data/bundestagswahl17_results_by_constituency.csv",
+btw17_header <- read_csv2("Data/bundestagswahl17_results_by_constituency.csv",
                           col_names = F, n_max = 3)
 
 btw17_header <- btw17_header %>%
@@ -47,7 +50,7 @@ btw17_header[4] <- "bundesland"
 btw17_header <- sapply(btw17_header, paste, "_btw17")
 
 
-btw17 <-  read_csv2("Literature/Graphs_Overview/Bundestagswahl2021_anaylsis/Data/bundestagswahl17_results_by_constituency.csv",
+btw17 <-  read_csv2("Data/bundestagswahl17_results_by_constituency.csv",
                     skip = 3, 
                     col_names = F) %>%
   remove_empty(which = "rows") 
@@ -100,7 +103,7 @@ btws_13_21 <- btw21_pruned %>%
   left_join(btw13_pruned, by = c("wkr_nr_btw21" = "wkr_nr_btw13"))
 
 # This should be a 299-by-133 data frame. 
-myshape_btw21 <- "Literature/Graphs_Overview/Bundestagswahl2021_anaylsis/Data/btw21_geometrie_wahlkreise_geo_shp/Geometrie_Wahlkreise_20DBT_geo.shp"
+myshape_btw21 <- "Data/btw21_geometrie_wahlkreise_geo_shp/Geometrie_Wahlkreise_20DBT_geo.shp"
 
 shape21 <- st_read(myshape_btw21)
 
@@ -111,10 +114,7 @@ btws_13_21 <- btws_13_21 %>%
 
 ## This is a 299-by-137 data frame. 
 
-############################
-# Creating useful variables. 
-############################
-
+## create useful variables
 btws_13_21 <- btws_13_21 %>%
   mutate(union_zweitstimmen_btw13 = ifelse(cdu_zweitstimmen_btw13 == 0, csu_zweitstimmen_btw13, cdu_zweitstimmen_btw13),
          union_zweitstimmen_btw17 = ifelse(is.na(christlich_demokratische_union_deutschlands_zweitstimmen_endgultig_btw17), christlich_soziale_union_in_bayern_e_v_zweitstimmen_endgultig_btw17, christlich_demokratische_union_deutschlands_zweitstimmen_endgultig_btw17),
@@ -136,5 +136,7 @@ btws_13_21 <- btws_13_21 %>%
          FDP_delta_21_13 = fdp_zweitstimmen_share_btw21 - fdp_zweitstimmen_share_btw13,
          LINKE_delta_21_13 = linke_zweitstimmen_share_btw21 - linke_zweitstimmen_share_btw13) %>%
   select(wkr_nr_btw21, wahlkreis_btw21, geometry, ends_with("delta_21_13"))
-save(btws_13_21, file = "Literature/Graphs_Overview/Bundestagswahl2021_anaylsis/Data/btws_13_21.RData")
+
+# save data frame
+save(btws_13_21, file = "Data/btws_13_21.RData")
 
