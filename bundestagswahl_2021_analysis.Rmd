@@ -161,7 +161,7 @@ btws17_21_merged_plot %>%
          "Veränderung des LINKE Zweitstimmenanteils" = LINKE_delta_21_17) %>%
   mutate(across(.cols = everything(),
                 .fns = ~ . * 100)) %>%
-  datasummary_skim(fmt = "%.3f", 
+  datasummary_skim(fmt = "%.2f", 
                    output = "kableExtra", 
                    histogram = F) %>%
   landscape() %>%
@@ -240,7 +240,7 @@ btws17_21_merged %>%
                 .fns = ~ . * 100)) %>%
   kable(col.names = c("Wahlkreis", "CDU/CSU", "SPD",
                       "Grüne/B90", "FDP", "AfD", "LINKE"),
-    booktabs = T, digits = 3) %>%
+    booktabs = T, digits = 1) %>%
   add_header_above(c(" " = 1, "Zweitstimmenanteile" = 6)) %>%
   kable_styling(full_width = F) %>%
   landscape() 
