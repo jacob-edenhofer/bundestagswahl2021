@@ -161,7 +161,7 @@ btws17_21_merged_plot %>%
          "Veränderung des LINKE Zweitstimmenanteils" = LINKE_delta_21_17) %>%
   mutate(across(.cols = everything(),
                 .fns = ~ . * 100)) %>%
-  datasummary_skim(fmt = "%.2f", 
+  datasummary_skim(fmt = "%.1f", 
                    output = "kableExtra", 
                    histogram = F) %>%
   landscape() %>%

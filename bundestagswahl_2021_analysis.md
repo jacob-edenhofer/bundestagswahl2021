@@ -154,7 +154,7 @@ btws17_21_merged_plot %>%
          "Veränderung des LINKE Zweitstimmenanteils" = LINKE_delta_21_17) %>%
   mutate(across(.cols = everything(),
                 .fns = ~ . * 100)) %>%
-  datasummary_skim(fmt = "%.3f", 
+  datasummary_skim(fmt = "%.1f", 
                    output = "kableExtra", 
                    histogram = F) %>%
   landscape() %>%
@@ -202,19 +202,19 @@ CDU/CSU Zweitstimmenanteil 2017
 0
 </td>
 <td style="text-align:right;">
-32.880
+32.9
 </td>
 <td style="text-align:right;">
-5.961
+6.0
 </td>
 <td style="text-align:right;">
-13.908
+13.9
 </td>
 <td style="text-align:right;">
-32.788
+32.8
 </td>
 <td style="text-align:right;">
-53.103
+53.1
 </td>
 </tr>
 <tr>
@@ -228,19 +228,19 @@ SPD Zweitstimmenanteil 2017
 0
 </td>
 <td style="text-align:right;">
-20.653
+20.7
 </td>
 <td style="text-align:right;">
-6.240
+6.2
 </td>
 <td style="text-align:right;">
-7.799
+7.8
 </td>
 <td style="text-align:right;">
-20.655
+20.7
 </td>
 <td style="text-align:right;">
-37.820
+37.8
 </td>
 </tr>
 <tr>
@@ -254,19 +254,19 @@ AfD Zweitstimmenanteil 2017
 0
 </td>
 <td style="text-align:right;">
-12.759
+12.8
 </td>
 <td style="text-align:right;">
-5.462
+5.5
 </td>
 <td style="text-align:right;">
-4.940
+4.9
 </td>
 <td style="text-align:right;">
-11.454
+11.5
 </td>
 <td style="text-align:right;">
-35.465
+35.5
 </td>
 </tr>
 <tr>
@@ -280,19 +280,19 @@ FDP Zweitstimmenanteil 2017
 0
 </td>
 <td style="text-align:right;">
-10.659
+10.7
 </td>
 <td style="text-align:right;">
-2.693
+2.7
 </td>
 <td style="text-align:right;">
-5.264
+5.3
 </td>
 <td style="text-align:right;">
-10.414
+10.4
 </td>
 <td style="text-align:right;">
-19.743
+19.7
 </td>
 </tr>
 <tr>
@@ -306,19 +306,19 @@ Grüne B90 Zweitstimmenanteil 2017
 0
 </td>
 <td style="text-align:right;">
-8.777
+8.8
 </td>
 <td style="text-align:right;">
-3.948
+3.9
 </td>
 <td style="text-align:right;">
-2.233
+2.2
 </td>
 <td style="text-align:right;">
-8.078
+8.1
 </td>
 <td style="text-align:right;">
-21.167
+21.2
 </td>
 </tr>
 <tr>
@@ -332,19 +332,19 @@ LINKE Zweitstimmenanteil 2017
 0
 </td>
 <td style="text-align:right;">
-9.273
+9.3
 </td>
 <td style="text-align:right;">
-4.813
+4.8
 </td>
 <td style="text-align:right;">
-4.164
+4.2
 </td>
 <td style="text-align:right;">
-7.077
+7.1
 </td>
 <td style="text-align:right;">
-29.344
+29.3
 </td>
 </tr>
 <tr>
@@ -358,19 +358,19 @@ CDU/CSU Zweitstimmenanteil 2021
 0
 </td>
 <td style="text-align:right;">
-23.987
+24.0
 </td>
 <td style="text-align:right;">
-5.966
+6.0
 </td>
 <td style="text-align:right;">
-6.980
+7.0
 </td>
 <td style="text-align:right;">
-23.628
+23.6
 </td>
 <td style="text-align:right;">
-38.467
+38.5
 </td>
 </tr>
 <tr>
@@ -384,19 +384,19 @@ FDP Zweitstimmenanteil 2021
 0
 </td>
 <td style="text-align:right;">
-11.388
+11.4
 </td>
 <td style="text-align:right;">
-2.283
+2.3
 </td>
 <td style="text-align:right;">
-6.340
+6.3
 </td>
 <td style="text-align:right;">
-11.117
+11.1
 </td>
 <td style="text-align:right;">
-18.109
+18.1
 </td>
 </tr>
 <tr>
@@ -410,19 +410,19 @@ SPD Zweitstimmenanteil 2021
 0
 </td>
 <td style="text-align:right;">
-25.987
+26.0
 </td>
 <td style="text-align:right;">
-6.007
+6.0
 </td>
 <td style="text-align:right;">
-13.502
+13.5
 </td>
 <td style="text-align:right;">
-26.230
+26.2
 </td>
 <td style="text-align:right;">
-43.348
+43.3
 </td>
 </tr>
 <tr>
@@ -436,19 +436,19 @@ AfD Zweitstimmenanteil 2021
 0
 </td>
 <td style="text-align:right;">
-10.530
+10.5
 </td>
 <td style="text-align:right;">
-5.881
+5.9
 </td>
 <td style="text-align:right;">
-2.867
+2.9
 </td>
 <td style="text-align:right;">
-8.855
+8.9
 </td>
 <td style="text-align:right;">
-32.533
+32.5
 </td>
 </tr>
 <tr>
@@ -462,19 +462,19 @@ Grüne B90 Zweitstimmenanteil 2021
 1
 </td>
 <td style="text-align:right;">
-14.664
+14.7
 </td>
 <td style="text-align:right;">
-6.267
+6.3
 </td>
 <td style="text-align:right;">
-3.254
+3.3
 </td>
 <td style="text-align:right;">
-13.941
+13.9
 </td>
 <td style="text-align:right;">
-36.750
+36.7
 </td>
 </tr>
 <tr>
@@ -488,19 +488,19 @@ LINKE Zweitstimmenanteil 2021
 0
 </td>
 <td style="text-align:right;">
-4.912
+4.9
 </td>
 <td style="text-align:right;">
-3.145
+3.1
 </td>
 <td style="text-align:right;">
-1.817
+1.8
 </td>
 <td style="text-align:right;">
-3.430
+3.4
 </td>
 <td style="text-align:right;">
-18.243
+18.2
 </td>
 </tr>
 <tr>
@@ -514,19 +514,19 @@ Veränderung des CDU/CSU Zweitstimmenanteils
 0
 </td>
 <td style="text-align:right;">
--8.893
+-8.9
 </td>
 <td style="text-align:right;">
-2.639
+2.6
 </td>
 <td style="text-align:right;">
--17.058
+-17.1
 </td>
 <td style="text-align:right;">
--8.629
+-8.6
 </td>
 <td style="text-align:right;">
--1.175
+-1.2
 </td>
 </tr>
 <tr>
@@ -540,19 +540,19 @@ Veränderung des SPD Zweitstimmenanteils
 0
 </td>
 <td style="text-align:right;">
-5.335
+5.3
 </td>
 <td style="text-align:right;">
-3.009
+3.0
 </td>
 <td style="text-align:right;">
--3.692
+-3.7
 </td>
 <td style="text-align:right;">
-4.767
+4.8
 </td>
 <td style="text-align:right;">
-15.407
+15.4
 </td>
 </tr>
 <tr>
@@ -566,19 +566,19 @@ Veränderung des AfD Zweitstimmenanteils
 0
 </td>
 <td style="text-align:right;">
--2.229
+-2.2
 </td>
 <td style="text-align:right;">
-1.455
+1.5
 </td>
 <td style="text-align:right;">
--5.258
+-5.3
 </td>
 <td style="text-align:right;">
--2.282
+-2.3
 </td>
 <td style="text-align:right;">
-3.336
+3.3
 </td>
 </tr>
 <tr>
@@ -592,19 +592,19 @@ Veränderung des Grüne Zweitstimmenanteils
 1
 </td>
 <td style="text-align:right;">
-5.850
+5.8
 </td>
 <td style="text-align:right;">
-3.241
+3.2
 </td>
 <td style="text-align:right;">
--0.116
+-0.1
 </td>
 <td style="text-align:right;">
-5.608
+5.6
 </td>
 <td style="text-align:right;">
-16.386
+16.4
 </td>
 </tr>
 <tr>
@@ -618,19 +618,19 @@ Veränderung des FDP Zweitstimmenanteils
 0
 </td>
 <td style="text-align:right;">
-0.729
+0.7
 </td>
 <td style="text-align:right;">
-1.719
+1.7
 </td>
 <td style="text-align:right;">
--4.176
+-4.2
 </td>
 <td style="text-align:right;">
-0.838
+0.8
 </td>
 <td style="text-align:right;">
-4.562
+4.6
 </td>
 </tr>
 <tr>
@@ -644,19 +644,19 @@ Veränderung des LINKE Zweitstimmenanteils
 0
 </td>
 <td style="text-align:right;">
--4.361
+-4.4
 </td>
 <td style="text-align:right;">
-1.808
+1.8
 </td>
 <td style="text-align:right;">
--11.100
+-11.1
 </td>
 <td style="text-align:right;">
--3.745
+-3.7
 </td>
 <td style="text-align:right;">
--1.737
+-1.7
 </td>
 </tr>
 </tbody>
@@ -743,7 +743,7 @@ btws17_21_merged %>%
                 .fns = ~ . * 100)) %>%
   kable(col.names = c("Wahlkreis", "CDU/CSU", "SPD",
                       "Grüne/B90", "FDP", "AfD", "LINKE"),
-    booktabs = T, digits = 3) %>%
+    booktabs = T, digits = 1) %>%
   add_header_above(c(" " = 1, "Zweitstimmenanteile" = 6)) %>%
   kable_styling(full_width = F) %>%
   landscape() 
@@ -794,22 +794,22 @@ LINKE
 Flensburg – Schleswig
 </td>
 <td style="text-align:right;">
-20.390
+20.4
 </td>
 <td style="text-align:right;">
-25.477
+25.5
 </td>
 <td style="text-align:right;">
-18.642
+18.6
 </td>
 <td style="text-align:right;">
-10.743
+10.7
 </td>
 <td style="text-align:right;">
-5.776
+5.8
 </td>
 <td style="text-align:right;">
-4.185
+4.2
 </td>
 </tr>
 <tr>
@@ -817,22 +817,22 @@ Flensburg – Schleswig
 Nordfriesland – Dithmarschen Nord
 </td>
 <td style="text-align:right;">
-24.636
+24.6
 </td>
 <td style="text-align:right;">
-26.311
+26.3
 </td>
 <td style="text-align:right;">
-15.670
+15.7
 </td>
 <td style="text-align:right;">
-12.730
+12.7
 </td>
 <td style="text-align:right;">
-6.104
+6.1
 </td>
 <td style="text-align:right;">
-3.078
+3.1
 </td>
 </tr>
 <tr>
@@ -840,22 +840,22 @@ Nordfriesland – Dithmarschen Nord
 Steinburg – Dithmarschen Süd
 </td>
 <td style="text-align:right;">
-24.308
+24.3
 </td>
 <td style="text-align:right;">
-27.732
+27.7
 </td>
 <td style="text-align:right;">
-14.238
+14.2
 </td>
 <td style="text-align:right;">
-13.687
+13.7
 </td>
 <td style="text-align:right;">
-8.366
+8.4
 </td>
 <td style="text-align:right;">
-3.348
+3.3
 </td>
 </tr>
 <tr>
@@ -863,22 +863,22 @@ Steinburg – Dithmarschen Süd
 Rendsburg-Eckernförde
 </td>
 <td style="text-align:right;">
-23.930
+23.9
 </td>
 <td style="text-align:right;">
-26.807
+26.8
 </td>
 <td style="text-align:right;">
-17.911
+17.9
 </td>
 <td style="text-align:right;">
-12.005
+12.0
 </td>
 <td style="text-align:right;">
-6.563
+6.6
 </td>
 <td style="text-align:right;">
-3.208
+3.2
 </td>
 </tr>
 <tr>
@@ -886,22 +886,22 @@ Rendsburg-Eckernförde
 Kiel
 </td>
 <td style="text-align:right;">
-15.425
+15.4
 </td>
 <td style="text-align:right;">
-26.013
+26.0
 </td>
 <td style="text-align:right;">
-28.432
+28.4
 </td>
 <td style="text-align:right;">
-10.389
+10.4
 </td>
 <td style="text-align:right;">
-4.936
+4.9
 </td>
 <td style="text-align:right;">
-6.081
+6.1
 </td>
 </tr>
 <tr>
@@ -909,22 +909,22 @@ Kiel
 Plön – Neumünster
 </td>
 <td style="text-align:right;">
-22.856
+22.9
 </td>
 <td style="text-align:right;">
-29.179
+29.2
 </td>
 <td style="text-align:right;">
-17.393
+17.4
 </td>
 <td style="text-align:right;">
-11.998
+12.0
 </td>
 <td style="text-align:right;">
-7.350
+7.4
 </td>
 <td style="text-align:right;">
-3.193
+3.2
 </td>
 </tr>
 <tr>
@@ -932,22 +932,22 @@ Plön – Neumünster
 Pinneberg
 </td>
 <td style="text-align:right;">
-22.104
+22.1
 </td>
 <td style="text-align:right;">
-29.271
+29.3
 </td>
 <td style="text-align:right;">
-18.022
+18.0
 </td>
 <td style="text-align:right;">
-13.488
+13.5
 </td>
 <td style="text-align:right;">
-6.874
+6.9
 </td>
 <td style="text-align:right;">
-3.344
+3.3
 </td>
 </tr>
 <tr>
@@ -955,22 +955,22 @@ Pinneberg
 Segeberg – Stormarn-Mitte
 </td>
 <td style="text-align:right;">
-22.336
+22.3
 </td>
 <td style="text-align:right;">
-28.577
+28.6
 </td>
 <td style="text-align:right;">
-16.826
+16.8
 </td>
 <td style="text-align:right;">
-13.959
+14.0
 </td>
 <td style="text-align:right;">
-7.327
+7.3
 </td>
 <td style="text-align:right;">
-3.262
+3.3
 </td>
 </tr>
 <tr>
@@ -978,22 +978,22 @@ Segeberg – Stormarn-Mitte
 Ostholstein – Stormarn-Nord
 </td>
 <td style="text-align:right;">
-25.051
+25.1
 </td>
 <td style="text-align:right;">
-29.951
+30.0
 </td>
 <td style="text-align:right;">
-15.718
+15.7
 </td>
 <td style="text-align:right;">
-12.669
+12.7
 </td>
 <td style="text-align:right;">
-7.095
+7.1
 </td>
 <td style="text-align:right;">
-2.843
+2.8
 </td>
 </tr>
 <tr>
@@ -1001,22 +1001,22 @@ Ostholstein – Stormarn-Nord
 Herzogtum Lauenburg – Stormarn-Süd
 </td>
 <td style="text-align:right;">
-23.194
+23.2
 </td>
 <td style="text-align:right;">
-28.848
+28.8
 </td>
 <td style="text-align:right;">
-16.604
+16.6
 </td>
 <td style="text-align:right;">
-14.175
+14.2
 </td>
 <td style="text-align:right;">
-7.507
+7.5
 </td>
 <td style="text-align:right;">
-3.234
+3.2
 </td>
 </tr>
 <tr>
@@ -1024,22 +1024,22 @@ Herzogtum Lauenburg – Stormarn-Süd
 Lübeck
 </td>
 <td style="text-align:right;">
-18.142
+18.1
 </td>
 <td style="text-align:right;">
-30.486
+30.5
 </td>
 <td style="text-align:right;">
-22.443
+22.4
 </td>
 <td style="text-align:right;">
-10.462
+10.5
 </td>
 <td style="text-align:right;">
-6.778
+6.8
 </td>
 <td style="text-align:right;">
-4.442
+4.4
 </td>
 </tr>
 <tr>
@@ -1047,22 +1047,22 @@ Lübeck
 Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I
 </td>
 <td style="text-align:right;">
-17.114
+17.1
 </td>
 <td style="text-align:right;">
-31.960
+32.0
 </td>
 <td style="text-align:right;">
-8.056
+8.1
 </td>
 <td style="text-align:right;">
-8.590
+8.6
 </td>
 <td style="text-align:right;">
-15.688
+15.7
 </td>
 <td style="text-align:right;">
-10.770
+10.8
 </td>
 </tr>
 <tr>
@@ -1070,22 +1070,22 @@ Schwerin – Ludwigslust-Parchim I – Nordwestmecklenburg I
 Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I
 </td>
 <td style="text-align:right;">
-17.086
+17.1
 </td>
 <td style="text-align:right;">
-32.508
+32.5
 </td>
 <td style="text-align:right;">
-7.041
+7.0
 </td>
 <td style="text-align:right;">
-8.076
+8.1
 </td>
 <td style="text-align:right;">
-17.122
+17.1
 </td>
 <td style="text-align:right;">
-10.395
+10.4
 </td>
 </tr>
 <tr>
@@ -1093,22 +1093,22 @@ Ludwigslust-Parchim II – Nordwestmecklenburg II – Landkreis Rostock I
 Rostock – Landkreis Rostock II
 </td>
 <td style="text-align:right;">
-14.176
+14.2
 </td>
 <td style="text-align:right;">
-29.010
+29.0
 </td>
 <td style="text-align:right;">
-12.849
+12.8
 </td>
 <td style="text-align:right;">
-9.113
+9.1
 </td>
 <td style="text-align:right;">
-12.675
+12.7
 </td>
 <td style="text-align:right;">
-13.187
+13.2
 </td>
 </tr>
 <tr>
@@ -1116,22 +1116,22 @@ Rostock – Landkreis Rostock II
 Vorpommern-Rügen – Vorpommern-Greifswald I
 </td>
 <td style="text-align:right;">
-18.645
+18.6
 </td>
 <td style="text-align:right;">
-25.083
+25.1
 </td>
 <td style="text-align:right;">
-8.839
+8.8
 </td>
 <td style="text-align:right;">
-8.310
+8.3
 </td>
 <td style="text-align:right;">
-18.882
+18.9
 </td>
 <td style="text-align:right;">
-11.375
+11.4
 </td>
 </tr>
 <tr>
@@ -1139,22 +1139,22 @@ Vorpommern-Rügen – Vorpommern-Greifswald I
 Mecklenburgische Seenplatte I – Vorpommern-Greifswald II
 </td>
 <td style="text-align:right;">
-18.991
+19.0
 </td>
 <td style="text-align:right;">
-26.708
+26.7
 </td>
 <td style="text-align:right;">
-4.380
+4.4
 </td>
 <td style="text-align:right;">
-7.573
+7.6
 </td>
 <td style="text-align:right;">
-23.241
+23.2
 </td>
 <td style="text-align:right;">
-10.176
+10.2
 </td>
 </tr>
 <tr>
@@ -1162,22 +1162,22 @@ Mecklenburgische Seenplatte I – Vorpommern-Greifswald II
 Mecklenburgische Seenplatte II – Landkreis Rostock III
 </td>
 <td style="text-align:right;">
-18.752
+18.8
 </td>
 <td style="text-align:right;">
-29.865
+29.9
 </td>
 <td style="text-align:right;">
-5.099
+5.1
 </td>
 <td style="text-align:right;">
-7.535
+7.5
 </td>
 <td style="text-align:right;">
-20.896
+20.9
 </td>
 <td style="text-align:right;">
-10.252
+10.3
 </td>
 </tr>
 <tr>
@@ -1185,22 +1185,22 @@ Mecklenburgische Seenplatte II – Landkreis Rostock III
 Hamburg-Mitte
 </td>
 <td style="text-align:right;">
-11.191
+11.2
 </td>
 <td style="text-align:right;">
-28.658
+28.7
 </td>
 <td style="text-align:right;">
-27.886
+27.9
 </td>
 <td style="text-align:right;">
-10.486
+10.5
 </td>
 <td style="text-align:right;">
-5.096
+5.1
 </td>
 <td style="text-align:right;">
-8.733
+8.7
 </td>
 </tr>
 <tr>
@@ -1208,22 +1208,22 @@ Hamburg-Mitte
 Hamburg-Altona
 </td>
 <td style="text-align:right;">
-14.779
+14.8
 </td>
 <td style="text-align:right;">
-25.553
+25.6
 </td>
 <td style="text-align:right;">
-30.351
+30.4
 </td>
 <td style="text-align:right;">
-10.877
+10.9
 </td>
 <td style="text-align:right;">
-3.311
+3.3
 </td>
 <td style="text-align:right;">
-8.986
+9.0
 </td>
 </tr>
 <tr>
@@ -1231,22 +1231,22 @@ Hamburg-Altona
 Hamburg-Eimsbüttel
 </td>
 <td style="text-align:right;">
-14.868
+14.9
 </td>
 <td style="text-align:right;">
-28.005
+28.0
 </td>
 <td style="text-align:right;">
-29.921
+29.9
 </td>
 <td style="text-align:right;">
-11.343
+11.3
 </td>
 <td style="text-align:right;">
-3.531
+3.5
 </td>
 <td style="text-align:right;">
-6.764
+6.8
 </td>
 </tr>
 <tr>
@@ -1254,22 +1254,22 @@ Hamburg-Eimsbüttel
 Hamburg-Nord
 </td>
 <td style="text-align:right;">
-18.619
+18.6
 </td>
 <td style="text-align:right;">
-27.925
+27.9
 </td>
 <td style="text-align:right;">
-25.194
+25.2
 </td>
 <td style="text-align:right;">
-14.211
+14.2
 </td>
 <td style="text-align:right;">
-3.688
+3.7
 </td>
 <td style="text-align:right;">
-4.733
+4.7
 </td>
 </tr>
 <tr>
@@ -1277,22 +1277,22 @@ Hamburg-Nord
 Hamburg-Wandsbek
 </td>
 <td style="text-align:right;">
-16.840
+16.8
 </td>
 <td style="text-align:right;">
-34.312
+34.3
 </td>
 <td style="text-align:right;">
-18.594
+18.6
 </td>
 <td style="text-align:right;">
-11.124
+11.1
 </td>
 <td style="text-align:right;">
-6.533
+6.5
 </td>
 <td style="text-align:right;">
-5.122
+5.1
 </td>
 </tr>
 <tr>
@@ -1300,22 +1300,22 @@ Hamburg-Wandsbek
 Hamburg-Bergedorf – Harburg
 </td>
 <td style="text-align:right;">
-16.194
+16.2
 </td>
 <td style="text-align:right;">
-33.451
+33.5
 </td>
 <td style="text-align:right;">
-17.789
+17.8
 </td>
 <td style="text-align:right;">
-9.982
+10.0
 </td>
 <td style="text-align:right;">
-8.049
+8.0
 </td>
 <td style="text-align:right;">
-6.291
+6.3
 </td>
 </tr>
 <tr>
@@ -1323,22 +1323,22 @@ Hamburg-Bergedorf – Harburg
 Aurich – Emden
 </td>
 <td style="text-align:right;">
-17.670
+17.7
 </td>
 <td style="text-align:right;">
-43.348
+43.3
 </td>
 <td style="text-align:right;">
-12.973
+13.0
 </td>
 <td style="text-align:right;">
-8.894
+8.9
 </td>
 <td style="text-align:right;">
-8.204
+8.2
 </td>
 <td style="text-align:right;">
-3.430
+3.4
 </td>
 </tr>
 <tr>
@@ -1346,22 +1346,22 @@ Aurich – Emden
 Unterems
 </td>
 <td style="text-align:right;">
-29.876
+29.9
 </td>
 <td style="text-align:right;">
-33.986
+34.0
 </td>
 <td style="text-align:right;">
-10.659
+10.7
 </td>
 <td style="text-align:right;">
-10.140
+10.1
 </td>
 <td style="text-align:right;">
-8.176
+8.2
 </td>
 <td style="text-align:right;">
-2.668
+2.7
 </td>
 </tr>
 <tr>
@@ -1369,22 +1369,22 @@ Unterems
 Friesland – Wilhelmshaven – Wittmund
 </td>
 <td style="text-align:right;">
-21.466
+21.5
 </td>
 <td style="text-align:right;">
-37.951
+38.0
 </td>
 <td style="text-align:right;">
-12.804
+12.8
 </td>
 <td style="text-align:right;">
-10.437
+10.4
 </td>
 <td style="text-align:right;">
-8.238
+8.2
 </td>
 <td style="text-align:right;">
-3.101
+3.1
 </td>
 </tr>
 <tr>
@@ -1392,22 +1392,22 @@ Friesland – Wilhelmshaven – Wittmund
 Oldenburg – Ammerland
 </td>
 <td style="text-align:right;">
-18.603
+18.6
 </td>
 <td style="text-align:right;">
-32.009
+32.0
 </td>
 <td style="text-align:right;">
-23.714
+23.7
 </td>
 <td style="text-align:right;">
-10.243
+10.2
 </td>
 <td style="text-align:right;">
-5.160
+5.2
 </td>
 <td style="text-align:right;">
-4.836
+4.8
 </td>
 </tr>
 <tr>
@@ -1415,22 +1415,22 @@ Oldenburg – Ammerland
 Delmenhorst – Wesermarsch – Oldenburg-Land
 </td>
 <td style="text-align:right;">
-22.601
+22.6
 </td>
 <td style="text-align:right;">
-34.300
+34.3
 </td>
 <td style="text-align:right;">
-14.784
+14.8
 </td>
 <td style="text-align:right;">
-11.452
+11.5
 </td>
 <td style="text-align:right;">
-8.009
+8.0
 </td>
 <td style="text-align:right;">
-3.112
+3.1
 </td>
 </tr>
 <tr>
@@ -1438,22 +1438,22 @@ Delmenhorst – Wesermarsch – Oldenburg-Land
 Cuxhaven – Stade II
 </td>
 <td style="text-align:right;">
-26.186
+26.2
 </td>
 <td style="text-align:right;">
-34.970
+35.0
 </td>
 <td style="text-align:right;">
-12.563
+12.6
 </td>
 <td style="text-align:right;">
-10.058
+10.1
 </td>
 <td style="text-align:right;">
-7.873
+7.9
 </td>
 <td style="text-align:right;">
-2.628
+2.6
 </td>
 </tr>
 <tr>
@@ -1461,22 +1461,22 @@ Cuxhaven – Stade II
 Stade I – Rotenburg II
 </td>
 <td style="text-align:right;">
-26.490
+26.5
 </td>
 <td style="text-align:right;">
-32.012
+32.0
 </td>
 <td style="text-align:right;">
-14.641
+14.6
 </td>
 <td style="text-align:right;">
-11.081
+11.1
 </td>
 <td style="text-align:right;">
-7.292
+7.3
 </td>
 <td style="text-align:right;">
-2.850
+2.9
 </td>
 </tr>
 <tr>
@@ -1484,22 +1484,22 @@ Stade I – Rotenburg II
 Mittelems
 </td>
 <td style="text-align:right;">
-33.846
+33.8
 </td>
 <td style="text-align:right;">
-30.908
+30.9
 </td>
 <td style="text-align:right;">
-12.547
+12.5
 </td>
 <td style="text-align:right;">
-11.759
+11.8
 </td>
 <td style="text-align:right;">
-5.147
+5.1
 </td>
 <td style="text-align:right;">
-2.212
+2.2
 </td>
 </tr>
 <tr>
@@ -1507,22 +1507,22 @@ Mittelems
 Cloppenburg – Vechta
 </td>
 <td style="text-align:right;">
-38.467
+38.5
 </td>
 <td style="text-align:right;">
-24.617
+24.6
 </td>
 <td style="text-align:right;">
-11.076
+11.1
 </td>
 <td style="text-align:right;">
-12.089
+12.1
 </td>
 <td style="text-align:right;">
-7.819
+7.8
 </td>
 <td style="text-align:right;">
-2.173
+2.2
 </td>
 </tr>
 <tr>
@@ -1530,22 +1530,22 @@ Cloppenburg – Vechta
 Diepholz – Nienburg I
 </td>
 <td style="text-align:right;">
-25.289
+25.3
 </td>
 <td style="text-align:right;">
-33.017
+33.0
 </td>
 <td style="text-align:right;">
-14.482
+14.5
 </td>
 <td style="text-align:right;">
-12.076
+12.1
 </td>
 <td style="text-align:right;">
-7.105
+7.1
 </td>
 <td style="text-align:right;">
-2.685
+2.7
 </td>
 </tr>
 <tr>
@@ -1553,22 +1553,22 @@ Diepholz – Nienburg I
 Osterholz – Verden
 </td>
 <td style="text-align:right;">
-24.087
+24.1
 </td>
 <td style="text-align:right;">
-32.905
+32.9
 </td>
 <td style="text-align:right;">
-16.098
+16.1
 </td>
 <td style="text-align:right;">
-10.420
+10.4
 </td>
 <td style="text-align:right;">
-7.542
+7.5
 </td>
 <td style="text-align:right;">
-3.497
+3.5
 </td>
 </tr>
 <tr>
@@ -1576,22 +1576,22 @@ Osterholz – Verden
 Rotenburg I – Heidekreis
 </td>
 <td style="text-align:right;">
-25.055
+25.1
 </td>
 <td style="text-align:right;">
-34.778
+34.8
 </td>
 <td style="text-align:right;">
-13.572
+13.6
 </td>
 <td style="text-align:right;">
-10.085
+10.1
 </td>
 <td style="text-align:right;">
-8.007
+8.0
 </td>
 <td style="text-align:right;">
-2.847
+2.8
 </td>
 </tr>
 <tr>
@@ -1599,22 +1599,22 @@ Rotenburg I – Heidekreis
 Harburg
 </td>
 <td style="text-align:right;">
-24.791
+24.8
 </td>
 <td style="text-align:right;">
-29.093
+29.1
 </td>
 <td style="text-align:right;">
-16.658
+16.7
 </td>
 <td style="text-align:right;">
-12.707
+12.7
 </td>
 <td style="text-align:right;">
-7.261
+7.3
 </td>
 <td style="text-align:right;">
-2.913
+2.9
 </td>
 </tr>
 <tr>
@@ -1622,22 +1622,22 @@ Harburg
 Lüchow-Dannenberg – Lüneburg
 </td>
 <td style="text-align:right;">
-21.022
+21.0
 </td>
 <td style="text-align:right;">
-29.877
+29.9
 </td>
 <td style="text-align:right;">
-22.146
+22.1
 </td>
 <td style="text-align:right;">
-9.588
+9.6
 </td>
 <td style="text-align:right;">
-6.622
+6.6
 </td>
 <td style="text-align:right;">
-4.582
+4.6
 </td>
 </tr>
 <tr>
@@ -1645,22 +1645,22 @@ Lüchow-Dannenberg – Lüneburg
 Osnabrück-Land
 </td>
 <td style="text-align:right;">
-28.489
+28.5
 </td>
 <td style="text-align:right;">
-32.137
+32.1
 </td>
 <td style="text-align:right;">
-14.728
+14.7
 </td>
 <td style="text-align:right;">
-11.068
+11.1
 </td>
 <td style="text-align:right;">
-6.692
+6.7
 </td>
 <td style="text-align:right;">
-2.572
+2.6
 </td>
 </tr>
 <tr>
@@ -1668,22 +1668,22 @@ Osnabrück-Land
 Stadt Osnabrück
 </td>
 <td style="text-align:right;">
-23.205
+23.2
 </td>
 <td style="text-align:right;">
-30.246
+30.2
 </td>
 <td style="text-align:right;">
-23.262
+23.3
 </td>
 <td style="text-align:right;">
-9.849
+9.8
 </td>
 <td style="text-align:right;">
-4.648
+4.6
 </td>
 <td style="text-align:right;">
-4.191
+4.2
 </td>
 </tr>
 <tr>
@@ -1691,22 +1691,22 @@ Stadt Osnabrück
 Nienburg II – Schaumburg
 </td>
 <td style="text-align:right;">
-23.956
+24.0
 </td>
 <td style="text-align:right;">
-34.948
+34.9
 </td>
 <td style="text-align:right;">
-14.083
+14.1
 </td>
 <td style="text-align:right;">
-10.024
+10.0
 </td>
 <td style="text-align:right;">
-8.769
+8.8
 </td>
 <td style="text-align:right;">
-2.710
+2.7
 </td>
 </tr>
 <tr>
@@ -1714,22 +1714,22 @@ Nienburg II – Schaumburg
 Stadt Hannover I
 </td>
 <td style="text-align:right;">
-18.348
+18.3
 </td>
 <td style="text-align:right;">
-30.968
+31.0
 </td>
 <td style="text-align:right;">
-23.796
+23.8
 </td>
 <td style="text-align:right;">
-10.410
+10.4
 </td>
 <td style="text-align:right;">
-6.017
+6.0
 </td>
 <td style="text-align:right;">
-4.521
+4.5
 </td>
 </tr>
 <tr>
@@ -1737,22 +1737,22 @@ Stadt Hannover I
 Stadt Hannover II
 </td>
 <td style="text-align:right;">
-15.821
+15.8
 </td>
 <td style="text-align:right;">
-28.161
+28.2
 </td>
 <td style="text-align:right;">
-29.467
+29.5
 </td>
 <td style="text-align:right;">
-9.328
+9.3
 </td>
 <td style="text-align:right;">
-4.741
+4.7
 </td>
 <td style="text-align:right;">
-6.199
+6.2
 </td>
 </tr>
 <tr>
@@ -1760,22 +1760,22 @@ Stadt Hannover II
 Hannover-Land I
 </td>
 <td style="text-align:right;">
-25.784
+25.8
 </td>
 <td style="text-align:right;">
-32.115
+32.1
 </td>
 <td style="text-align:right;">
-15.182
+15.2
 </td>
 <td style="text-align:right;">
-11.320
+11.3
 </td>
 <td style="text-align:right;">
-7.698
+7.7
 </td>
 <td style="text-align:right;">
-2.608
+2.6
 </td>
 </tr>
 <tr>
@@ -1783,22 +1783,22 @@ Hannover-Land I
 Celle – Uelzen
 </td>
 <td style="text-align:right;">
-26.138
+26.1
 </td>
 <td style="text-align:right;">
-30.818
+30.8
 </td>
 <td style="text-align:right;">
-13.953
+14.0
 </td>
 <td style="text-align:right;">
-11.471
+11.5
 </td>
 <td style="text-align:right;">
-9.197
+9.2
 </td>
 <td style="text-align:right;">
-2.984
+3.0
 </td>
 </tr>
 <tr>
@@ -1806,22 +1806,22 @@ Celle – Uelzen
 Gifhorn – Peine
 </td>
 <td style="text-align:right;">
-22.956
+23.0
 </td>
 <td style="text-align:right;">
-35.701
+35.7
 </td>
 <td style="text-align:right;">
-13.323
+13.3
 </td>
 <td style="text-align:right;">
-9.851
+9.9
 </td>
 <td style="text-align:right;">
-9.736
+9.7
 </td>
 <td style="text-align:right;">
-2.516
+2.5
 </td>
 </tr>
 <tr>
@@ -1829,22 +1829,22 @@ Gifhorn – Peine
 Hameln-Pyrmont – Holzminden
 </td>
 <td style="text-align:right;">
-22.650
+22.6
 </td>
 <td style="text-align:right;">
-36.804
+36.8
 </td>
 <td style="text-align:right;">
-13.125
+13.1
 </td>
 <td style="text-align:right;">
-10.352
+10.4
 </td>
 <td style="text-align:right;">
-8.806
+8.8
 </td>
 <td style="text-align:right;">
-2.837
+2.8
 </td>
 </tr>
 <tr>
@@ -1852,22 +1852,22 @@ Hameln-Pyrmont – Holzminden
 Hannover-Land II
 </td>
 <td style="text-align:right;">
-22.677
+22.7
 </td>
 <td style="text-align:right;">
-34.632
+34.6
 </td>
 <td style="text-align:right;">
-16.305
+16.3
 </td>
 <td style="text-align:right;">
-10.229
+10.2
 </td>
 <td style="text-align:right;">
-7.733
+7.7
 </td>
 <td style="text-align:right;">
-2.789
+2.8
 </td>
 </tr>
 <tr>
@@ -1875,22 +1875,22 @@ Hannover-Land II
 Hildesheim
 </td>
 <td style="text-align:right;">
-22.847
+22.8
 </td>
 <td style="text-align:right;">
-34.698
+34.7
 </td>
 <td style="text-align:right;">
-16.626
+16.6
 </td>
 <td style="text-align:right;">
-9.636
+9.6
 </td>
 <td style="text-align:right;">
-7.611
+7.6
 </td>
 <td style="text-align:right;">
-3.322
+3.3
 </td>
 </tr>
 <tr>
@@ -1898,22 +1898,22 @@ Hildesheim
 Salzgitter – Wolfenbüttel
 </td>
 <td style="text-align:right;">
-22.957
+23.0
 </td>
 <td style="text-align:right;">
-36.653
+36.7
 </td>
 <td style="text-align:right;">
-12.424
+12.4
 </td>
 <td style="text-align:right;">
-9.239
+9.2
 </td>
 <td style="text-align:right;">
-9.892
+9.9
 </td>
 <td style="text-align:right;">
-3.073
+3.1
 </td>
 </tr>
 <tr>
@@ -1921,22 +1921,22 @@ Salzgitter – Wolfenbüttel
 Braunschweig
 </td>
 <td style="text-align:right;">
-18.615
+18.6
 </td>
 <td style="text-align:right;">
-30.423
+30.4
 </td>
 <td style="text-align:right;">
-23.979
+24.0
 </td>
 <td style="text-align:right;">
-10.084
+10.1
 </td>
 <td style="text-align:right;">
-5.914
+5.9
 </td>
 <td style="text-align:right;">
-4.562
+4.6
 </td>
 </tr>
 <tr>
@@ -1944,22 +1944,22 @@ Braunschweig
 Helmstedt – Wolfsburg
 </td>
 <td style="text-align:right;">
-24.633
+24.6
 </td>
 <td style="text-align:right;">
-35.149
+35.1
 </td>
 <td style="text-align:right;">
-11.982
+12.0
 </td>
 <td style="text-align:right;">
-10.118
+10.1
 </td>
 <td style="text-align:right;">
-9.474
+9.5
 </td>
 <td style="text-align:right;">
-2.706
+2.7
 </td>
 </tr>
 <tr>
@@ -1967,22 +1967,22 @@ Helmstedt – Wolfsburg
 Goslar – Northeim – Osterode
 </td>
 <td style="text-align:right;">
-23.619
+23.6
 </td>
 <td style="text-align:right;">
-37.857
+37.9
 </td>
 <td style="text-align:right;">
-12.028
+12.0
 </td>
 <td style="text-align:right;">
-10.005
+10.0
 </td>
 <td style="text-align:right;">
-8.305
+8.3
 </td>
 <td style="text-align:right;">
-2.987
+3.0
 </td>
 </tr>
 <tr>
@@ -1990,22 +1990,22 @@ Goslar – Northeim – Osterode
 Göttingen
 </td>
 <td style="text-align:right;">
-21.576
+21.6
 </td>
 <td style="text-align:right;">
-31.927
+31.9
 </td>
 <td style="text-align:right;">
-20.241
+20.2
 </td>
 <td style="text-align:right;">
-9.755
+9.8
 </td>
 <td style="text-align:right;">
-6.104
+6.1
 </td>
 <td style="text-align:right;">
-5.073
+5.1
 </td>
 </tr>
 <tr>
@@ -2013,22 +2013,22 @@ Göttingen
 Bremen I
 </td>
 <td style="text-align:right;">
-17.478
+17.5
 </td>
 <td style="text-align:right;">
-28.841
+28.8
 </td>
 <td style="text-align:right;">
-23.977
+24.0
 </td>
 <td style="text-align:right;">
-9.931
+9.9
 </td>
 <td style="text-align:right;">
-5.309
+5.3
 </td>
 <td style="text-align:right;">
-8.497
+8.5
 </td>
 </tr>
 <tr>
@@ -2036,22 +2036,22 @@ Bremen I
 Bremen II – Bremerhaven
 </td>
 <td style="text-align:right;">
-16.893
+16.9
 </td>
 <td style="text-align:right;">
-34.873
+34.9
 </td>
 <td style="text-align:right;">
-16.815
+16.8
 </td>
 <td style="text-align:right;">
-8.463
+8.5
 </td>
 <td style="text-align:right;">
-8.921
+8.9
 </td>
 <td style="text-align:right;">
-6.732
+6.7
 </td>
 </tr>
 <tr>
@@ -2059,22 +2059,22 @@ Bremen II – Bremerhaven
 Prignitz – Ostprignitz-Ruppin – Havelland I
 </td>
 <td style="text-align:right;">
-16.044
+16.0
 </td>
 <td style="text-align:right;">
-34.017
+34.0
 </td>
 <td style="text-align:right;">
-6.344
+6.3
 </td>
 <td style="text-align:right;">
-7.495
+7.5
 </td>
 <td style="text-align:right;">
-19.190
+19.2
 </td>
 <td style="text-align:right;">
-8.061
+8.1
 </td>
 </tr>
 <tr>
@@ -2082,22 +2082,22 @@ Prignitz – Ostprignitz-Ruppin – Havelland I
 Uckermark – Barnim I
 </td>
 <td style="text-align:right;">
-15.334
+15.3
 </td>
 <td style="text-align:right;">
-31.369
+31.4
 </td>
 <td style="text-align:right;">
-7.037
+7.0
 </td>
 <td style="text-align:right;">
-8.064
+8.1
 </td>
 <td style="text-align:right;">
-19.922
+19.9
 </td>
 <td style="text-align:right;">
-8.988
+9.0
 </td>
 </tr>
 <tr>
@@ -2105,22 +2105,22 @@ Uckermark – Barnim I
 Oberhavel – Havelland II
 </td>
 <td style="text-align:right;">
-17.286
+17.3
 </td>
 <td style="text-align:right;">
-28.584
+28.6
 </td>
 <td style="text-align:right;">
-10.701
+10.7
 </td>
 <td style="text-align:right;">
-10.255
+10.3
 </td>
 <td style="text-align:right;">
-15.948
+15.9
 </td>
 <td style="text-align:right;">
-6.559
+6.6
 </td>
 </tr>
 <tr>
@@ -2128,22 +2128,22 @@ Oberhavel – Havelland II
 Märkisch-Oderland – Barnim II
 </td>
 <td style="text-align:right;">
-15.045
+15.0
 </td>
 <td style="text-align:right;">
-27.916
+27.9
 </td>
 <td style="text-align:right;">
-7.997
+8.0
 </td>
 <td style="text-align:right;">
-8.561
+8.6
 </td>
 <td style="text-align:right;">
-18.235
+18.2
 </td>
 <td style="text-align:right;">
-10.318
+10.3
 </td>
 </tr>
 <tr>
@@ -2152,22 +2152,22 @@ Brandenburg an der Havel – Potsdam-Mittelmark I – Havelland III –
 Teltow-Fläming I
 </td>
 <td style="text-align:right;">
-15.300
+15.3
 </td>
 <td style="text-align:right;">
-33.262
+33.3
 </td>
 <td style="text-align:right;">
-8.388
+8.4
 </td>
 <td style="text-align:right;">
-8.198
+8.2
 </td>
 <td style="text-align:right;">
-16.379
+16.4
 </td>
 <td style="text-align:right;">
-8.256
+8.3
 </td>
 </tr>
 <tr>
@@ -2175,22 +2175,22 @@ Teltow-Fläming I
 Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II
 </td>
 <td style="text-align:right;">
-13.917
+13.9
 </td>
 <td style="text-align:right;">
-26.982
+27.0
 </td>
 <td style="text-align:right;">
-18.988
+19.0
 </td>
 <td style="text-align:right;">
-10.700
+10.7
 </td>
 <td style="text-align:right;">
-9.878
+9.9
 </td>
 <td style="text-align:right;">
-10.117
+10.1
 </td>
 </tr>
 <tr>
@@ -2198,22 +2198,22 @@ Potsdam – Potsdam-Mittelmark II – Teltow-Fläming II
 Dahme-Spreewald – Teltow-Fläming III – Oberspreewald-Lausitz I
 </td>
 <td style="text-align:right;">
-16.325
+16.3
 </td>
 <td style="text-align:right;">
-28.504
+28.5
 </td>
 <td style="text-align:right;">
-8.426
+8.4
 </td>
 <td style="text-align:right;">
-9.854
+9.9
 </td>
 <td style="text-align:right;">
-17.948
+17.9
 </td>
 <td style="text-align:right;">
-7.800
+7.8
 </td>
 </tr>
 <tr>
@@ -2221,22 +2221,22 @@ Dahme-Spreewald – Teltow-Fläming III – Oberspreewald-Lausitz I
 Frankfurt (Oder) – Oder-Spree
 </td>
 <td style="text-align:right;">
-14.148
+14.1
 </td>
 <td style="text-align:right;">
-29.457
+29.5
 </td>
 <td style="text-align:right;">
-7.107
+7.1
 </td>
 <td style="text-align:right;">
-8.848
+8.8
 </td>
 <td style="text-align:right;">
-20.156
+20.2
 </td>
 <td style="text-align:right;">
-9.557
+9.6
 </td>
 </tr>
 <tr>
@@ -2244,22 +2244,22 @@ Frankfurt (Oder) – Oder-Spree
 Cottbus – Spree-Neiße
 </td>
 <td style="text-align:right;">
-13.830
+13.8
 </td>
 <td style="text-align:right;">
-28.524
+28.5
 </td>
 <td style="text-align:right;">
-5.483
+5.5
 </td>
 <td style="text-align:right;">
-10.749
+10.7
 </td>
 <td style="text-align:right;">
-24.281
+24.3
 </td>
 <td style="text-align:right;">
-7.641
+7.6
 </td>
 </tr>
 <tr>
@@ -2267,22 +2267,22 @@ Cottbus – Spree-Neiße
 Elbe-Elster – Oberspreewald-Lausitz II
 </td>
 <td style="text-align:right;">
-15.005
+15.0
 </td>
 <td style="text-align:right;">
-28.204
+28.2
 </td>
 <td style="text-align:right;">
-4.153
+4.2
 </td>
 <td style="text-align:right;">
-9.382
+9.4
 </td>
 <td style="text-align:right;">
-25.197
+25.2
 </td>
 <td style="text-align:right;">
-7.202
+7.2
 </td>
 </tr>
 <tr>
@@ -2290,22 +2290,22 @@ Elbe-Elster – Oberspreewald-Lausitz II
 Altmark
 </td>
 <td style="text-align:right;">
-20.945
+20.9
 </td>
 <td style="text-align:right;">
-27.414
+27.4
 </td>
 <td style="text-align:right;">
-5.415
+5.4
 </td>
 <td style="text-align:right;">
-8.721
+8.7
 </td>
 <td style="text-align:right;">
-19.146
+19.1
 </td>
 <td style="text-align:right;">
-9.635
+9.6
 </td>
 </tr>
 <tr>
@@ -2313,22 +2313,22 @@ Altmark
 Börde – Jerichower Land
 </td>
 <td style="text-align:right;">
-22.264
+22.3
 </td>
 <td style="text-align:right;">
-26.567
+26.6
 </td>
 <td style="text-align:right;">
-4.945
+4.9
 </td>
 <td style="text-align:right;">
-9.247
+9.2
 </td>
 <td style="text-align:right;">
-20.144
+20.1
 </td>
 <td style="text-align:right;">
-8.455
+8.5
 </td>
 </tr>
 <tr>
@@ -2336,22 +2336,22 @@ Börde – Jerichower Land
 Harz
 </td>
 <td style="text-align:right;">
-22.260
+22.3
 </td>
 <td style="text-align:right;">
-27.238
+27.2
 </td>
 <td style="text-align:right;">
-5.469
+5.5
 </td>
 <td style="text-align:right;">
-9.144
+9.1
 </td>
 <td style="text-align:right;">
-18.088
+18.1
 </td>
 <td style="text-align:right;">
-9.267
+9.3
 </td>
 </tr>
 <tr>
@@ -2359,22 +2359,22 @@ Harz
 Magdeburg
 </td>
 <td style="text-align:right;">
-18.470
+18.5
 </td>
 <td style="text-align:right;">
-26.400
+26.4
 </td>
 <td style="text-align:right;">
-10.524
+10.5
 </td>
 <td style="text-align:right;">
-9.443
+9.4
 </td>
 <td style="text-align:right;">
-15.089
+15.1
 </td>
 <td style="text-align:right;">
-10.586
+10.6
 </td>
 </tr>
 <tr>
@@ -2382,22 +2382,22 @@ Magdeburg
 Dessau – Wittenberg
 </td>
 <td style="text-align:right;">
-23.463
+23.5
 </td>
 <td style="text-align:right;">
-26.185
+26.2
 </td>
 <td style="text-align:right;">
-5.731
+5.7
 </td>
 <td style="text-align:right;">
-9.127
+9.1
 </td>
 <td style="text-align:right;">
-18.979
+19.0
 </td>
 <td style="text-align:right;">
-8.454
+8.5
 </td>
 </tr>
 <tr>
@@ -2405,22 +2405,22 @@ Dessau – Wittenberg
 Anhalt
 </td>
 <td style="text-align:right;">
-21.698
+21.7
 </td>
 <td style="text-align:right;">
-24.049
+24.0
 </td>
 <td style="text-align:right;">
-3.980
+4.0
 </td>
 <td style="text-align:right;">
-9.244
+9.2
 </td>
 <td style="text-align:right;">
-22.556
+22.6
 </td>
 <td style="text-align:right;">
-10.367
+10.4
 </td>
 </tr>
 <tr>
@@ -2428,22 +2428,22 @@ Anhalt
 Halle
 </td>
 <td style="text-align:right;">
-17.852
+17.9
 </td>
 <td style="text-align:right;">
-23.560
+23.6
 </td>
 <td style="text-align:right;">
-13.527
+13.5
 </td>
 <td style="text-align:right;">
-10.290
+10.3
 </td>
 <td style="text-align:right;">
-14.885
+14.9
 </td>
 <td style="text-align:right;">
-11.669
+11.7
 </td>
 </tr>
 <tr>
@@ -2451,22 +2451,22 @@ Halle
 Burgenland – Saalekreis
 </td>
 <td style="text-align:right;">
-21.300
+21.3
 </td>
 <td style="text-align:right;">
-22.845
+22.8
 </td>
 <td style="text-align:right;">
-4.015
+4.0
 </td>
 <td style="text-align:right;">
-10.263
+10.3
 </td>
 <td style="text-align:right;">
-24.884
+24.9
 </td>
 <td style="text-align:right;">
-8.533
+8.5
 </td>
 </tr>
 <tr>
@@ -2474,22 +2474,22 @@ Burgenland – Saalekreis
 Mansfeld
 </td>
 <td style="text-align:right;">
-21.592
+21.6
 </td>
 <td style="text-align:right;">
-24.402
+24.4
 </td>
 <td style="text-align:right;">
-3.675
+3.7
 </td>
 <td style="text-align:right;">
-9.722
+9.7
 </td>
 <td style="text-align:right;">
-23.921
+23.9
 </td>
 <td style="text-align:right;">
-8.877
+8.9
 </td>
 </tr>
 <tr>
@@ -2497,22 +2497,22 @@ Mansfeld
 Berlin-Mitte
 </td>
 <td style="text-align:right;">
-11.206
+11.2
 </td>
 <td style="text-align:right;">
-21.362
+21.4
 </td>
 <td style="text-align:right;">
-30.661
+30.7
 </td>
 <td style="text-align:right;">
-8.766
+8.8
 </td>
 <td style="text-align:right;">
-5.142
+5.1
 </td>
 <td style="text-align:right;">
-13.841
+13.8
 </td>
 </tr>
 <tr>
@@ -2520,22 +2520,22 @@ Berlin-Mitte
 Berlin-Pankow
 </td>
 <td style="text-align:right;">
-11.670
+11.7
 </td>
 <td style="text-align:right;">
-22.027
+22.0
 </td>
 <td style="text-align:right;">
-26.390
+26.4
 </td>
 <td style="text-align:right;">
-8.033
+8.0
 </td>
 <td style="text-align:right;">
-8.752
+8.8
 </td>
 <td style="text-align:right;">
-13.804
+13.8
 </td>
 </tr>
 <tr>
@@ -2543,22 +2543,22 @@ Berlin-Pankow
 Berlin-Reinickendorf
 </td>
 <td style="text-align:right;">
-24.045
+24.0
 </td>
 <td style="text-align:right;">
-24.978
+25.0
 </td>
 <td style="text-align:right;">
-15.553
+15.6
 </td>
 <td style="text-align:right;">
-10.689
+10.7
 </td>
 <td style="text-align:right;">
-9.767
+9.8
 </td>
 <td style="text-align:right;">
-4.641
+4.6
 </td>
 </tr>
 <tr>
@@ -2566,22 +2566,22 @@ Berlin-Reinickendorf
 Berlin-Spandau – Charlottenburg Nord
 </td>
 <td style="text-align:right;">
-21.263
+21.3
 </td>
 <td style="text-align:right;">
-27.713
+27.7
 </td>
 <td style="text-align:right;">
-14.542
+14.5
 </td>
 <td style="text-align:right;">
-10.112
+10.1
 </td>
 <td style="text-align:right;">
-10.348
+10.3
 </td>
 <td style="text-align:right;">
-5.143
+5.1
 </td>
 </tr>
 <tr>
@@ -2589,22 +2589,22 @@ Berlin-Spandau – Charlottenburg Nord
 Berlin-Steglitz-Zehlendorf
 </td>
 <td style="text-align:right;">
-22.842
+22.8
 </td>
 <td style="text-align:right;">
-24.538
+24.5
 </td>
 <td style="text-align:right;">
-22.617
+22.6
 </td>
 <td style="text-align:right;">
-12.700
+12.7
 </td>
 <td style="text-align:right;">
-5.670
+5.7
 </td>
 <td style="text-align:right;">
-4.753
+4.8
 </td>
 </tr>
 <tr>
@@ -2612,22 +2612,22 @@ Berlin-Steglitz-Zehlendorf
 Berlin-Charlottenburg-Wilmersdorf
 </td>
 <td style="text-align:right;">
-18.987
+19.0
 </td>
 <td style="text-align:right;">
-24.051
+24.1
 </td>
 <td style="text-align:right;">
-26.317
+26.3
 </td>
 <td style="text-align:right;">
-13.124
+13.1
 </td>
 <td style="text-align:right;">
-4.793
+4.8
 </td>
 <td style="text-align:right;">
-6.468
+6.5
 </td>
 </tr>
 <tr>
@@ -2635,22 +2635,22 @@ Berlin-Charlottenburg-Wilmersdorf
 Berlin-Tempelhof-Schöneberg
 </td>
 <td style="text-align:right;">
-18.205
+18.2
 </td>
 <td style="text-align:right;">
-24.770
+24.8
 </td>
 <td style="text-align:right;">
-25.243
+25.2
 </td>
 <td style="text-align:right;">
-9.523
+9.5
 </td>
 <td style="text-align:right;">
-6.228
+6.2
 </td>
 <td style="text-align:right;">
-7.514
+7.5
 </td>
 </tr>
 <tr>
@@ -2658,22 +2658,22 @@ Berlin-Tempelhof-Schöneberg
 Berlin-Neukölln
 </td>
 <td style="text-align:right;">
-16.564
+16.6
 </td>
 <td style="text-align:right;">
-24.144
+24.1
 </td>
 <td style="text-align:right;">
-22.668
+22.7
 </td>
 <td style="text-align:right;">
-7.134
+7.1
 </td>
 <td style="text-align:right;">
-7.426
+7.4
 </td>
 <td style="text-align:right;">
-11.922
+11.9
 </td>
 </tr>
 <tr>
@@ -2681,22 +2681,22 @@ Berlin-Neukölln
 Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost
 </td>
 <td style="text-align:right;">
-6.980
+7.0
 </td>
 <td style="text-align:right;">
-19.189
+19.2
 </td>
 <td style="text-align:right;">
-36.750
+36.7
 </td>
 <td style="text-align:right;">
-6.340
+6.3
 </td>
 <td style="text-align:right;">
-4.095
+4.1
 </td>
 <td style="text-align:right;">
-18.097
+18.1
 </td>
 </tr>
 <tr>
@@ -2704,22 +2704,22 @@ Berlin-Friedrichshain-Kreuzberg – Prenzlauer Berg Ost
 Berlin-Treptow-Köpenick
 </td>
 <td style="text-align:right;">
-13.185
+13.2
 </td>
 <td style="text-align:right;">
-23.449
+23.4
 </td>
 <td style="text-align:right;">
-16.123
+16.1
 </td>
 <td style="text-align:right;">
-8.107
+8.1
 </td>
 <td style="text-align:right;">
-12.267
+12.3
 </td>
 <td style="text-align:right;">
-15.958
+16.0
 </td>
 </tr>
 <tr>
@@ -2727,22 +2727,22 @@ Berlin-Treptow-Köpenick
 Berlin-Marzahn-Hellersdorf
 </td>
 <td style="text-align:right;">
-16.369
+16.4
 </td>
 <td style="text-align:right;">
-23.460
+23.5
 </td>
 <td style="text-align:right;">
-8.565
+8.6
 </td>
 <td style="text-align:right;">
-7.310
+7.3
 </td>
 <td style="text-align:right;">
-16.848
+16.8
 </td>
 <td style="text-align:right;">
-15.867
+15.9
 </td>
 </tr>
 <tr>
@@ -2750,22 +2750,22 @@ Berlin-Marzahn-Hellersdorf
 Berlin-Lichtenberg
 </td>
 <td style="text-align:right;">
-11.808
+11.8
 </td>
 <td style="text-align:right;">
-23.220
+23.2
 </td>
 <td style="text-align:right;">
-15.478
+15.5
 </td>
 <td style="text-align:right;">
-7.031
+7.0
 </td>
 <td style="text-align:right;">
-12.487
+12.5
 </td>
 <td style="text-align:right;">
-18.243
+18.2
 </td>
 </tr>
 <tr>
@@ -2773,22 +2773,22 @@ Berlin-Lichtenberg
 Aachen I
 </td>
 <td style="text-align:right;">
-22.809
+22.8
 </td>
 <td style="text-align:right;">
-21.959
+22.0
 </td>
 <td style="text-align:right;">
-29.019
+29.0
 </td>
 <td style="text-align:right;">
-10.792
+10.8
 </td>
 <td style="text-align:right;">
-3.896
+3.9
 </td>
 <td style="text-align:right;">
-5.351
+5.4
 </td>
 </tr>
 <tr>
@@ -2796,22 +2796,22 @@ Aachen I
 Aachen II
 </td>
 <td style="text-align:right;">
-29.475
+29.5
 </td>
 <td style="text-align:right;">
-31.586
+31.6
 </td>
 <td style="text-align:right;">
-11.780
+11.8
 </td>
 <td style="text-align:right;">
-10.582
+10.6
 </td>
 <td style="text-align:right;">
-7.339
+7.3
 </td>
 <td style="text-align:right;">
-3.110
+3.1
 </td>
 </tr>
 <tr>
@@ -2819,22 +2819,22 @@ Aachen II
 Heinsberg
 </td>
 <td style="text-align:right;">
-32.275
+32.3
 </td>
 <td style="text-align:right;">
-26.965
+27.0
 </td>
 <td style="text-align:right;">
-11.709
+11.7
 </td>
 <td style="text-align:right;">
-11.129
+11.1
 </td>
 <td style="text-align:right;">
-7.890
+7.9
 </td>
 <td style="text-align:right;">
-3.146
+3.1
 </td>
 </tr>
 <tr>
@@ -2842,22 +2842,22 @@ Heinsberg
 Düren
 </td>
 <td style="text-align:right;">
-30.380
+30.4
 </td>
 <td style="text-align:right;">
-28.961
+29.0
 </td>
 <td style="text-align:right;">
-11.143
+11.1
 </td>
 <td style="text-align:right;">
-11.243
+11.2
 </td>
 <td style="text-align:right;">
-8.658
+8.7
 </td>
 <td style="text-align:right;">
-3.004
+3.0
 </td>
 </tr>
 <tr>
@@ -2865,22 +2865,22 @@ Düren
 Rhein-Erft-Kreis I
 </td>
 <td style="text-align:right;">
-28.473
+28.5
 </td>
 <td style="text-align:right;">
-28.290
+28.3
 </td>
 <td style="text-align:right;">
-14.253
+14.3
 </td>
 <td style="text-align:right;">
-12.527
+12.5
 </td>
 <td style="text-align:right;">
-6.937
+6.9
 </td>
 <td style="text-align:right;">
-2.938
+2.9
 </td>
 </tr>
 <tr>
@@ -2888,22 +2888,22 @@ Rhein-Erft-Kreis I
 Euskirchen – Rhein-Erft-Kreis II
 </td>
 <td style="text-align:right;">
-30.365
+30.4
 </td>
 <td style="text-align:right;">
-26.637
+26.6
 </td>
 <td style="text-align:right;">
-13.677
+13.7
 </td>
 <td style="text-align:right;">
-12.189
+12.2
 </td>
 <td style="text-align:right;">
-7.787
+7.8
 </td>
 <td style="text-align:right;">
-2.996
+3.0
 </td>
 </tr>
 <tr>
@@ -2911,22 +2911,22 @@ Euskirchen – Rhein-Erft-Kreis II
 Köln I
 </td>
 <td style="text-align:right;">
-19.771
+19.8
 </td>
 <td style="text-align:right;">
-26.366
+26.4
 </td>
 <td style="text-align:right;">
-23.916
+23.9
 </td>
 <td style="text-align:right;">
-10.737
+10.7
 </td>
 <td style="text-align:right;">
-5.970
+6.0
 </td>
 <td style="text-align:right;">
-5.902
+5.9
 </td>
 </tr>
 <tr>
@@ -2934,22 +2934,22 @@ Köln I
 Köln II
 </td>
 <td style="text-align:right;">
-20.473
+20.5
 </td>
 <td style="text-align:right;">
-21.139
+21.1
 </td>
 <td style="text-align:right;">
-31.928
+31.9
 </td>
 <td style="text-align:right;">
-12.954
+13.0
 </td>
 <td style="text-align:right;">
-2.883
+2.9
 </td>
 <td style="text-align:right;">
-5.089
+5.1
 </td>
 </tr>
 <tr>
@@ -2957,22 +2957,22 @@ Köln II
 Köln III
 </td>
 <td style="text-align:right;">
-17.801
+17.8
 </td>
 <td style="text-align:right;">
-25.842
+25.8
 </td>
 <td style="text-align:right;">
-28.761
+28.8
 </td>
 <td style="text-align:right;">
-8.967
+9.0
 </td>
 <td style="text-align:right;">
-5.101
+5.1
 </td>
 <td style="text-align:right;">
-6.414
+6.4
 </td>
 </tr>
 <tr>
@@ -2980,22 +2980,22 @@ Köln III
 Bonn
 </td>
 <td style="text-align:right;">
-22.528
+22.5
 </td>
 <td style="text-align:right;">
-22.577
+22.6
 </td>
 <td style="text-align:right;">
-27.203
+27.2
 </td>
 <td style="text-align:right;">
-11.875
+11.9
 </td>
 <td style="text-align:right;">
-4.202
+4.2
 </td>
 <td style="text-align:right;">
-5.436
+5.4
 </td>
 </tr>
 <tr>
@@ -3003,22 +3003,22 @@ Bonn
 Rhein-Sieg-Kreis I
 </td>
 <td style="text-align:right;">
-27.552
+27.6
 </td>
 <td style="text-align:right;">
-26.511
+26.5
 </td>
 <td style="text-align:right;">
-15.686
+15.7
 </td>
 <td style="text-align:right;">
-12.376
+12.4
 </td>
 <td style="text-align:right;">
-7.282
+7.3
 </td>
 <td style="text-align:right;">
-3.401
+3.4
 </td>
 </tr>
 <tr>
@@ -3026,22 +3026,22 @@ Rhein-Sieg-Kreis I
 Rhein-Sieg-Kreis II
 </td>
 <td style="text-align:right;">
-29.526
+29.5
 </td>
 <td style="text-align:right;">
-23.802
+23.8
 </td>
 <td style="text-align:right;">
-17.687
+17.7
 </td>
 <td style="text-align:right;">
-13.359
+13.4
 </td>
 <td style="text-align:right;">
-6.015
+6.0
 </td>
 <td style="text-align:right;">
-3.242
+3.2
 </td>
 </tr>
 <tr>
@@ -3049,22 +3049,22 @@ Rhein-Sieg-Kreis II
 Oberbergischer Kreis
 </td>
 <td style="text-align:right;">
-27.741
+27.7
 </td>
 <td style="text-align:right;">
-26.730
+26.7
 </td>
 <td style="text-align:right;">
-12.579
+12.6
 </td>
 <td style="text-align:right;">
-12.476
+12.5
 </td>
 <td style="text-align:right;">
-9.586
+9.6
 </td>
 <td style="text-align:right;">
-3.248
+3.2
 </td>
 </tr>
 <tr>
@@ -3072,22 +3072,22 @@ Oberbergischer Kreis
 Rheinisch-Bergischer Kreis
 </td>
 <td style="text-align:right;">
-27.416
+27.4
 </td>
 <td style="text-align:right;">
-25.259
+25.3
 </td>
 <td style="text-align:right;">
-18.355
+18.4
 </td>
 <td style="text-align:right;">
-13.856
+13.9
 </td>
 <td style="text-align:right;">
-5.714
+5.7
 </td>
 <td style="text-align:right;">
-2.969
+3.0
 </td>
 </tr>
 <tr>
@@ -3095,22 +3095,22 @@ Rheinisch-Bergischer Kreis
 Leverkusen – Köln IV
 </td>
 <td style="text-align:right;">
-21.729
+21.7
 </td>
 <td style="text-align:right;">
-29.141
+29.1
 </td>
 <td style="text-align:right;">
-19.169
+19.2
 </td>
 <td style="text-align:right;">
-10.412
+10.4
 </td>
 <td style="text-align:right;">
-7.167
+7.2
 </td>
 <td style="text-align:right;">
-4.783
+4.8
 </td>
 </tr>
 <tr>
@@ -3118,22 +3118,22 @@ Leverkusen – Köln IV
 Wuppertal I
 </td>
 <td style="text-align:right;">
-20.995
+21.0
 </td>
 <td style="text-align:right;">
-29.176
+29.2
 </td>
 <td style="text-align:right;">
-17.461
+17.5
 </td>
 <td style="text-align:right;">
-10.984
+11.0
 </td>
 <td style="text-align:right;">
-8.315
+8.3
 </td>
 <td style="text-align:right;">
-5.540
+5.5
 </td>
 </tr>
 <tr>
@@ -3141,22 +3141,22 @@ Wuppertal I
 Solingen – Remscheid – Wuppertal II
 </td>
 <td style="text-align:right;">
-24.296
+24.3
 </td>
 <td style="text-align:right;">
-29.711
+29.7
 </td>
 <td style="text-align:right;">
-14.977
+15.0
 </td>
 <td style="text-align:right;">
-12.487
+12.5
 </td>
 <td style="text-align:right;">
-7.709
+7.7
 </td>
 <td style="text-align:right;">
-3.746
+3.7
 </td>
 </tr>
 <tr>
@@ -3164,22 +3164,22 @@ Solingen – Remscheid – Wuppertal II
 Mettmann I
 </td>
 <td style="text-align:right;">
-27.386
+27.4
 </td>
 <td style="text-align:right;">
-26.774
+26.8
 </td>
 <td style="text-align:right;">
-16.064
+16.1
 </td>
 <td style="text-align:right;">
-13.318
+13.3
 </td>
 <td style="text-align:right;">
-6.732
+6.7
 </td>
 <td style="text-align:right;">
-3.131
+3.1
 </td>
 </tr>
 <tr>
@@ -3187,22 +3187,22 @@ Mettmann I
 Mettmann II
 </td>
 <td style="text-align:right;">
-27.060
+27.1
 </td>
 <td style="text-align:right;">
-27.999
+28.0
 </td>
 <td style="text-align:right;">
-14.738
+14.7
 </td>
 <td style="text-align:right;">
-13.211
+13.2
 </td>
 <td style="text-align:right;">
-7.408
+7.4
 </td>
 <td style="text-align:right;">
-3.163
+3.2
 </td>
 </tr>
 <tr>
@@ -3210,22 +3210,22 @@ Mettmann II
 Düsseldorf I
 </td>
 <td style="text-align:right;">
-25.755
+25.8
 </td>
 <td style="text-align:right;">
-21.913
+21.9
 </td>
 <td style="text-align:right;">
-22.634
+22.6
 </td>
 <td style="text-align:right;">
-15.917
+15.9
 </td>
 <td style="text-align:right;">
-4.300
+4.3
 </td>
 <td style="text-align:right;">
-3.867
+3.9
 </td>
 </tr>
 <tr>
@@ -3233,22 +3233,22 @@ Düsseldorf I
 Düsseldorf II
 </td>
 <td style="text-align:right;">
-22.370
+22.4
 </td>
 <td style="text-align:right;">
-25.221
+25.2
 </td>
 <td style="text-align:right;">
-22.289
+22.3
 </td>
 <td style="text-align:right;">
-12.257
+12.3
 </td>
 <td style="text-align:right;">
-6.012
+6.0
 </td>
 <td style="text-align:right;">
-4.901
+4.9
 </td>
 </tr>
 <tr>
@@ -3256,22 +3256,22 @@ Düsseldorf II
 Neuss I
 </td>
 <td style="text-align:right;">
-29.923
+29.9
 </td>
 <td style="text-align:right;">
-27.186
+27.2
 </td>
 <td style="text-align:right;">
-13.637
+13.6
 </td>
 <td style="text-align:right;">
-12.632
+12.6
 </td>
 <td style="text-align:right;">
-7.019
+7.0
 </td>
 <td style="text-align:right;">
-2.964
+3.0
 </td>
 </tr>
 <tr>
@@ -3279,22 +3279,22 @@ Neuss I
 Mönchengladbach
 </td>
 <td style="text-align:right;">
-28.469
+28.5
 </td>
 <td style="text-align:right;">
-27.162
+27.2
 </td>
 <td style="text-align:right;">
-14.147
+14.1
 </td>
 <td style="text-align:right;">
-12.039
+12.0
 </td>
 <td style="text-align:right;">
-7.508
+7.5
 </td>
 <td style="text-align:right;">
-3.837
+3.8
 </td>
 </tr>
 <tr>
@@ -3302,22 +3302,22 @@ Mönchengladbach
 Krefeld I – Neuss II
 </td>
 <td style="text-align:right;">
-29.519
+29.5
 </td>
 <td style="text-align:right;">
-25.491
+25.5
 </td>
 <td style="text-align:right;">
-15.534
+15.5
 </td>
 <td style="text-align:right;">
-14.275
+14.3
 </td>
 <td style="text-align:right;">
-6.043
+6.0
 </td>
 <td style="text-align:right;">
-3.027
+3.0
 </td>
 </tr>
 <tr>
@@ -3325,22 +3325,22 @@ Krefeld I – Neuss II
 Viersen
 </td>
 <td style="text-align:right;">
-30.443
+30.4
 </td>
 <td style="text-align:right;">
-26.690
+26.7
 </td>
 <td style="text-align:right;">
-14.776
+14.8
 </td>
 <td style="text-align:right;">
-12.823
+12.8
 </td>
 <td style="text-align:right;">
-5.961
+6.0
 </td>
 <td style="text-align:right;">
-2.994
+3.0
 </td>
 </tr>
 <tr>
@@ -3348,22 +3348,22 @@ Viersen
 Kleve
 </td>
 <td style="text-align:right;">
-32.275
+32.3
 </td>
 <td style="text-align:right;">
-28.178
+28.2
 </td>
 <td style="text-align:right;">
-13.894
+13.9
 </td>
 <td style="text-align:right;">
-11.511
+11.5
 </td>
 <td style="text-align:right;">
-5.674
+5.7
 </td>
 <td style="text-align:right;">
-2.785
+2.8
 </td>
 </tr>
 <tr>
@@ -3371,22 +3371,22 @@ Kleve
 Wesel I
 </td>
 <td style="text-align:right;">
-26.674
+26.7
 </td>
 <td style="text-align:right;">
-33.403
+33.4
 </td>
 <td style="text-align:right;">
-12.934
+12.9
 </td>
 <td style="text-align:right;">
-10.848
+10.8
 </td>
 <td style="text-align:right;">
-6.893
+6.9
 </td>
 <td style="text-align:right;">
-3.199
+3.2
 </td>
 </tr>
 <tr>
@@ -3394,22 +3394,22 @@ Wesel I
 Krefeld II – Wesel II
 </td>
 <td style="text-align:right;">
-24.741
+24.7
 </td>
 <td style="text-align:right;">
-31.754
+31.8
 </td>
 <td style="text-align:right;">
-14.959
+15.0
 </td>
 <td style="text-align:right;">
-11.407
+11.4
 </td>
 <td style="text-align:right;">
-7.035
+7.0
 </td>
 <td style="text-align:right;">
-3.601
+3.6
 </td>
 </tr>
 <tr>
@@ -3417,22 +3417,22 @@ Krefeld II – Wesel II
 Duisburg I
 </td>
 <td style="text-align:right;">
-19.700
+19.7
 </td>
 <td style="text-align:right;">
-35.128
+35.1
 </td>
 <td style="text-align:right;">
-15.232
+15.2
 </td>
 <td style="text-align:right;">
-9.008
+9.0
 </td>
 <td style="text-align:right;">
-8.335
+8.3
 </td>
 <td style="text-align:right;">
-4.745
+4.7
 </td>
 </tr>
 <tr>
@@ -3440,22 +3440,22 @@ Duisburg I
 Duisburg II
 </td>
 <td style="text-align:right;">
-18.698
+18.7
 </td>
 <td style="text-align:right;">
-36.887
+36.9
 </td>
 <td style="text-align:right;">
-10.587
+10.6
 </td>
 <td style="text-align:right;">
-8.144
+8.1
 </td>
 <td style="text-align:right;">
-12.179
+12.2
 </td>
 <td style="text-align:right;">
-4.639
+4.6
 </td>
 </tr>
 <tr>
@@ -3463,22 +3463,22 @@ Duisburg II
 Oberhausen – Wesel III
 </td>
 <td style="text-align:right;">
-21.366
+21.4
 </td>
 <td style="text-align:right;">
-36.825
+36.8
 </td>
 <td style="text-align:right;">
-12.460
+12.5
 </td>
 <td style="text-align:right;">
-9.425
+9.4
 </td>
 <td style="text-align:right;">
-9.096
+9.1
 </td>
 <td style="text-align:right;">
-3.897
+3.9
 </td>
 </tr>
 <tr>
@@ -3486,22 +3486,22 @@ Oberhausen – Wesel III
 Mülheim – Essen I
 </td>
 <td style="text-align:right;">
-23.594
+23.6
 </td>
 <td style="text-align:right;">
-33.252
+33.3
 </td>
 <td style="text-align:right;">
-14.599
+14.6
 </td>
 <td style="text-align:right;">
-10.959
+11.0
 </td>
 <td style="text-align:right;">
-8.035
+8.0
 </td>
 <td style="text-align:right;">
-3.243
+3.2
 </td>
 </tr>
 <tr>
@@ -3509,22 +3509,22 @@ Mülheim – Essen I
 Essen II
 </td>
 <td style="text-align:right;">
-20.151
+20.2
 </td>
 <td style="text-align:right;">
-33.870
+33.9
 </td>
 <td style="text-align:right;">
-13.381
+13.4
 </td>
 <td style="text-align:right;">
-9.129
+9.1
 </td>
 <td style="text-align:right;">
-11.034
+11.0
 </td>
 <td style="text-align:right;">
-4.334
+4.3
 </td>
 </tr>
 <tr>
@@ -3532,22 +3532,22 @@ Essen II
 Essen III
 </td>
 <td style="text-align:right;">
-24.367
+24.4
 </td>
 <td style="text-align:right;">
-28.034
+28.0
 </td>
 <td style="text-align:right;">
-20.231
+20.2
 </td>
 <td style="text-align:right;">
-11.834
+11.8
 </td>
 <td style="text-align:right;">
-5.523
+5.5
 </td>
 <td style="text-align:right;">
-4.023
+4.0
 </td>
 </tr>
 <tr>
@@ -3555,22 +3555,22 @@ Essen III
 Recklinghausen I
 </td>
 <td style="text-align:right;">
-23.181
+23.2
 </td>
 <td style="text-align:right;">
-35.244
+35.2
 </td>
 <td style="text-align:right;">
-12.573
+12.6
 </td>
 <td style="text-align:right;">
-9.930
+9.9
 </td>
 <td style="text-align:right;">
-9.050
+9.1
 </td>
 <td style="text-align:right;">
-3.511
+3.5
 </td>
 </tr>
 <tr>
@@ -3578,22 +3578,22 @@ Recklinghausen I
 Recklinghausen II
 </td>
 <td style="text-align:right;">
-24.580
+24.6
 </td>
 <td style="text-align:right;">
-35.515
+35.5
 </td>
 <td style="text-align:right;">
-11.428
+11.4
 </td>
 <td style="text-align:right;">
-9.925
+9.9
 </td>
 <td style="text-align:right;">
-9.158
+9.2
 </td>
 <td style="text-align:right;">
-2.987
+3.0
 </td>
 </tr>
 <tr>
@@ -3601,22 +3601,22 @@ Recklinghausen II
 Gelsenkirchen
 </td>
 <td style="text-align:right;">
-19.851
+19.9
 </td>
 <td style="text-align:right;">
-37.136
+37.1
 </td>
 <td style="text-align:right;">
-10.037
+10.0
 </td>
 <td style="text-align:right;">
-8.735
+8.7
 </td>
 <td style="text-align:right;">
-12.764
+12.8
 </td>
 <td style="text-align:right;">
-3.462
+3.5
 </td>
 </tr>
 <tr>
@@ -3624,22 +3624,22 @@ Gelsenkirchen
 Steinfurt I – Borken I
 </td>
 <td style="text-align:right;">
-33.751
+33.8
 </td>
 <td style="text-align:right;">
-28.725
+28.7
 </td>
 <td style="text-align:right;">
-13.164
+13.2
 </td>
 <td style="text-align:right;">
-11.405
+11.4
 </td>
 <td style="text-align:right;">
-5.378
+5.4
 </td>
 <td style="text-align:right;">
-2.866
+2.9
 </td>
 </tr>
 <tr>
@@ -3647,22 +3647,22 @@ Steinfurt I – Borken I
 Bottrop – Recklinghausen III
 </td>
 <td style="text-align:right;">
-24.938
+24.9
 </td>
 <td style="text-align:right;">
-34.979
+35.0
 </td>
 <td style="text-align:right;">
-11.132
+11.1
 </td>
 <td style="text-align:right;">
-9.922
+9.9
 </td>
 <td style="text-align:right;">
-9.415
+9.4
 </td>
 <td style="text-align:right;">
-3.037
+3.0
 </td>
 </tr>
 <tr>
@@ -3670,22 +3670,22 @@ Bottrop – Recklinghausen III
 Borken II
 </td>
 <td style="text-align:right;">
-36.646
+36.6
 </td>
 <td style="text-align:right;">
-26.230
+26.2
 </td>
 <td style="text-align:right;">
-13.479
+13.5
 </td>
 <td style="text-align:right;">
-11.831
+11.8
 </td>
 <td style="text-align:right;">
-4.789
+4.8
 </td>
 <td style="text-align:right;">
-2.427
+2.4
 </td>
 </tr>
 <tr>
@@ -3693,22 +3693,22 @@ Borken II
 Coesfeld – Steinfurt II
 </td>
 <td style="text-align:right;">
-34.480
+34.5
 </td>
 <td style="text-align:right;">
-26.624
+26.6
 </td>
 <td style="text-align:right;">
-15.923
+15.9
 </td>
 <td style="text-align:right;">
-11.192
+11.2
 </td>
 <td style="text-align:right;">
-4.582
+4.6
 </td>
 <td style="text-align:right;">
-2.555
+2.6
 </td>
 </tr>
 <tr>
@@ -3716,22 +3716,22 @@ Coesfeld – Steinfurt II
 Steinfurt III
 </td>
 <td style="text-align:right;">
-27.521
+27.5
 </td>
 <td style="text-align:right;">
-32.715
+32.7
 </td>
 <td style="text-align:right;">
-15.528
+15.5
 </td>
 <td style="text-align:right;">
-10.427
+10.4
 </td>
 <td style="text-align:right;">
-5.988
+6.0
 </td>
 <td style="text-align:right;">
-3.056
+3.1
 </td>
 </tr>
 <tr>
@@ -3739,22 +3739,22 @@ Steinfurt III
 Münster
 </td>
 <td style="text-align:right;">
-22.404
+22.4
 </td>
 <td style="text-align:right;">
-23.455
+23.5
 </td>
 <td style="text-align:right;">
-30.716
+30.7
 </td>
 <td style="text-align:right;">
-10.635
+10.6
 </td>
 <td style="text-align:right;">
-2.867
+2.9
 </td>
 <td style="text-align:right;">
-4.986
+5.0
 </td>
 </tr>
 <tr>
@@ -3762,22 +3762,22 @@ Münster
 Warendorf
 </td>
 <td style="text-align:right;">
-31.419
+31.4
 </td>
 <td style="text-align:right;">
-28.944
+28.9
 </td>
 <td style="text-align:right;">
-14.159
+14.2
 </td>
 <td style="text-align:right;">
-11.051
+11.1
 </td>
 <td style="text-align:right;">
-6.398
+6.4
 </td>
 <td style="text-align:right;">
-2.749
+2.7
 </td>
 </tr>
 <tr>
@@ -3785,22 +3785,22 @@ Warendorf
 Gütersloh I
 </td>
 <td style="text-align:right;">
-29.393
+29.4
 </td>
 <td style="text-align:right;">
-26.561
+26.6
 </td>
 <td style="text-align:right;">
-15.872
+15.9
 </td>
 <td style="text-align:right;">
-11.893
+11.9
 </td>
 <td style="text-align:right;">
-7.457
+7.5
 </td>
 <td style="text-align:right;">
-2.901
+2.9
 </td>
 </tr>
 <tr>
@@ -3808,22 +3808,22 @@ Gütersloh I
 Bielefeld – Gütersloh II
 </td>
 <td style="text-align:right;">
-20.284
+20.3
 </td>
 <td style="text-align:right;">
-27.155
+27.2
 </td>
 <td style="text-align:right;">
-21.807
+21.8
 </td>
 <td style="text-align:right;">
-11.217
+11.2
 </td>
 <td style="text-align:right;">
-6.759
+6.8
 </td>
 <td style="text-align:right;">
-6.224
+6.2
 </td>
 </tr>
 <tr>
@@ -3831,22 +3831,22 @@ Bielefeld – Gütersloh II
 Herford – Minden-Lübbecke II
 </td>
 <td style="text-align:right;">
-23.524
+23.5
 </td>
 <td style="text-align:right;">
-31.563
+31.6
 </td>
 <td style="text-align:right;">
-13.446
+13.4
 </td>
 <td style="text-align:right;">
-11.762
+11.8
 </td>
 <td style="text-align:right;">
-9.549
+9.5
 </td>
 <td style="text-align:right;">
-3.572
+3.6
 </td>
 </tr>
 <tr>
@@ -3854,22 +3854,22 @@ Herford – Minden-Lübbecke II
 Minden-Lübbecke I
 </td>
 <td style="text-align:right;">
-23.628
+23.6
 </td>
 <td style="text-align:right;">
-32.559
+32.6
 </td>
 <td style="text-align:right;">
-13.038
+13.0
 </td>
 <td style="text-align:right;">
-11.536
+11.5
 </td>
 <td style="text-align:right;">
-9.165
+9.2
 </td>
 <td style="text-align:right;">
-3.204
+3.2
 </td>
 </tr>
 <tr>
@@ -3877,22 +3877,22 @@ Minden-Lübbecke I
 Lippe I
 </td>
 <td style="text-align:right;">
-22.825
+22.8
 </td>
 <td style="text-align:right;">
-31.094
+31.1
 </td>
 <td style="text-align:right;">
-13.622
+13.6
 </td>
 <td style="text-align:right;">
-11.834
+11.8
 </td>
 <td style="text-align:right;">
-9.826
+9.8
 </td>
 <td style="text-align:right;">
-3.754
+3.8
 </td>
 </tr>
 <tr>
@@ -3900,22 +3900,22 @@ Lippe I
 Höxter – Gütersloh III – Lippe II
 </td>
 <td style="text-align:right;">
-32.509
+32.5
 </td>
 <td style="text-align:right;">
-27.240
+27.2
 </td>
 <td style="text-align:right;">
-11.058
+11.1
 </td>
 <td style="text-align:right;">
-11.637
+11.6
 </td>
 <td style="text-align:right;">
-8.666
+8.7
 </td>
 <td style="text-align:right;">
-2.827
+2.8
 </td>
 </tr>
 <tr>
@@ -3923,22 +3923,22 @@ Höxter – Gütersloh III – Lippe II
 Paderborn
 </td>
 <td style="text-align:right;">
-33.008
+33.0
 </td>
 <td style="text-align:right;">
-22.086
+22.1
 </td>
 <td style="text-align:right;">
-15.245
+15.2
 </td>
 <td style="text-align:right;">
-12.361
+12.4
 </td>
 <td style="text-align:right;">
-8.114
+8.1
 </td>
 <td style="text-align:right;">
-3.310
+3.3
 </td>
 </tr>
 <tr>
@@ -3946,22 +3946,22 @@ Paderborn
 Hagen – Ennepe-Ruhr-Kreis I
 </td>
 <td style="text-align:right;">
-23.822
+23.8
 </td>
 <td style="text-align:right;">
-33.006
+33.0
 </td>
 <td style="text-align:right;">
-12.003
+12.0
 </td>
 <td style="text-align:right;">
-11.266
+11.3
 </td>
 <td style="text-align:right;">
-9.582
+9.6
 </td>
 <td style="text-align:right;">
-3.382
+3.4
 </td>
 </tr>
 <tr>
@@ -3969,22 +3969,22 @@ Hagen – Ennepe-Ruhr-Kreis I
 Ennepe-Ruhr-Kreis II
 </td>
 <td style="text-align:right;">
-22.001
+22.0
 </td>
 <td style="text-align:right;">
-33.651
+33.7
 </td>
 <td style="text-align:right;">
-16.169
+16.2
 </td>
 <td style="text-align:right;">
-10.635
+10.6
 </td>
 <td style="text-align:right;">
-7.114
+7.1
 </td>
 <td style="text-align:right;">
-3.706
+3.7
 </td>
 </tr>
 <tr>
@@ -3992,22 +3992,22 @@ Ennepe-Ruhr-Kreis II
 Bochum I
 </td>
 <td style="text-align:right;">
-19.410
+19.4
 </td>
 <td style="text-align:right;">
-32.660
+32.7
 </td>
 <td style="text-align:right;">
-20.050
+20.1
 </td>
 <td style="text-align:right;">
-9.495
+9.5
 </td>
 <td style="text-align:right;">
-6.662
+6.7
 </td>
 <td style="text-align:right;">
-5.355
+5.4
 </td>
 </tr>
 <tr>
@@ -4015,22 +4015,22 @@ Bochum I
 Herne – Bochum II
 </td>
 <td style="text-align:right;">
-19.012
+19.0
 </td>
 <td style="text-align:right;">
-38.229
+38.2
 </td>
 <td style="text-align:right;">
-12.625
+12.6
 </td>
 <td style="text-align:right;">
-8.719
+8.7
 </td>
 <td style="text-align:right;">
-9.752
+9.8
 </td>
 <td style="text-align:right;">
-4.128
+4.1
 </td>
 </tr>
 <tr>
@@ -4038,22 +4038,22 @@ Herne – Bochum II
 Dortmund I
 </td>
 <td style="text-align:right;">
-17.948
+17.9
 </td>
 <td style="text-align:right;">
-32.360
+32.4
 </td>
 <td style="text-align:right;">
-20.576
+20.6
 </td>
 <td style="text-align:right;">
-9.395
+9.4
 </td>
 <td style="text-align:right;">
-6.939
+6.9
 </td>
 <td style="text-align:right;">
-4.885
+4.9
 </td>
 </tr>
 <tr>
@@ -4061,22 +4061,22 @@ Dortmund I
 Dortmund II
 </td>
 <td style="text-align:right;">
-19.364
+19.4
 </td>
 <td style="text-align:right;">
-35.773
+35.8
 </td>
 <td style="text-align:right;">
-15.207
+15.2
 </td>
 <td style="text-align:right;">
-9.545
+9.5
 </td>
 <td style="text-align:right;">
-7.907
+7.9
 </td>
 <td style="text-align:right;">
-4.455
+4.5
 </td>
 </tr>
 <tr>
@@ -4084,22 +4084,22 @@ Dortmund II
 Unna I
 </td>
 <td style="text-align:right;">
-21.775
+21.8
 </td>
 <td style="text-align:right;">
-36.404
+36.4
 </td>
 <td style="text-align:right;">
-13.626
+13.6
 </td>
 <td style="text-align:right;">
-10.403
+10.4
 </td>
 <td style="text-align:right;">
-7.778
+7.8
 </td>
 <td style="text-align:right;">
-3.508
+3.5
 </td>
 </tr>
 <tr>
@@ -4107,22 +4107,22 @@ Unna I
 Hamm – Unna II
 </td>
 <td style="text-align:right;">
-24.156
+24.2
 </td>
 <td style="text-align:right;">
-35.375
+35.4
 </td>
 <td style="text-align:right;">
-11.437
+11.4
 </td>
 <td style="text-align:right;">
-10.013
+10.0
 </td>
 <td style="text-align:right;">
-9.256
+9.3
 </td>
 <td style="text-align:right;">
-3.401
+3.4
 </td>
 </tr>
 <tr>
@@ -4130,22 +4130,22 @@ Hamm – Unna II
 Soest
 </td>
 <td style="text-align:right;">
-29.071
+29.1
 </td>
 <td style="text-align:right;">
-28.714
+28.7
 </td>
 <td style="text-align:right;">
-13.546
+13.5
 </td>
 <td style="text-align:right;">
-11.812
+11.8
 </td>
 <td style="text-align:right;">
-7.989
+8.0
 </td>
 <td style="text-align:right;">
-3.104
+3.1
 </td>
 </tr>
 <tr>
@@ -4153,22 +4153,22 @@ Soest
 Hochsauerlandkreis
 </td>
 <td style="text-align:right;">
-33.453
+33.5
 </td>
 <td style="text-align:right;">
-28.709
+28.7
 </td>
 <td style="text-align:right;">
-9.951
+10.0
 </td>
 <td style="text-align:right;">
-12.034
+12.0
 </td>
 <td style="text-align:right;">
-7.416
+7.4
 </td>
 <td style="text-align:right;">
-2.565
+2.6
 </td>
 </tr>
 <tr>
@@ -4176,22 +4176,22 @@ Hochsauerlandkreis
 Siegen-Wittgenstein
 </td>
 <td style="text-align:right;">
-26.187
+26.2
 </td>
 <td style="text-align:right;">
-31.259
+31.3
 </td>
 <td style="text-align:right;">
-11.082
+11.1
 </td>
 <td style="text-align:right;">
-11.551
+11.6
 </td>
 <td style="text-align:right;">
-9.136
+9.1
 </td>
 <td style="text-align:right;">
-3.557
+3.6
 </td>
 </tr>
 <tr>
@@ -4199,22 +4199,22 @@ Siegen-Wittgenstein
 Olpe – Märkischer Kreis I
 </td>
 <td style="text-align:right;">
-32.774
+32.8
 </td>
 <td style="text-align:right;">
-27.567
+27.6
 </td>
 <td style="text-align:right;">
-9.919
+9.9
 </td>
 <td style="text-align:right;">
-12.512
+12.5
 </td>
 <td style="text-align:right;">
-8.525
+8.5
 </td>
 <td style="text-align:right;">
-2.701
+2.7
 </td>
 </tr>
 <tr>
@@ -4222,22 +4222,22 @@ Olpe – Märkischer Kreis I
 Märkischer Kreis II
 </td>
 <td style="text-align:right;">
-28.307
+28.3
 </td>
 <td style="text-align:right;">
-29.613
+29.6
 </td>
 <td style="text-align:right;">
-10.434
+10.4
 </td>
 <td style="text-align:right;">
-12.008
+12.0
 </td>
 <td style="text-align:right;">
-9.173
+9.2
 </td>
 <td style="text-align:right;">
-3.369
+3.4
 </td>
 </tr>
 <tr>
@@ -4245,22 +4245,22 @@ Märkischer Kreis II
 Nordsachsen
 </td>
 <td style="text-align:right;">
-19.532
+19.5
 </td>
 <td style="text-align:right;">
-21.003
+21.0
 </td>
 <td style="text-align:right;">
-4.638
+4.6
 </td>
 <td style="text-align:right;">
-10.595
+10.6
 </td>
 <td style="text-align:right;">
-27.231
+27.2
 </td>
 <td style="text-align:right;">
-7.531
+7.5
 </td>
 </tr>
 <tr>
@@ -4268,22 +4268,22 @@ Nordsachsen
 Leipzig I
 </td>
 <td style="text-align:right;">
-14.994
+15.0
 </td>
 <td style="text-align:right;">
-20.880
+20.9
 </td>
 <td style="text-align:right;">
-15.532
+15.5
 </td>
 <td style="text-align:right;">
-10.612
+10.6
 </td>
 <td style="text-align:right;">
-15.558
+15.6
 </td>
 <td style="text-align:right;">
-12.549
+12.5
 </td>
 </tr>
 <tr>
@@ -4291,22 +4291,22 @@ Leipzig I
 Leipzig II
 </td>
 <td style="text-align:right;">
-13.101
+13.1
 </td>
 <td style="text-align:right;">
-20.927
+20.9
 </td>
 <td style="text-align:right;">
-21.277
+21.3
 </td>
 <td style="text-align:right;">
-9.697
+9.7
 </td>
 <td style="text-align:right;">
-11.240
+11.2
 </td>
 <td style="text-align:right;">
-14.720
+14.7
 </td>
 </tr>
 <tr>
@@ -4314,22 +4314,22 @@ Leipzig II
 Leipzig-Land
 </td>
 <td style="text-align:right;">
-20.387
+20.4
 </td>
 <td style="text-align:right;">
-21.256
+21.3
 </td>
 <td style="text-align:right;">
-5.847
+5.8
 </td>
 <td style="text-align:right;">
-11.419
+11.4
 </td>
 <td style="text-align:right;">
-23.969
+24.0
 </td>
 <td style="text-align:right;">
-7.705
+7.7
 </td>
 </tr>
 <tr>
@@ -4337,22 +4337,22 @@ Leipzig-Land
 Meißen
 </td>
 <td style="text-align:right;">
-17.556
+17.6
 </td>
 <td style="text-align:right;">
-17.646
+17.6
 </td>
 <td style="text-align:right;">
-6.011
+6.0
 </td>
 <td style="text-align:right;">
-11.662
+11.7
 </td>
 <td style="text-align:right;">
-29.771
+29.8
 </td>
 <td style="text-align:right;">
-7.267
+7.3
 </td>
 </tr>
 <tr>
@@ -4360,22 +4360,22 @@ Meißen
 Bautzen I
 </td>
 <td style="text-align:right;">
-18.597
+18.6
 </td>
 <td style="text-align:right;">
-16.980
+17.0
 </td>
 <td style="text-align:right;">
-3.977
+4.0
 </td>
 <td style="text-align:right;">
-10.941
+10.9
 </td>
 <td style="text-align:right;">
-31.861
+31.9
 </td>
 <td style="text-align:right;">
-7.812
+7.8
 </td>
 </tr>
 <tr>
@@ -4383,22 +4383,22 @@ Bautzen I
 Görlitz
 </td>
 <td style="text-align:right;">
-18.299
+18.3
 </td>
 <td style="text-align:right;">
-16.849
+16.8
 </td>
 <td style="text-align:right;">
-4.873
+4.9
 </td>
 <td style="text-align:right;">
-9.960
+10.0
 </td>
 <td style="text-align:right;">
-32.533
+32.5
 </td>
 <td style="text-align:right;">
-7.502
+7.5
 </td>
 </tr>
 <tr>
@@ -4406,22 +4406,22 @@ Görlitz
 Sächsische Schweiz-Osterzgebirge
 </td>
 <td style="text-align:right;">
-17.106
+17.1
 </td>
 <td style="text-align:right;">
-15.474
+15.5
 </td>
 <td style="text-align:right;">
-5.273
+5.3
 </td>
 <td style="text-align:right;">
-11.708
+11.7
 </td>
 <td style="text-align:right;">
-31.928
+31.9
 </td>
 <td style="text-align:right;">
-7.659
+7.7
 </td>
 </tr>
 <tr>
@@ -4429,22 +4429,22 @@ Sächsische Schweiz-Osterzgebirge
 Dresden I
 </td>
 <td style="text-align:right;">
-15.418
+15.4
 </td>
 <td style="text-align:right;">
-18.987
+19.0
 </td>
 <td style="text-align:right;">
-15.228
+15.2
 </td>
 <td style="text-align:right;">
-12.235
+12.2
 </td>
 <td style="text-align:right;">
-17.873
+17.9
 </td>
 <td style="text-align:right;">
-10.522
+10.5
 </td>
 </tr>
 <tr>
@@ -4452,22 +4452,22 @@ Dresden I
 Dresden II – Bautzen II
 </td>
 <td style="text-align:right;">
-13.849
+13.8
 </td>
 <td style="text-align:right;">
-16.287
+16.3
 </td>
 <td style="text-align:right;">
-16.630
+16.6
 </td>
 <td style="text-align:right;">
-12.172
+12.2
 </td>
 <td style="text-align:right;">
-19.150
+19.2
 </td>
 <td style="text-align:right;">
-11.124
+11.1
 </td>
 </tr>
 <tr>
@@ -4475,22 +4475,22 @@ Dresden II – Bautzen II
 Mittelsachsen
 </td>
 <td style="text-align:right;">
-17.537
+17.5
 </td>
 <td style="text-align:right;">
-18.494
+18.5
 </td>
 <td style="text-align:right;">
-4.673
+4.7
 </td>
 <td style="text-align:right;">
-11.574
+11.6
 </td>
 <td style="text-align:right;">
-30.016
+30.0
 </td>
 <td style="text-align:right;">
-8.005
+8.0
 </td>
 </tr>
 <tr>
@@ -4498,22 +4498,22 @@ Mittelsachsen
 Chemnitz
 </td>
 <td style="text-align:right;">
-14.840
+14.8
 </td>
 <td style="text-align:right;">
-23.367
+23.4
 </td>
 <td style="text-align:right;">
-9.084
+9.1
 </td>
 <td style="text-align:right;">
-11.306
+11.3
 </td>
 <td style="text-align:right;">
-21.557
+21.6
 </td>
 <td style="text-align:right;">
-10.752
+10.8
 </td>
 </tr>
 <tr>
@@ -4521,22 +4521,22 @@ Chemnitz
 Chemnitzer Umland – Erzgebirgskreis II
 </td>
 <td style="text-align:right;">
-18.136
+18.1
 </td>
 <td style="text-align:right;">
-20.237
+20.2
 </td>
 <td style="text-align:right;">
-4.514
+4.5
 </td>
 <td style="text-align:right;">
-11.117
+11.1
 </td>
 <td style="text-align:right;">
-27.343
+27.3
 </td>
 <td style="text-align:right;">
-8.211
+8.2
 </td>
 </tr>
 <tr>
@@ -4544,22 +4544,22 @@ Chemnitzer Umland – Erzgebirgskreis II
 Erzgebirgskreis I
 </td>
 <td style="text-align:right;">
-19.632
+19.6
 </td>
 <td style="text-align:right;">
-18.071
+18.1
 </td>
 <td style="text-align:right;">
-3.254
+3.3
 </td>
 <td style="text-align:right;">
-10.154
+10.2
 </td>
 <td style="text-align:right;">
-30.566
+30.6
 </td>
 <td style="text-align:right;">
-7.566
+7.6
 </td>
 </tr>
 <tr>
@@ -4567,22 +4567,22 @@ Erzgebirgskreis I
 Zwickau
 </td>
 <td style="text-align:right;">
-18.567
+18.6
 </td>
 <td style="text-align:right;">
-21.105
+21.1
 </td>
 <td style="text-align:right;">
-4.902
+4.9
 </td>
 <td style="text-align:right;">
-10.602
+10.6
 </td>
 <td style="text-align:right;">
-25.147
+25.1
 </td>
 <td style="text-align:right;">
-9.364
+9.4
 </td>
 </tr>
 <tr>
@@ -4590,22 +4590,22 @@ Zwickau
 Vogtlandkreis
 </td>
 <td style="text-align:right;">
-19.672
+19.7
 </td>
 <td style="text-align:right;">
-22.356
+22.4
 </td>
 <td style="text-align:right;">
-4.600
+4.6
 </td>
 <td style="text-align:right;">
-10.069
+10.1
 </td>
 <td style="text-align:right;">
-25.056
+25.1
 </td>
 <td style="text-align:right;">
-8.857
+8.9
 </td>
 </tr>
 <tr>
@@ -4613,22 +4613,22 @@ Vogtlandkreis
 Waldeck
 </td>
 <td style="text-align:right;">
-22.340
+22.3
 </td>
 <td style="text-align:right;">
-36.065
+36.1
 </td>
 <td style="text-align:right;">
-10.861
+10.9
 </td>
 <td style="text-align:right;">
-11.238
+11.2
 </td>
 <td style="text-align:right;">
-9.482
+9.5
 </td>
 <td style="text-align:right;">
-3.264
+3.3
 </td>
 </tr>
 <tr>
@@ -4636,22 +4636,22 @@ Waldeck
 Kassel
 </td>
 <td style="text-align:right;">
-17.524
+17.5
 </td>
 <td style="text-align:right;">
-32.216
+32.2
 </td>
 <td style="text-align:right;">
-18.870
+18.9
 </td>
 <td style="text-align:right;">
-10.227
+10.2
 </td>
 <td style="text-align:right;">
-7.549
+7.5
 </td>
 <td style="text-align:right;">
-6.540
+6.5
 </td>
 </tr>
 <tr>
@@ -4659,22 +4659,22 @@ Kassel
 Werra-Meißner – Hersfeld-Rotenburg
 </td>
 <td style="text-align:right;">
-21.598
+21.6
 </td>
 <td style="text-align:right;">
-37.651
+37.7
 </td>
 <td style="text-align:right;">
-8.987
+9.0
 </td>
 <td style="text-align:right;">
-9.926
+9.9
 </td>
 <td style="text-align:right;">
-11.547
+11.5
 </td>
 <td style="text-align:right;">
-3.506
+3.5
 </td>
 </tr>
 <tr>
@@ -4682,22 +4682,22 @@ Werra-Meißner – Hersfeld-Rotenburg
 Schwalm-Eder
 </td>
 <td style="text-align:right;">
-21.494
+21.5
 </td>
 <td style="text-align:right;">
-35.999
+36.0
 </td>
 <td style="text-align:right;">
-10.124
+10.1
 </td>
 <td style="text-align:right;">
-11.081
+11.1
 </td>
 <td style="text-align:right;">
-10.812
+10.8
 </td>
 <td style="text-align:right;">
-3.169
+3.2
 </td>
 </tr>
 <tr>
@@ -4705,22 +4705,22 @@ Schwalm-Eder
 Marburg
 </td>
 <td style="text-align:right;">
-22.130
+22.1
 </td>
 <td style="text-align:right;">
-30.012
+30.0
 </td>
 <td style="text-align:right;">
-15.932
+15.9
 </td>
 <td style="text-align:right;">
-10.543
+10.5
 </td>
 <td style="text-align:right;">
-8.953
+9.0
 </td>
 <td style="text-align:right;">
-5.767
+5.8
 </td>
 </tr>
 <tr>
@@ -4728,22 +4728,22 @@ Marburg
 Lahn-Dill
 </td>
 <td style="text-align:right;">
-24.917
+24.9
 </td>
 <td style="text-align:right;">
-29.423
+29.4
 </td>
 <td style="text-align:right;">
-11.200
+11.2
 </td>
 <td style="text-align:right;">
-11.445
+11.4
 </td>
 <td style="text-align:right;">
-11.567
+11.6
 </td>
 <td style="text-align:right;">
-3.370
+3.4
 </td>
 </tr>
 <tr>
@@ -4751,22 +4751,22 @@ Lahn-Dill
 Gießen
 </td>
 <td style="text-align:right;">
-22.668
+22.7
 </td>
 <td style="text-align:right;">
-27.580
+27.6
 </td>
 <td style="text-align:right;">
-16.349
+16.3
 </td>
 <td style="text-align:right;">
-10.711
+10.7
 </td>
 <td style="text-align:right;">
-9.290
+9.3
 </td>
 <td style="text-align:right;">
-5.027
+5.0
 </td>
 </tr>
 <tr>
@@ -4774,22 +4774,22 @@ Gießen
 Fulda
 </td>
 <td style="text-align:right;">
-31.114
+31.1
 </td>
 <td style="text-align:right;">
-22.475
+22.5
 </td>
 <td style="text-align:right;">
-10.095
+10.1
 </td>
 <td style="text-align:right;">
-12.695
+12.7
 </td>
 <td style="text-align:right;">
-13.261
+13.3
 </td>
 <td style="text-align:right;">
-2.750
+2.8
 </td>
 </tr>
 <tr>
@@ -4797,22 +4797,22 @@ Fulda
 Main-Kinzig – Wetterau II – Schotten
 </td>
 <td style="text-align:right;">
-24.204
+24.2
 </td>
 <td style="text-align:right;">
-27.358
+27.4
 </td>
 <td style="text-align:right;">
-11.115
+11.1
 </td>
 <td style="text-align:right;">
-12.623
+12.6
 </td>
 <td style="text-align:right;">
-12.648
+12.6
 </td>
 <td style="text-align:right;">
-3.190
+3.2
 </td>
 </tr>
 <tr>
@@ -4820,22 +4820,22 @@ Main-Kinzig – Wetterau II – Schotten
 Hochtaunus
 </td>
 <td style="text-align:right;">
-26.164
+26.2
 </td>
 <td style="text-align:right;">
-24.650
+24.6
 </td>
 <td style="text-align:right;">
-15.760
+15.8
 </td>
 <td style="text-align:right;">
-15.416
+15.4
 </td>
 <td style="text-align:right;">
-7.819
+7.8
 </td>
 <td style="text-align:right;">
-3.113
+3.1
 </td>
 </tr>
 <tr>
@@ -4843,22 +4843,22 @@ Hochtaunus
 Wetterau I
 </td>
 <td style="text-align:right;">
-23.619
+23.6
 </td>
 <td style="text-align:right;">
-26.162
+26.2
 </td>
 <td style="text-align:right;">
-15.968
+16.0
 </td>
 <td style="text-align:right;">
-13.874
+13.9
 </td>
 <td style="text-align:right;">
-8.510
+8.5
 </td>
 <td style="text-align:right;">
-3.574
+3.6
 </td>
 </tr>
 <tr>
@@ -4866,22 +4866,22 @@ Wetterau I
 Rheingau-Taunus – Limburg
 </td>
 <td style="text-align:right;">
-26.051
+26.1
 </td>
 <td style="text-align:right;">
-25.638
+25.6
 </td>
 <td style="text-align:right;">
-14.857
+14.9
 </td>
 <td style="text-align:right;">
-13.928
+13.9
 </td>
 <td style="text-align:right;">
-8.519
+8.5
 </td>
 <td style="text-align:right;">
-3.165
+3.2
 </td>
 </tr>
 <tr>
@@ -4889,22 +4889,22 @@ Rheingau-Taunus – Limburg
 Wiesbaden
 </td>
 <td style="text-align:right;">
-21.149
+21.1
 </td>
 <td style="text-align:right;">
-24.874
+24.9
 </td>
 <td style="text-align:right;">
-19.885
+19.9
 </td>
 <td style="text-align:right;">
-14.049
+14.0
 </td>
 <td style="text-align:right;">
-7.109
+7.1
 </td>
 <td style="text-align:right;">
-5.285
+5.3
 </td>
 </tr>
 <tr>
@@ -4912,22 +4912,22 @@ Wiesbaden
 Hanau
 </td>
 <td style="text-align:right;">
-22.540
+22.5
 </td>
 <td style="text-align:right;">
-27.565
+27.6
 </td>
 <td style="text-align:right;">
-14.082
+14.1
 </td>
 <td style="text-align:right;">
-13.234
+13.2
 </td>
 <td style="text-align:right;">
-10.225
+10.2
 </td>
 <td style="text-align:right;">
-3.816
+3.8
 </td>
 </tr>
 <tr>
@@ -4935,22 +4935,22 @@ Hanau
 Main-Taunus
 </td>
 <td style="text-align:right;">
-27.041
+27.0
 </td>
 <td style="text-align:right;">
-22.055
+22.1
 </td>
 <td style="text-align:right;">
-17.130
+17.1
 </td>
 <td style="text-align:right;">
-16.851
+16.9
 </td>
 <td style="text-align:right;">
-6.672
+6.7
 </td>
 <td style="text-align:right;">
-3.013
+3.0
 </td>
 </tr>
 <tr>
@@ -4958,22 +4958,22 @@ Main-Taunus
 Frankfurt am Main I
 </td>
 <td style="text-align:right;">
-18.026
+18.0
 </td>
 <td style="text-align:right;">
-22.606
+22.6
 </td>
 <td style="text-align:right;">
-23.526
+23.5
 </td>
 <td style="text-align:right;">
-14.858
+14.9
 </td>
 <td style="text-align:right;">
-5.458
+5.5
 </td>
 <td style="text-align:right;">
-7.223
+7.2
 </td>
 </tr>
 <tr>
@@ -4981,22 +4981,22 @@ Frankfurt am Main I
 Frankfurt am Main II
 </td>
 <td style="text-align:right;">
-18.232
+18.2
 </td>
 <td style="text-align:right;">
-22.330
+22.3
 </td>
 <td style="text-align:right;">
-25.551
+25.6
 </td>
 <td style="text-align:right;">
-14.702
+14.7
 </td>
 <td style="text-align:right;">
-4.715
+4.7
 </td>
 <td style="text-align:right;">
-6.853
+6.9
 </td>
 </tr>
 <tr>
@@ -5004,22 +5004,22 @@ Frankfurt am Main II
 Groß-Gerau
 </td>
 <td style="text-align:right;">
-21.398
+21.4
 </td>
 <td style="text-align:right;">
-29.763
+29.8
 </td>
 <td style="text-align:right;">
-14.836
+14.8
 </td>
 <td style="text-align:right;">
-11.756
+11.8
 </td>
 <td style="text-align:right;">
-8.815
+8.8
 </td>
 <td style="text-align:right;">
-4.228
+4.2
 </td>
 </tr>
 <tr>
@@ -5027,22 +5027,22 @@ Groß-Gerau
 Offenbach
 </td>
 <td style="text-align:right;">
-22.947
+22.9
 </td>
 <td style="text-align:right;">
-24.901
+24.9
 </td>
 <td style="text-align:right;">
-17.368
+17.4
 </td>
 <td style="text-align:right;">
-13.237
+13.2
 </td>
 <td style="text-align:right;">
-7.764
+7.8
 </td>
 <td style="text-align:right;">
-4.998
+5.0
 </td>
 </tr>
 <tr>
@@ -5050,22 +5050,22 @@ Offenbach
 Darmstadt
 </td>
 <td style="text-align:right;">
-18.431
+18.4
 </td>
 <td style="text-align:right;">
-26.345
+26.3
 </td>
 <td style="text-align:right;">
-22.429
+22.4
 </td>
 <td style="text-align:right;">
-11.900
+11.9
 </td>
 <td style="text-align:right;">
-6.520
+6.5
 </td>
 <td style="text-align:right;">
-5.755
+5.8
 </td>
 </tr>
 <tr>
@@ -5073,22 +5073,22 @@ Darmstadt
 Odenwald
 </td>
 <td style="text-align:right;">
-24.196
+24.2
 </td>
 <td style="text-align:right;">
-27.956
+28.0
 </td>
 <td style="text-align:right;">
-13.941
+13.9
 </td>
 <td style="text-align:right;">
-12.665
+12.7
 </td>
 <td style="text-align:right;">
-9.024
+9.0
 </td>
 <td style="text-align:right;">
-3.575
+3.6
 </td>
 </tr>
 <tr>
@@ -5096,22 +5096,22 @@ Odenwald
 Bergstraße
 </td>
 <td style="text-align:right;">
-24.474
+24.5
 </td>
 <td style="text-align:right;">
-27.155
+27.2
 </td>
 <td style="text-align:right;">
-14.168
+14.2
 </td>
 <td style="text-align:right;">
-13.492
+13.5
 </td>
 <td style="text-align:right;">
-9.493
+9.5
 </td>
 <td style="text-align:right;">
-3.057
+3.1
 </td>
 </tr>
 <tr>
@@ -5119,22 +5119,22 @@ Bergstraße
 Eichsfeld – Nordhausen – Kyffhäuserkreis
 </td>
 <td style="text-align:right;">
-22.048
+22.0
 </td>
 <td style="text-align:right;">
-24.419
+24.4
 </td>
 <td style="text-align:right;">
-4.700
+4.7
 </td>
 <td style="text-align:right;">
-8.970
+9.0
 </td>
 <td style="text-align:right;">
-22.463
+22.5
 </td>
 <td style="text-align:right;">
-9.933
+9.9
 </td>
 </tr>
 <tr>
@@ -5142,22 +5142,22 @@ Eichsfeld – Nordhausen – Kyffhäuserkreis
 Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis
 </td>
 <td style="text-align:right;">
-18.317
+18.3
 </td>
 <td style="text-align:right;">
-24.875
+24.9
 </td>
 <td style="text-align:right;">
-4.843
+4.8
 </td>
 <td style="text-align:right;">
-8.597
+8.6
 </td>
 <td style="text-align:right;">
-24.469
+24.5
 </td>
 <td style="text-align:right;">
-10.292
+10.3
 </td>
 </tr>
 <tr>
@@ -5165,22 +5165,22 @@ Eisenach – Wartburgkreis – Unstrut-Hainich-Kreis
 Jena – Sömmerda – Weimarer Land I
 </td>
 <td style="text-align:right;">
-15.644
+15.6
 </td>
 <td style="text-align:right;">
-22.412
+22.4
 </td>
 <td style="text-align:right;">
-10.951
+11.0
 </td>
 <td style="text-align:right;">
-9.222
+9.2
 </td>
 <td style="text-align:right;">
-19.835
+19.8
 </td>
 <td style="text-align:right;">
-12.784
+12.8
 </td>
 </tr>
 <tr>
@@ -5188,22 +5188,22 @@ Jena – Sömmerda – Weimarer Land I
 Gotha – Ilm-Kreis
 </td>
 <td style="text-align:right;">
-15.514
+15.5
 </td>
 <td style="text-align:right;">
-23.774
+23.8
 </td>
 <td style="text-align:right;">
-5.759
+5.8
 </td>
 <td style="text-align:right;">
-8.622
+8.6
 </td>
 <td style="text-align:right;">
-25.967
+26.0
 </td>
 <td style="text-align:right;">
-10.988
+11.0
 </td>
 </tr>
 <tr>
@@ -5211,22 +5211,22 @@ Gotha – Ilm-Kreis
 Erfurt – Weimar – Weimarer Land II
 </td>
 <td style="text-align:right;">
-14.291
+14.3
 </td>
 <td style="text-align:right;">
-23.866
+23.9
 </td>
 <td style="text-align:right;">
-13.231
+13.2
 </td>
 <td style="text-align:right;">
-9.396
+9.4
 </td>
 <td style="text-align:right;">
-16.244
+16.2
 </td>
 <td style="text-align:right;">
-13.973
+14.0
 </td>
 </tr>
 <tr>
@@ -5234,22 +5234,22 @@ Erfurt – Weimar – Weimarer Land II
 Gera – Greiz – Altenburger Land
 </td>
 <td style="text-align:right;">
-16.443
+16.4
 </td>
 <td style="text-align:right;">
-21.877
+21.9
 </td>
 <td style="text-align:right;">
-4.415
+4.4
 </td>
 <td style="text-align:right;">
-9.764
+9.8
 </td>
 <td style="text-align:right;">
-28.101
+28.1
 </td>
 <td style="text-align:right;">
-11.242
+11.2
 </td>
 </tr>
 <tr>
@@ -5257,22 +5257,22 @@ Gera – Greiz – Altenburger Land
 Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis
 </td>
 <td style="text-align:right;">
-16.406
+16.4
 </td>
 <td style="text-align:right;">
-21.272
+21.3
 </td>
 <td style="text-align:right;">
-4.485
+4.5
 </td>
 <td style="text-align:right;">
-9.372
+9.4
 </td>
 <td style="text-align:right;">
-28.174
+28.2
 </td>
 <td style="text-align:right;">
-11.231
+11.2
 </td>
 </tr>
 <tr>
@@ -5280,22 +5280,22 @@ Saalfeld-Rudolstadt – Saale-Holzland-Kreis – Saale-Orla-Kreis
 Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg
 </td>
 <td style="text-align:right;">
-16.510
+16.5
 </td>
 <td style="text-align:right;">
-25.097
+25.1
 </td>
 <td style="text-align:right;">
-4.270
+4.3
 </td>
 <td style="text-align:right;">
-8.272
+8.3
 </td>
 <td style="text-align:right;">
-26.354
+26.4
 </td>
 <td style="text-align:right;">
-10.930
+10.9
 </td>
 </tr>
 <tr>
@@ -5303,22 +5303,22 @@ Suhl – Schmalkalden-Meiningen – Hildburghausen – Sonneberg
 Neuwied
 </td>
 <td style="text-align:right;">
-26.811
+26.8
 </td>
 <td style="text-align:right;">
-29.961
+30.0
 </td>
 <td style="text-align:right;">
-10.500
+10.5
 </td>
 <td style="text-align:right;">
-11.510
+11.5
 </td>
 <td style="text-align:right;">
-9.709
+9.7
 </td>
 <td style="text-align:right;">
-3.005
+3.0
 </td>
 </tr>
 <tr>
@@ -5326,22 +5326,22 @@ Neuwied
 Ahrweiler
 </td>
 <td style="text-align:right;">
-28.515
+28.5
 </td>
 <td style="text-align:right;">
-28.761
+28.8
 </td>
 <td style="text-align:right;">
-12.023
+12.0
 </td>
 <td style="text-align:right;">
-11.887
+11.9
 </td>
 <td style="text-align:right;">
-7.697
+7.7
 </td>
 <td style="text-align:right;">
-2.618
+2.6
 </td>
 </tr>
 <tr>
@@ -5349,22 +5349,22 @@ Ahrweiler
 Koblenz
 </td>
 <td style="text-align:right;">
-26.016
+26.0
 </td>
 <td style="text-align:right;">
-29.346
+29.3
 </td>
 <td style="text-align:right;">
-14.398
+14.4
 </td>
 <td style="text-align:right;">
-11.220
+11.2
 </td>
 <td style="text-align:right;">
-7.146
+7.1
 </td>
 <td style="text-align:right;">
-3.293
+3.3
 </td>
 </tr>
 <tr>
@@ -5372,22 +5372,22 @@ Koblenz
 Mosel/Rhein-Hunsrück
 </td>
 <td style="text-align:right;">
-29.014
+29.0
 </td>
 <td style="text-align:right;">
-28.527
+28.5
 </td>
 <td style="text-align:right;">
-9.177
+9.2
 </td>
 <td style="text-align:right;">
-12.505
+12.5
 </td>
 <td style="text-align:right;">
-8.300
+8.3
 </td>
 <td style="text-align:right;">
-2.795
+2.8
 </td>
 </tr>
 <tr>
@@ -5395,22 +5395,22 @@ Mosel/Rhein-Hunsrück
 Kreuznach
 </td>
 <td style="text-align:right;">
-24.465
+24.5
 </td>
 <td style="text-align:right;">
-32.387
+32.4
 </td>
 <td style="text-align:right;">
-9.442
+9.4
 </td>
 <td style="text-align:right;">
-11.491
+11.5
 </td>
 <td style="text-align:right;">
-9.886
+9.9
 </td>
 <td style="text-align:right;">
-3.259
+3.3
 </td>
 </tr>
 <tr>
@@ -5418,22 +5418,22 @@ Kreuznach
 Bitburg
 </td>
 <td style="text-align:right;">
-30.138
+30.1
 </td>
 <td style="text-align:right;">
-27.909
+27.9
 </td>
 <td style="text-align:right;">
-9.273
+9.3
 </td>
 <td style="text-align:right;">
-11.375
+11.4
 </td>
 <td style="text-align:right;">
-7.146
+7.1
 </td>
 <td style="text-align:right;">
-2.653
+2.7
 </td>
 </tr>
 <tr>
@@ -5441,22 +5441,22 @@ Bitburg
 Trier
 </td>
 <td style="text-align:right;">
-23.744
+23.7
 </td>
 <td style="text-align:right;">
-30.298
+30.3
 </td>
 <td style="text-align:right;">
-15.593
+15.6
 </td>
 <td style="text-align:right;">
-11.128
+11.1
 </td>
 <td style="text-align:right;">
-6.181
+6.2
 </td>
 <td style="text-align:right;">
-3.922
+3.9
 </td>
 </tr>
 <tr>
@@ -5464,22 +5464,22 @@ Trier
 Montabaur
 </td>
 <td style="text-align:right;">
-26.504
+26.5
 </td>
 <td style="text-align:right;">
-30.327
+30.3
 </td>
 <td style="text-align:right;">
-10.345
+10.3
 </td>
 <td style="text-align:right;">
-11.690
+11.7
 </td>
 <td style="text-align:right;">
-8.951
+9.0
 </td>
 <td style="text-align:right;">
-2.882
+2.9
 </td>
 </tr>
 <tr>
@@ -5487,22 +5487,22 @@ Montabaur
 Mainz
 </td>
 <td style="text-align:right;">
-21.193
+21.2
 </td>
 <td style="text-align:right;">
-26.772
+26.8
 </td>
 <td style="text-align:right;">
-22.944
+22.9
 </td>
 <td style="text-align:right;">
-11.515
+11.5
 </td>
 <td style="text-align:right;">
-5.382
+5.4
 </td>
 <td style="text-align:right;">
-4.679
+4.7
 </td>
 </tr>
 <tr>
@@ -5510,22 +5510,22 @@ Mainz
 Worms
 </td>
 <td style="text-align:right;">
-22.781
+22.8
 </td>
 <td style="text-align:right;">
-30.127
+30.1
 </td>
 <td style="text-align:right;">
-12.619
+12.6
 </td>
 <td style="text-align:right;">
-12.192
+12.2
 </td>
 <td style="text-align:right;">
-10.334
+10.3
 </td>
 <td style="text-align:right;">
-3.075
+3.1
 </td>
 </tr>
 <tr>
@@ -5533,22 +5533,22 @@ Worms
 Ludwigshafen/Frankenthal
 </td>
 <td style="text-align:right;">
-22.006
+22.0
 </td>
 <td style="text-align:right;">
-29.946
+29.9
 </td>
 <td style="text-align:right;">
-11.828
+11.8
 </td>
 <td style="text-align:right;">
-12.020
+12.0
 </td>
 <td style="text-align:right;">
-11.794
+11.8
 </td>
 <td style="text-align:right;">
-3.035
+3.0
 </td>
 </tr>
 <tr>
@@ -5556,22 +5556,22 @@ Ludwigshafen/Frankenthal
 Neustadt – Speyer
 </td>
 <td style="text-align:right;">
-23.980
+24.0
 </td>
 <td style="text-align:right;">
-27.345
+27.3
 </td>
 <td style="text-align:right;">
-13.898
+13.9
 </td>
 <td style="text-align:right;">
-12.664
+12.7
 </td>
 <td style="text-align:right;">
-10.155
+10.2
 </td>
 <td style="text-align:right;">
-2.832
+2.8
 </td>
 </tr>
 <tr>
@@ -5579,22 +5579,22 @@ Neustadt – Speyer
 Kaiserslautern
 </td>
 <td style="text-align:right;">
-19.841
+19.8
 </td>
 <td style="text-align:right;">
-32.520
+32.5
 </td>
 <td style="text-align:right;">
-10.516
+10.5
 </td>
 <td style="text-align:right;">
-10.296
+10.3
 </td>
 <td style="text-align:right;">
-12.362
+12.4
 </td>
 <td style="text-align:right;">
-3.812
+3.8
 </td>
 </tr>
 <tr>
@@ -5602,22 +5602,22 @@ Kaiserslautern
 Pirmasens
 </td>
 <td style="text-align:right;">
-25.632
+25.6
 </td>
 <td style="text-align:right;">
-29.269
+29.3
 </td>
 <td style="text-align:right;">
-7.556
+7.6
 </td>
 <td style="text-align:right;">
-10.996
+11.0
 </td>
 <td style="text-align:right;">
-13.141
+13.1
 </td>
 <td style="text-align:right;">
-3.218
+3.2
 </td>
 </tr>
 <tr>
@@ -5625,22 +5625,22 @@ Pirmasens
 Südpfalz
 </td>
 <td style="text-align:right;">
-23.233
+23.2
 </td>
 <td style="text-align:right;">
-27.716
+27.7
 </td>
 <td style="text-align:right;">
-13.486
+13.5
 </td>
 <td style="text-align:right;">
-12.447
+12.4
 </td>
 <td style="text-align:right;">
-10.433
+10.4
 </td>
 <td style="text-align:right;">
-3.299
+3.3
 </td>
 </tr>
 <tr>
@@ -5648,22 +5648,22 @@ Südpfalz
 Altötting
 </td>
 <td style="text-align:right;">
-34.219
+34.2
 </td>
 <td style="text-align:right;">
-14.219
+14.2
 </td>
 <td style="text-align:right;">
-9.512
+9.5
 </td>
 <td style="text-align:right;">
-10.328
+10.3
 </td>
 <td style="text-align:right;">
-10.826
+10.8
 </td>
 <td style="text-align:right;">
-2.151
+2.2
 </td>
 </tr>
 <tr>
@@ -5671,22 +5671,22 @@ Altötting
 Erding – Ebersberg
 </td>
 <td style="text-align:right;">
-33.408
+33.4
 </td>
 <td style="text-align:right;">
-15.330
+15.3
 </td>
 <td style="text-align:right;">
-14.689
+14.7
 </td>
 <td style="text-align:right;">
-12.069
+12.1
 </td>
 <td style="text-align:right;">
-7.296
+7.3
 </td>
 <td style="text-align:right;">
-2.177
+2.2
 </td>
 </tr>
 <tr>
@@ -5694,22 +5694,22 @@ Erding – Ebersberg
 Freising
 </td>
 <td style="text-align:right;">
-32.586
+32.6
 </td>
 <td style="text-align:right;">
-15.061
+15.1
 </td>
 <td style="text-align:right;">
-13.492
+13.5
 </td>
 <td style="text-align:right;">
-11.256
+11.3
 </td>
 <td style="text-align:right;">
-9.070
+9.1
 </td>
 <td style="text-align:right;">
-2.307
+2.3
 </td>
 </tr>
 <tr>
@@ -5717,22 +5717,22 @@ Freising
 Fürstenfeldbruck
 </td>
 <td style="text-align:right;">
-33.330
+33.3
 </td>
 <td style="text-align:right;">
-16.232
+16.2
 </td>
 <td style="text-align:right;">
-15.917
+15.9
 </td>
 <td style="text-align:right;">
-12.012
+12.0
 </td>
 <td style="text-align:right;">
-6.885
+6.9
 </td>
 <td style="text-align:right;">
-2.185
+2.2
 </td>
 </tr>
 <tr>
@@ -5740,22 +5740,22 @@ Fürstenfeldbruck
 Ingolstadt
 </td>
 <td style="text-align:right;">
-34.618
+34.6
 </td>
 <td style="text-align:right;">
-16.936
+16.9
 </td>
 <td style="text-align:right;">
-11.168
+11.2
 </td>
 <td style="text-align:right;">
-10.613
+10.6
 </td>
 <td style="text-align:right;">
-10.021
+10.0
 </td>
 <td style="text-align:right;">
-2.386
+2.4
 </td>
 </tr>
 <tr>
@@ -5763,22 +5763,22 @@ Ingolstadt
 München-Nord
 </td>
 <td style="text-align:right;">
-22.862
+22.9
 </td>
 <td style="text-align:right;">
-19.006
+19.0
 </td>
 <td style="text-align:right;">
-25.649
+25.6
 </td>
 <td style="text-align:right;">
-14.839
+14.8
 </td>
 <td style="text-align:right;">
-4.717
+4.7
 </td>
 <td style="text-align:right;">
-4.027
+4.0
 </td>
 </tr>
 <tr>
@@ -5786,22 +5786,22 @@ München-Nord
 München-Ost
 </td>
 <td style="text-align:right;">
-25.501
+25.5
 </td>
 <td style="text-align:right;">
-18.682
+18.7
 </td>
 <td style="text-align:right;">
-24.653
+24.7
 </td>
 <td style="text-align:right;">
-14.028
+14.0
 </td>
 <td style="text-align:right;">
-4.645
+4.6
 </td>
 <td style="text-align:right;">
-3.663
+3.7
 </td>
 </tr>
 <tr>
@@ -5809,22 +5809,22 @@ München-Ost
 München-Süd
 </td>
 <td style="text-align:right;">
-23.545
+23.5
 </td>
 <td style="text-align:right;">
-19.213
+19.2
 </td>
 <td style="text-align:right;">
-26.433
+26.4
 </td>
 <td style="text-align:right;">
-12.470
+12.5
 </td>
 <td style="text-align:right;">
-4.589
+4.6
 </td>
 <td style="text-align:right;">
-4.449
+4.4
 </td>
 </tr>
 <tr>
@@ -5832,22 +5832,22 @@ München-Süd
 München-West/Mitte
 </td>
 <td style="text-align:right;">
-23.044
+23.0
 </td>
 <td style="text-align:right;">
-18.982
+19.0
 </td>
 <td style="text-align:right;">
-27.478
+27.5
 </td>
 <td style="text-align:right;">
-13.359
+13.4
 </td>
 <td style="text-align:right;">
-4.252
+4.3
 </td>
 <td style="text-align:right;">
-4.159
+4.2
 </td>
 </tr>
 <tr>
@@ -5855,22 +5855,22 @@ München-West/Mitte
 München-Land
 </td>
 <td style="text-align:right;">
-32.561
+32.6
 </td>
 <td style="text-align:right;">
-17.214
+17.2
 </td>
 <td style="text-align:right;">
-18.537
+18.5
 </td>
 <td style="text-align:right;">
-14.448
+14.4
 </td>
 <td style="text-align:right;">
-5.281
+5.3
 </td>
 <td style="text-align:right;">
-2.240
+2.2
 </td>
 </tr>
 <tr>
@@ -5878,22 +5878,22 @@ München-Land
 Rosenheim
 </td>
 <td style="text-align:right;">
-31.027
+31.0
 </td>
 <td style="text-align:right;">
-14.382
+14.4
 </td>
 <td style="text-align:right;">
-13.624
+13.6
 </td>
 <td style="text-align:right;">
-12.095
+12.1
 </td>
 <td style="text-align:right;">
-8.695
+8.7
 </td>
 <td style="text-align:right;">
-2.418
+2.4
 </td>
 </tr>
 <tr>
@@ -5901,22 +5901,22 @@ Rosenheim
 Bad Tölz-Wolfratshausen – Miesbach
 </td>
 <td style="text-align:right;">
-34.209
+34.2
 </td>
 <td style="text-align:right;">
-13.502
+13.5
 </td>
 <td style="text-align:right;">
-13.400
+13.4
 </td>
 <td style="text-align:right;">
-12.595
+12.6
 </td>
 <td style="text-align:right;">
-8.005
+8.0
 </td>
 <td style="text-align:right;">
-2.148
+2.1
 </td>
 </tr>
 <tr>
@@ -5924,22 +5924,22 @@ Bad Tölz-Wolfratshausen – Miesbach
 Starnberg – Landsberg am Lech
 </td>
 <td style="text-align:right;">
-32.123
+32.1
 </td>
 <td style="text-align:right;">
-15.857
+15.9
 </td>
 <td style="text-align:right;">
-18.120
+18.1
 </td>
 <td style="text-align:right;">
-13.254
+13.3
 </td>
 <td style="text-align:right;">
-6.139
+6.1
 </td>
 <td style="text-align:right;">
-2.466
+2.5
 </td>
 </tr>
 <tr>
@@ -5947,22 +5947,22 @@ Starnberg – Landsberg am Lech
 Traunstein
 </td>
 <td style="text-align:right;">
-31.535
+31.5
 </td>
 <td style="text-align:right;">
-15.448
+15.4
 </td>
 <td style="text-align:right;">
-12.256
+12.3
 </td>
 <td style="text-align:right;">
-9.657
+9.7
 </td>
 <td style="text-align:right;">
-8.602
+8.6
 </td>
 <td style="text-align:right;">
-2.418
+2.4
 </td>
 </tr>
 <tr>
@@ -5970,22 +5970,22 @@ Traunstein
 Weilheim
 </td>
 <td style="text-align:right;">
-35.125
+35.1
 </td>
 <td style="text-align:right;">
-14.528
+14.5
 </td>
 <td style="text-align:right;">
-13.413
+13.4
 </td>
 <td style="text-align:right;">
-10.434
+10.4
 </td>
 <td style="text-align:right;">
-7.927
+7.9
 </td>
 <td style="text-align:right;">
-2.278
+2.3
 </td>
 </tr>
 <tr>
@@ -5993,22 +5993,22 @@ Weilheim
 Deggendorf
 </td>
 <td style="text-align:right;">
-33.285
+33.3
 </td>
 <td style="text-align:right;">
-15.692
+15.7
 </td>
 <td style="text-align:right;">
-6.724
+6.7
 </td>
 <td style="text-align:right;">
-8.510
+8.5
 </td>
 <td style="text-align:right;">
-14.143
+14.1
 </td>
 <td style="text-align:right;">
-1.817
+1.8
 </td>
 </tr>
 <tr>
@@ -6016,22 +6016,22 @@ Deggendorf
 Landshut
 </td>
 <td style="text-align:right;">
-33.057
+33.1
 </td>
 <td style="text-align:right;">
-15.881
+15.9
 </td>
 <td style="text-align:right;">
-10.313
+10.3
 </td>
 <td style="text-align:right;">
-10.373
+10.4
 </td>
 <td style="text-align:right;">
-10.255
+10.3
 </td>
 <td style="text-align:right;">
-2.149
+2.1
 </td>
 </tr>
 <tr>
@@ -6039,22 +6039,22 @@ Landshut
 Passau
 </td>
 <td style="text-align:right;">
-32.499
+32.5
 </td>
 <td style="text-align:right;">
-17.561
+17.6
 </td>
 <td style="text-align:right;">
-9.294
+9.3
 </td>
 <td style="text-align:right;">
-9.395
+9.4
 </td>
 <td style="text-align:right;">
-11.777
+11.8
 </td>
 <td style="text-align:right;">
-2.273
+2.3
 </td>
 </tr>
 <tr>
@@ -6062,22 +6062,22 @@ Passau
 Rottal-Inn
 </td>
 <td style="text-align:right;">
-34.288
+34.3
 </td>
 <td style="text-align:right;">
-14.340
+14.3
 </td>
 <td style="text-align:right;">
-7.126
+7.1
 </td>
 <td style="text-align:right;">
-9.684
+9.7
 </td>
 <td style="text-align:right;">
-12.296
+12.3
 </td>
 <td style="text-align:right;">
-1.866
+1.9
 </td>
 </tr>
 <tr>
@@ -6085,22 +6085,22 @@ Rottal-Inn
 Straubing
 </td>
 <td style="text-align:right;">
-35.346
+35.3
 </td>
 <td style="text-align:right;">
-15.077
+15.1
 </td>
 <td style="text-align:right;">
-6.778
+6.8
 </td>
 <td style="text-align:right;">
-8.774
+8.8
 </td>
 <td style="text-align:right;">
-13.159
+13.2
 </td>
 <td style="text-align:right;">
-1.866
+1.9
 </td>
 </tr>
 <tr>
@@ -6108,22 +6108,22 @@ Straubing
 Amberg
 </td>
 <td style="text-align:right;">
-35.061
+35.1
 </td>
 <td style="text-align:right;">
-18.303
+18.3
 </td>
 <td style="text-align:right;">
-9.394
+9.4
 </td>
 <td style="text-align:right;">
-8.742
+8.7
 </td>
 <td style="text-align:right;">
-10.419
+10.4
 </td>
 <td style="text-align:right;">
-2.376
+2.4
 </td>
 </tr>
 <tr>
@@ -6131,22 +6131,22 @@ Amberg
 Regensburg
 </td>
 <td style="text-align:right;">
-30.875
+30.9
 </td>
 <td style="text-align:right;">
-17.441
+17.4
 </td>
 <td style="text-align:right;">
-16.195
+16.2
 </td>
 <td style="text-align:right;">
-9.473
+9.5
 </td>
 <td style="text-align:right;">
-8.751
+8.8
 </td>
 <td style="text-align:right;">
-3.430
+3.4
 </td>
 </tr>
 <tr>
@@ -6154,22 +6154,22 @@ Regensburg
 Schwandorf
 </td>
 <td style="text-align:right;">
-34.127
+34.1
 </td>
 <td style="text-align:right;">
-17.921
+17.9
 </td>
 <td style="text-align:right;">
-6.419
+6.4
 </td>
 <td style="text-align:right;">
-7.264
+7.3
 </td>
 <td style="text-align:right;">
-13.499
+13.5
 </td>
 <td style="text-align:right;">
-1.949
+1.9
 </td>
 </tr>
 <tr>
@@ -6177,22 +6177,22 @@ Schwandorf
 Weiden
 </td>
 <td style="text-align:right;">
-35.363
+35.4
 </td>
 <td style="text-align:right;">
-22.428
+22.4
 </td>
 <td style="text-align:right;">
-6.981
+7.0
 </td>
 <td style="text-align:right;">
-7.309
+7.3
 </td>
 <td style="text-align:right;">
-11.342
+11.3
 </td>
 <td style="text-align:right;">
-2.154
+2.2
 </td>
 </tr>
 <tr>
@@ -6200,22 +6200,22 @@ Weiden
 Bamberg
 </td>
 <td style="text-align:right;">
-33.406
+33.4
 </td>
 <td style="text-align:right;">
-17.356
+17.4
 </td>
 <td style="text-align:right;">
-14.789
+14.8
 </td>
 <td style="text-align:right;">
-9.682
+9.7
 </td>
 <td style="text-align:right;">
-9.647
+9.6
 </td>
 <td style="text-align:right;">
-3.158
+3.2
 </td>
 </tr>
 <tr>
@@ -6223,22 +6223,22 @@ Bamberg
 Bayreuth
 </td>
 <td style="text-align:right;">
-34.053
+34.1
 </td>
 <td style="text-align:right;">
-20.683
+20.7
 </td>
 <td style="text-align:right;">
-12.174
+12.2
 </td>
 <td style="text-align:right;">
-9.352
+9.4
 </td>
 <td style="text-align:right;">
-9.053
+9.1
 </td>
 <td style="text-align:right;">
-2.563
+2.6
 </td>
 </tr>
 <tr>
@@ -6246,22 +6246,22 @@ Bayreuth
 Coburg
 </td>
 <td style="text-align:right;">
-31.945
+31.9
 </td>
 <td style="text-align:right;">
-25.241
+25.2
 </td>
 <td style="text-align:right;">
-9.304
+9.3
 </td>
 <td style="text-align:right;">
-8.674
+8.7
 </td>
 <td style="text-align:right;">
-10.422
+10.4
 </td>
 <td style="text-align:right;">
-2.532
+2.5
 </td>
 </tr>
 <tr>
@@ -6269,22 +6269,22 @@ Coburg
 Hof
 </td>
 <td style="text-align:right;">
-33.163
+33.2
 </td>
 <td style="text-align:right;">
-24.427
+24.4
 </td>
 <td style="text-align:right;">
-7.730
+7.7
 </td>
 <td style="text-align:right;">
-8.471
+8.5
 </td>
 <td style="text-align:right;">
-11.689
+11.7
 </td>
 <td style="text-align:right;">
-2.412
+2.4
 </td>
 </tr>
 <tr>
@@ -6292,22 +6292,22 @@ Hof
 Kulmbach
 </td>
 <td style="text-align:right;">
-36.181
+36.2
 </td>
 <td style="text-align:right;">
-19.786
+19.8
 </td>
 <td style="text-align:right;">
-8.766
+8.8
 </td>
 <td style="text-align:right;">
-8.350
+8.4
 </td>
 <td style="text-align:right;">
-11.555
+11.6
 </td>
 <td style="text-align:right;">
-2.185
+2.2
 </td>
 </tr>
 <tr>
@@ -6315,22 +6315,22 @@ Kulmbach
 Ansbach
 </td>
 <td style="text-align:right;">
-33.057
+33.1
 </td>
 <td style="text-align:right;">
-19.658
+19.7
 </td>
 <td style="text-align:right;">
-11.659
+11.7
 </td>
 <td style="text-align:right;">
-8.467
+8.5
 </td>
 <td style="text-align:right;">
-9.997
+10.0
 </td>
 <td style="text-align:right;">
-2.561
+2.6
 </td>
 </tr>
 <tr>
@@ -6338,22 +6338,22 @@ Ansbach
 Erlangen
 </td>
 <td style="text-align:right;">
-28.870
+28.9
 </td>
 <td style="text-align:right;">
-19.486
+19.5
 </td>
 <td style="text-align:right;">
-20.181
+20.2
 </td>
 <td style="text-align:right;">
-10.382
+10.4
 </td>
 <td style="text-align:right;">
-7.027
+7.0
 </td>
 <td style="text-align:right;">
-3.760
+3.8
 </td>
 </tr>
 <tr>
@@ -6361,22 +6361,22 @@ Erlangen
 Fürth
 </td>
 <td style="text-align:right;">
-29.946
+29.9
 </td>
 <td style="text-align:right;">
-21.493
+21.5
 </td>
 <td style="text-align:right;">
-15.120
+15.1
 </td>
 <td style="text-align:right;">
-9.528
+9.5
 </td>
 <td style="text-align:right;">
-8.983
+9.0
 </td>
 <td style="text-align:right;">
-3.527
+3.5
 </td>
 </tr>
 <tr>
@@ -6384,22 +6384,22 @@ Fürth
 Nürnberg-Nord
 </td>
 <td style="text-align:right;">
-23.773
+23.8
 </td>
 <td style="text-align:right;">
-20.924
+20.9
 </td>
 <td style="text-align:right;">
-23.570
+23.6
 </td>
 <td style="text-align:right;">
-10.168
+10.2
 </td>
 <td style="text-align:right;">
-6.151
+6.2
 </td>
 <td style="text-align:right;">
-5.971
+6.0
 </td>
 </tr>
 <tr>
@@ -6407,22 +6407,22 @@ Nürnberg-Nord
 Nürnberg-Süd
 </td>
 <td style="text-align:right;">
-30.038
+30.0
 </td>
 <td style="text-align:right;">
-22.682
+22.7
 </td>
 <td style="text-align:right;">
-13.741
+13.7
 </td>
 <td style="text-align:right;">
-8.931
+8.9
 </td>
 <td style="text-align:right;">
-10.023
+10.0
 </td>
 <td style="text-align:right;">
-3.801
+3.8
 </td>
 </tr>
 <tr>
@@ -6430,22 +6430,22 @@ Nürnberg-Süd
 Roth
 </td>
 <td style="text-align:right;">
-32.311
+32.3
 </td>
 <td style="text-align:right;">
-20.551
+20.6
 </td>
 <td style="text-align:right;">
-13.881
+13.9
 </td>
 <td style="text-align:right;">
-8.994
+9.0
 </td>
 <td style="text-align:right;">
-8.501
+8.5
 </td>
 <td style="text-align:right;">
-2.623
+2.6
 </td>
 </tr>
 <tr>
@@ -6453,22 +6453,22 @@ Roth
 Aschaffenburg
 </td>
 <td style="text-align:right;">
-31.388
+31.4
 </td>
 <td style="text-align:right;">
-20.747
+20.7
 </td>
 <td style="text-align:right;">
-14.166
+14.2
 </td>
 <td style="text-align:right;">
-11.117
+11.1
 </td>
 <td style="text-align:right;">
-9.413
+9.4
 </td>
 <td style="text-align:right;">
-2.792
+2.8
 </td>
 </tr>
 <tr>
@@ -6476,22 +6476,22 @@ Aschaffenburg
 Bad Kissingen
 </td>
 <td style="text-align:right;">
-37.586
+37.6
 </td>
 <td style="text-align:right;">
-17.642
+17.6
 </td>
 <td style="text-align:right;">
-9.170
+9.2
 </td>
 <td style="text-align:right;">
-8.787
+8.8
 </td>
 <td style="text-align:right;">
-10.649
+10.6
 </td>
 <td style="text-align:right;">
-2.784
+2.8
 </td>
 </tr>
 <tr>
@@ -6499,22 +6499,22 @@ Bad Kissingen
 Main-Spessart
 </td>
 <td style="text-align:right;">
-34.442
+34.4
 </td>
 <td style="text-align:right;">
-20.864
+20.9
 </td>
 <td style="text-align:right;">
-11.337
+11.3
 </td>
 <td style="text-align:right;">
-9.010
+9.0
 </td>
 <td style="text-align:right;">
-8.861
+8.9
 </td>
 <td style="text-align:right;">
-2.346
+2.3
 </td>
 </tr>
 <tr>
@@ -6522,22 +6522,22 @@ Main-Spessart
 Schweinfurt
 </td>
 <td style="text-align:right;">
-34.820
+34.8
 </td>
 <td style="text-align:right;">
-19.496
+19.5
 </td>
 <td style="text-align:right;">
-10.927
+10.9
 </td>
 <td style="text-align:right;">
-9.619
+9.6
 </td>
 <td style="text-align:right;">
-10.033
+10.0
 </td>
 <td style="text-align:right;">
-3.152
+3.2
 </td>
 </tr>
 <tr>
@@ -6545,22 +6545,22 @@ Schweinfurt
 Würzburg
 </td>
 <td style="text-align:right;">
-30.296
+30.3
 </td>
 <td style="text-align:right;">
-20.075
+20.1
 </td>
 <td style="text-align:right;">
-19.293
+19.3
 </td>
 <td style="text-align:right;">
-10.411
+10.4
 </td>
 <td style="text-align:right;">
-6.616
+6.6
 </td>
 <td style="text-align:right;">
-3.805
+3.8
 </td>
 </tr>
 <tr>
@@ -6568,22 +6568,22 @@ Würzburg
 Augsburg-Stadt
 </td>
 <td style="text-align:right;">
-25.353
+25.4
 </td>
 <td style="text-align:right;">
-19.153
+19.2
 </td>
 <td style="text-align:right;">
-19.002
+19.0
 </td>
 <td style="text-align:right;">
-11.130
+11.1
 </td>
 <td style="text-align:right;">
-9.109
+9.1
 </td>
 <td style="text-align:right;">
-4.560
+4.6
 </td>
 </tr>
 <tr>
@@ -6591,22 +6591,22 @@ Augsburg-Stadt
 Augsburg-Land
 </td>
 <td style="text-align:right;">
-33.330
+33.3
 </td>
 <td style="text-align:right;">
-16.402
+16.4
 </td>
 <td style="text-align:right;">
-12.868
+12.9
 </td>
 <td style="text-align:right;">
-10.950
+10.9
 </td>
 <td style="text-align:right;">
-9.565
+9.6
 </td>
 <td style="text-align:right;">
-2.050
+2.1
 </td>
 </tr>
 <tr>
@@ -6614,22 +6614,22 @@ Augsburg-Land
 Donau-Ries
 </td>
 <td style="text-align:right;">
-35.162
+35.2
 </td>
 <td style="text-align:right;">
-16.505
+16.5
 </td>
 <td style="text-align:right;">
-9.545
+9.5
 </td>
 <td style="text-align:right;">
-9.982
+10.0
 </td>
 <td style="text-align:right;">
-10.969
+11.0
 </td>
 <td style="text-align:right;">
-1.828
+1.8
 </td>
 </tr>
 <tr>
@@ -6637,22 +6637,22 @@ Donau-Ries
 Neu-Ulm
 </td>
 <td style="text-align:right;">
-31.446
+31.4
 </td>
 <td style="text-align:right;">
-16.994
+17.0
 </td>
 <td style="text-align:right;">
-11.062
+11.1
 </td>
 <td style="text-align:right;">
-11.730
+11.7
 </td>
 <td style="text-align:right;">
-11.876
+11.9
 </td>
 <td style="text-align:right;">
-2.349
+2.3
 </td>
 </tr>
 <tr>
@@ -6660,22 +6660,22 @@ Neu-Ulm
 Oberallgäu
 </td>
 <td style="text-align:right;">
-30.440
+30.4
 </td>
 <td style="text-align:right;">
-16.549
+16.5
 </td>
 <td style="text-align:right;">
-15.156
+15.2
 </td>
 <td style="text-align:right;">
-11.593
+11.6
 </td>
 <td style="text-align:right;">
-7.940
+7.9
 </td>
 <td style="text-align:right;">
-2.790
+2.8
 </td>
 </tr>
 <tr>
@@ -6683,22 +6683,22 @@ Oberallgäu
 Ostallgäu
 </td>
 <td style="text-align:right;">
-31.691
+31.7
 </td>
 <td style="text-align:right;">
-15.641
+15.6
 </td>
 <td style="text-align:right;">
-11.997
+12.0
 </td>
 <td style="text-align:right;">
-10.909
+10.9
 </td>
 <td style="text-align:right;">
-10.007
+10.0
 </td>
 <td style="text-align:right;">
-2.533
+2.5
 </td>
 </tr>
 <tr>
@@ -6706,22 +6706,22 @@ Ostallgäu
 Stuttgart I
 </td>
 <td style="text-align:right;">
-20.107
+20.1
 </td>
 <td style="text-align:right;">
-19.768
+19.8
 </td>
 <td style="text-align:right;">
-28.411
+28.4
 </td>
 <td style="text-align:right;">
-16.601
+16.6
 </td>
 <td style="text-align:right;">
-4.202
+4.2
 </td>
 <td style="text-align:right;">
-5.182
+5.2
 </td>
 </tr>
 <tr>
@@ -6729,22 +6729,22 @@ Stuttgart I
 Stuttgart II
 </td>
 <td style="text-align:right;">
-21.405
+21.4
 </td>
 <td style="text-align:right;">
-22.757
+22.8
 </td>
 <td style="text-align:right;">
-21.267
+21.3
 </td>
 <td style="text-align:right;">
-15.278
+15.3
 </td>
 <td style="text-align:right;">
-7.190
+7.2
 </td>
 <td style="text-align:right;">
-5.079
+5.1
 </td>
 </tr>
 <tr>
@@ -6752,22 +6752,22 @@ Stuttgart II
 Böblingen
 </td>
 <td style="text-align:right;">
-26.106
+26.1
 </td>
 <td style="text-align:right;">
-20.583
+20.6
 </td>
 <td style="text-align:right;">
-16.791
+16.8
 </td>
 <td style="text-align:right;">
-18.073
+18.1
 </td>
 <td style="text-align:right;">
-8.660
+8.7
 </td>
 <td style="text-align:right;">
-2.648
+2.6
 </td>
 </tr>
 <tr>
@@ -6775,22 +6775,22 @@ Böblingen
 Esslingen
 </td>
 <td style="text-align:right;">
-25.301
+25.3
 </td>
 <td style="text-align:right;">
-22.767
+22.8
 </td>
 <td style="text-align:right;">
-18.229
+18.2
 </td>
 <td style="text-align:right;">
-15.940
+15.9
 </td>
 <td style="text-align:right;">
-7.423
+7.4
 </td>
 <td style="text-align:right;">
-3.099
+3.1
 </td>
 </tr>
 <tr>
@@ -6798,22 +6798,22 @@ Esslingen
 Nürtingen
 </td>
 <td style="text-align:right;">
-26.023
+26.0
 </td>
 <td style="text-align:right;">
-20.657
+20.7
 </td>
 <td style="text-align:right;">
-16.833
+16.8
 </td>
 <td style="text-align:right;">
-17.504
+17.5
 </td>
 <td style="text-align:right;">
-8.706
+8.7
 </td>
 <td style="text-align:right;">
-2.648
+2.6
 </td>
 </tr>
 <tr>
@@ -6821,22 +6821,22 @@ Nürtingen
 Göppingen
 </td>
 <td style="text-align:right;">
-26.096
+26.1
 </td>
 <td style="text-align:right;">
-23.375
+23.4
 </td>
 <td style="text-align:right;">
-12.584
+12.6
 </td>
 <td style="text-align:right;">
-16.160
+16.2
 </td>
 <td style="text-align:right;">
-11.465
+11.5
 </td>
 <td style="text-align:right;">
-2.483
+2.5
 </td>
 </tr>
 <tr>
@@ -6844,22 +6844,22 @@ Göppingen
 Waiblingen
 </td>
 <td style="text-align:right;">
-25.744
+25.7
 </td>
 <td style="text-align:right;">
-21.604
+21.6
 </td>
 <td style="text-align:right;">
-15.507
+15.5
 </td>
 <td style="text-align:right;">
-17.739
+17.7
 </td>
 <td style="text-align:right;">
-8.855
+8.9
 </td>
 <td style="text-align:right;">
-2.862
+2.9
 </td>
 </tr>
 <tr>
@@ -6867,22 +6867,22 @@ Waiblingen
 Ludwigsburg
 </td>
 <td style="text-align:right;">
-24.758
+24.8
 </td>
 <td style="text-align:right;">
-21.824
+21.8
 </td>
 <td style="text-align:right;">
-18.399
+18.4
 </td>
 <td style="text-align:right;">
-16.162
+16.2
 </td>
 <td style="text-align:right;">
-8.378
+8.4
 </td>
 <td style="text-align:right;">
-3.088
+3.1
 </td>
 </tr>
 <tr>
@@ -6890,22 +6890,22 @@ Ludwigsburg
 Neckar-Zaber
 </td>
 <td style="text-align:right;">
-24.976
+25.0
 </td>
 <td style="text-align:right;">
-22.309
+22.3
 </td>
 <td style="text-align:right;">
-15.665
+15.7
 </td>
 <td style="text-align:right;">
-16.600
+16.6
 </td>
 <td style="text-align:right;">
-10.085
+10.1
 </td>
 <td style="text-align:right;">
-2.616
+2.6
 </td>
 </tr>
 <tr>
@@ -6913,22 +6913,22 @@ Neckar-Zaber
 Heilbronn
 </td>
 <td style="text-align:right;">
-23.929
+23.9
 </td>
 <td style="text-align:right;">
-22.624
+22.6
 </td>
 <td style="text-align:right;">
-12.966
+13.0
 </td>
 <td style="text-align:right;">
-16.230
+16.2
 </td>
 <td style="text-align:right;">
-13.161
+13.2
 </td>
 <td style="text-align:right;">
-2.837
+2.8
 </td>
 </tr>
 <tr>
@@ -6936,22 +6936,22 @@ Heilbronn
 Schwäbisch Hall – Hohenlohe
 </td>
 <td style="text-align:right;">
-24.497
+24.5
 </td>
 <td style="text-align:right;">
-21.767
+21.8
 </td>
 <td style="text-align:right;">
-13.277
+13.3
 </td>
 <td style="text-align:right;">
-16.265
+16.3
 </td>
 <td style="text-align:right;">
-12.724
+12.7
 </td>
 <td style="text-align:right;">
-2.908
+2.9
 </td>
 </tr>
 <tr>
@@ -6959,22 +6959,22 @@ Schwäbisch Hall – Hohenlohe
 Backnang – Schwäbisch Gmünd
 </td>
 <td style="text-align:right;">
-25.838
+25.8
 </td>
 <td style="text-align:right;">
-21.666
+21.7
 </td>
 <td style="text-align:right;">
-13.719
+13.7
 </td>
 <td style="text-align:right;">
-15.800
+15.8
 </td>
 <td style="text-align:right;">
-11.799
+11.8
 </td>
 <td style="text-align:right;">
-2.900
+2.9
 </td>
 </tr>
 <tr>
@@ -6982,22 +6982,22 @@ Backnang – Schwäbisch Gmünd
 Aalen – Heidenheim
 </td>
 <td style="text-align:right;">
-27.416
+27.4
 </td>
 <td style="text-align:right;">
-23.599
+23.6
 </td>
 <td style="text-align:right;">
-12.692
+12.7
 </td>
 <td style="text-align:right;">
-14.686
+14.7
 </td>
 <td style="text-align:right;">
-10.725
+10.7
 </td>
 <td style="text-align:right;">
-2.713
+2.7
 </td>
 </tr>
 <tr>
@@ -7005,22 +7005,22 @@ Aalen – Heidenheim
 Karlsruhe-Stadt
 </td>
 <td style="text-align:right;">
-17.668
+17.7
 </td>
 <td style="text-align:right;">
-21.347
+21.3
 </td>
 <td style="text-align:right;">
-27.773
+27.8
 </td>
 <td style="text-align:right;">
-13.009
+13.0
 </td>
 <td style="text-align:right;">
-6.799
+6.8
 </td>
 <td style="text-align:right;">
-5.623
+5.6
 </td>
 </tr>
 <tr>
@@ -7028,22 +7028,22 @@ Karlsruhe-Stadt
 Karlsruhe-Land
 </td>
 <td style="text-align:right;">
-25.704
+25.7
 </td>
 <td style="text-align:right;">
-23.089
+23.1
 </td>
 <td style="text-align:right;">
-16.185
+16.2
 </td>
 <td style="text-align:right;">
-14.799
+14.8
 </td>
 <td style="text-align:right;">
-9.523
+9.5
 </td>
 <td style="text-align:right;">
-2.690
+2.7
 </td>
 </tr>
 <tr>
@@ -7051,22 +7051,22 @@ Karlsruhe-Land
 Rastatt
 </td>
 <td style="text-align:right;">
-26.980
+27.0
 </td>
 <td style="text-align:right;">
-23.694
+23.7
 </td>
 <td style="text-align:right;">
-14.256
+14.3
 </td>
 <td style="text-align:right;">
-13.817
+13.8
 </td>
 <td style="text-align:right;">
-10.620
+10.6
 </td>
 <td style="text-align:right;">
-2.783
+2.8
 </td>
 </tr>
 <tr>
@@ -7074,22 +7074,22 @@ Rastatt
 Heidelberg
 </td>
 <td style="text-align:right;">
-20.804
+20.8
 </td>
 <td style="text-align:right;">
-22.779
+22.8
 </td>
 <td style="text-align:right;">
-25.630
+25.6
 </td>
 <td style="text-align:right;">
-13.144
+13.1
 </td>
 <td style="text-align:right;">
-6.120
+6.1
 </td>
 <td style="text-align:right;">
-4.878
+4.9
 </td>
 </tr>
 <tr>
@@ -7097,22 +7097,22 @@ Heidelberg
 Mannheim
 </td>
 <td style="text-align:right;">
-18.218
+18.2
 </td>
 <td style="text-align:right;">
-25.290
+25.3
 </td>
 <td style="text-align:right;">
-21.150
+21.1
 </td>
 <td style="text-align:right;">
-13.134
+13.1
 </td>
 <td style="text-align:right;">
-9.113
+9.1
 </td>
 <td style="text-align:right;">
-5.013
+5.0
 </td>
 </tr>
 <tr>
@@ -7120,22 +7120,22 @@ Mannheim
 Odenwald – Tauber
 </td>
 <td style="text-align:right;">
-30.447
+30.4
 </td>
 <td style="text-align:right;">
-22.168
+22.2
 </td>
 <td style="text-align:right;">
-11.058
+11.1
 </td>
 <td style="text-align:right;">
-13.049
+13.0
 </td>
 <td style="text-align:right;">
-11.968
+12.0
 </td>
 <td style="text-align:right;">
-2.545
+2.5
 </td>
 </tr>
 <tr>
@@ -7143,22 +7143,22 @@ Odenwald – Tauber
 Rhein-Neckar
 </td>
 <td style="text-align:right;">
-25.459
+25.5
 </td>
 <td style="text-align:right;">
-23.478
+23.5
 </td>
 <td style="text-align:right;">
-15.766
+15.8
 </td>
 <td style="text-align:right;">
-14.370
+14.4
 </td>
 <td style="text-align:right;">
-10.283
+10.3
 </td>
 <td style="text-align:right;">
-2.829
+2.8
 </td>
 </tr>
 <tr>
@@ -7166,22 +7166,22 @@ Rhein-Neckar
 Bruchsal – Schwetzingen
 </td>
 <td style="text-align:right;">
-25.777
+25.8
 </td>
 <td style="text-align:right;">
-22.838
+22.8
 </td>
 <td style="text-align:right;">
-13.834
+13.8
 </td>
 <td style="text-align:right;">
-14.577
+14.6
 </td>
 <td style="text-align:right;">
-11.581
+11.6
 </td>
 <td style="text-align:right;">
-2.736
+2.7
 </td>
 </tr>
 <tr>
@@ -7189,22 +7189,22 @@ Bruchsal – Schwetzingen
 Pforzheim
 </td>
 <td style="text-align:right;">
-24.182
+24.2
 </td>
 <td style="text-align:right;">
-21.069
+21.1
 </td>
 <td style="text-align:right;">
-13.045
+13.0
 </td>
 <td style="text-align:right;">
-16.298
+16.3
 </td>
 <td style="text-align:right;">
-13.546
+13.5
 </td>
 <td style="text-align:right;">
-2.670
+2.7
 </td>
 </tr>
 <tr>
@@ -7212,22 +7212,22 @@ Pforzheim
 Calw
 </td>
 <td style="text-align:right;">
-28.261
+28.3
 </td>
 <td style="text-align:right;">
-18.848
+18.8
 </td>
 <td style="text-align:right;">
-11.413
+11.4
 </td>
 <td style="text-align:right;">
-17.660
+17.7
 </td>
 <td style="text-align:right;">
-12.846
+12.8
 </td>
 <td style="text-align:right;">
-2.412
+2.4
 </td>
 </tr>
 <tr>
@@ -7235,22 +7235,22 @@ Calw
 Freiburg
 </td>
 <td style="text-align:right;">
-17.399
+17.4
 </td>
 <td style="text-align:right;">
-21.228
+21.2
 </td>
 <td style="text-align:right;">
-31.612
+31.6
 </td>
 <td style="text-align:right;">
-10.644
+10.6
 </td>
 <td style="text-align:right;">
-4.922
+4.9
 </td>
 <td style="text-align:right;">
-6.910
+6.9
 </td>
 </tr>
 <tr>
@@ -7258,22 +7258,22 @@ Freiburg
 Lörrach – Müllheim
 </td>
 <td style="text-align:right;">
-22.310
+22.3
 </td>
 <td style="text-align:right;">
-24.242
+24.2
 </td>
 <td style="text-align:right;">
-19.017
+19.0
 </td>
 <td style="text-align:right;">
-14.295
+14.3
 </td>
 <td style="text-align:right;">
-8.226
+8.2
 </td>
 <td style="text-align:right;">
-3.206
+3.2
 </td>
 </tr>
 <tr>
@@ -7281,22 +7281,22 @@ Lörrach – Müllheim
 Emmendingen – Lahr
 </td>
 <td style="text-align:right;">
-24.808
+24.8
 </td>
 <td style="text-align:right;">
-23.850
+23.8
 </td>
 <td style="text-align:right;">
-17.244
+17.2
 </td>
 <td style="text-align:right;">
-13.289
+13.3
 </td>
 <td style="text-align:right;">
-8.988
+9.0
 </td>
 <td style="text-align:right;">
-3.127
+3.1
 </td>
 </tr>
 <tr>
@@ -7304,22 +7304,22 @@ Emmendingen – Lahr
 Offenburg
 </td>
 <td style="text-align:right;">
-25.909
+25.9
 </td>
 <td style="text-align:right;">
-21.291
+21.3
 </td>
 <td style="text-align:right;">
-14.873
+14.9
 </td>
 <td style="text-align:right;">
-14.690
+14.7
 </td>
 <td style="text-align:right;">
-9.871
+9.9
 </td>
 <td style="text-align:right;">
-2.850
+2.8
 </td>
 </tr>
 <tr>
@@ -7327,22 +7327,22 @@ Offenburg
 Rottweil – Tuttlingen
 </td>
 <td style="text-align:right;">
-27.615
+27.6
 </td>
 <td style="text-align:right;">
-18.620
+18.6
 </td>
 <td style="text-align:right;">
-10.849
+10.8
 </td>
 <td style="text-align:right;">
-18.109
+18.1
 </td>
 <td style="text-align:right;">
-13.359
+13.4
 </td>
 <td style="text-align:right;">
-2.246
+2.2
 </td>
 </tr>
 <tr>
@@ -7350,22 +7350,22 @@ Rottweil – Tuttlingen
 Schwarzwald-Baar
 </td>
 <td style="text-align:right;">
-26.587
+26.6
 </td>
 <td style="text-align:right;">
-21.242
+21.2
 </td>
 <td style="text-align:right;">
-13.315
+13.3
 </td>
 <td style="text-align:right;">
-16.208
+16.2
 </td>
 <td style="text-align:right;">
-10.777
+10.8
 </td>
 <td style="text-align:right;">
-2.520
+2.5
 </td>
 </tr>
 <tr>
@@ -7373,22 +7373,22 @@ Schwarzwald-Baar
 Konstanz
 </td>
 <td style="text-align:right;">
-23.152
+23.2
 </td>
 <td style="text-align:right;">
-20.880
+20.9
 </td>
 <td style="text-align:right;">
-21.044
+21.0
 </td>
 <td style="text-align:right;">
-15.031
+15.0
 </td>
 <td style="text-align:right;">
-8.530
+8.5
 </td>
 <td style="text-align:right;">
-3.711
+3.7
 </td>
 </tr>
 <tr>
@@ -7396,22 +7396,22 @@ Konstanz
 Waldshut
 </td>
 <td style="text-align:right;">
-26.362
+26.4
 </td>
 <td style="text-align:right;">
-22.798
+22.8
 </td>
 <td style="text-align:right;">
-17.252
+17.3
 </td>
 <td style="text-align:right;">
-13.644
+13.6
 </td>
 <td style="text-align:right;">
-8.343
+8.3
 </td>
 <td style="text-align:right;">
-2.885
+2.9
 </td>
 </tr>
 <tr>
@@ -7419,22 +7419,22 @@ Waldshut
 Reutlingen
 </td>
 <td style="text-align:right;">
-25.892
+25.9
 </td>
 <td style="text-align:right;">
-20.669
+20.7
 </td>
 <td style="text-align:right;">
-15.859
+15.9
 </td>
 <td style="text-align:right;">
-16.574
+16.6
 </td>
 <td style="text-align:right;">
-10.259
+10.3
 </td>
 <td style="text-align:right;">
-3.330
+3.3
 </td>
 </tr>
 <tr>
@@ -7442,22 +7442,22 @@ Reutlingen
 Tübingen
 </td>
 <td style="text-align:right;">
-21.764
+21.8
 </td>
 <td style="text-align:right;">
-20.388
+20.4
 </td>
 <td style="text-align:right;">
-23.422
+23.4
 </td>
 <td style="text-align:right;">
-14.193
+14.2
 </td>
 <td style="text-align:right;">
-7.853
+7.9
 </td>
 <td style="text-align:right;">
-5.151
+5.2
 </td>
 </tr>
 <tr>
@@ -7465,22 +7465,22 @@ Tübingen
 Ulm
 </td>
 <td style="text-align:right;">
-26.569
+26.6
 </td>
 <td style="text-align:right;">
-20.673
+20.7
 </td>
 <td style="text-align:right;">
-17.732
+17.7
 </td>
 <td style="text-align:right;">
-14.412
+14.4
 </td>
 <td style="text-align:right;">
-9.109
+9.1
 </td>
 <td style="text-align:right;">
-3.052
+3.1
 </td>
 </tr>
 <tr>
@@ -7488,22 +7488,22 @@ Ulm
 Biberach
 </td>
 <td style="text-align:right;">
-30.607
+30.6
 </td>
 <td style="text-align:right;">
-17.509
+17.5
 </td>
 <td style="text-align:right;">
-13.666
+13.7
 </td>
 <td style="text-align:right;">
-14.492
+14.5
 </td>
 <td style="text-align:right;">
-10.821
+10.8
 </td>
 <td style="text-align:right;">
-2.244
+2.2
 </td>
 </tr>
 <tr>
@@ -7511,22 +7511,22 @@ Biberach
 Bodensee
 </td>
 <td style="text-align:right;">
-26.724
+26.7
 </td>
 <td style="text-align:right;">
-19.722
+19.7
 </td>
 <td style="text-align:right;">
-17.271
+17.3
 </td>
 <td style="text-align:right;">
-15.792
+15.8
 </td>
 <td style="text-align:right;">
-8.707
+8.7
 </td>
 <td style="text-align:right;">
-2.854
+2.9
 </td>
 </tr>
 <tr>
@@ -7534,22 +7534,22 @@ Bodensee
 Ravensburg
 </td>
 <td style="text-align:right;">
-26.666
+26.7
 </td>
 <td style="text-align:right;">
-19.010
+19.0
 </td>
 <td style="text-align:right;">
-17.493
+17.5
 </td>
 <td style="text-align:right;">
-14.893
+14.9
 </td>
 <td style="text-align:right;">
-8.666
+8.7
 </td>
 <td style="text-align:right;">
-3.244
+3.2
 </td>
 </tr>
 <tr>
@@ -7557,22 +7557,22 @@ Ravensburg
 Zollernalb – Sigmaringen
 </td>
 <td style="text-align:right;">
-28.806
+28.8
 </td>
 <td style="text-align:right;">
-19.566
+19.6
 </td>
 <td style="text-align:right;">
-11.354
+11.4
 </td>
 <td style="text-align:right;">
-16.991
+17.0
 </td>
 <td style="text-align:right;">
-12.068
+12.1
 </td>
 <td style="text-align:right;">
-2.593
+2.6
 </td>
 </tr>
 <tr>
@@ -7580,22 +7580,22 @@ Zollernalb – Sigmaringen
 Saarbrücken
 </td>
 <td style="text-align:right;">
-20.500
+20.5
 </td>
 <td style="text-align:right;">
-38.112
+38.1
 </td>
 <td style="text-align:right;">
 NA
 </td>
 <td style="text-align:right;">
-11.702
+11.7
 </td>
 <td style="text-align:right;">
-9.259
+9.3
 </td>
 <td style="text-align:right;">
-9.599
+9.6
 </td>
 </tr>
 <tr>
@@ -7603,22 +7603,22 @@ NA
 Saarlouis
 </td>
 <td style="text-align:right;">
-24.370
+24.4
 </td>
 <td style="text-align:right;">
-36.422
+36.4
 </td>
 <td style="text-align:right;">
 NA
 </td>
 <td style="text-align:right;">
-12.076
+12.1
 </td>
 <td style="text-align:right;">
-10.015
+10.0
 </td>
 <td style="text-align:right;">
-6.726
+6.7
 </td>
 </tr>
 <tr>
@@ -7626,22 +7626,22 @@ NA
 St. Wendel
 </td>
 <td style="text-align:right;">
-26.452
+26.5
 </td>
 <td style="text-align:right;">
-37.385
+37.4
 </td>
 <td style="text-align:right;">
 NA
 </td>
 <td style="text-align:right;">
-10.885
+10.9
 </td>
 <td style="text-align:right;">
-9.417
+9.4
 </td>
 <td style="text-align:right;">
-5.756
+5.8
 </td>
 </tr>
 <tr>
@@ -7649,22 +7649,22 @@ NA
 Homburg
 </td>
 <td style="text-align:right;">
-22.879
+22.9
 </td>
 <td style="text-align:right;">
-37.239
+37.2
 </td>
 <td style="text-align:right;">
 NA
 </td>
 <td style="text-align:right;">
-11.237
+11.2
 </td>
 <td style="text-align:right;">
-11.487
+11.5
 </td>
 <td style="text-align:right;">
-6.611
+6.6
 </td>
 </tr>
 </tbody>
