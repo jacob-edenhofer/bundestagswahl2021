@@ -382,7 +382,7 @@ direkt %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/map-cdu-direct-candidates-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/map-cdu-direct-candidates-1.png)<!-- -->
 
 Lessons:
 
@@ -555,7 +555,7 @@ direkt %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/map-spd-direct-candidates-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/map-spd-direct-candidates-1.png)<!-- -->
 
 Lessons:
 
@@ -594,7 +594,7 @@ direkt %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/map-fdp-direct-candidates-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/map-fdp-direct-candidates-1.png)<!-- -->
 
 Lessons:
 
@@ -620,7 +620,7 @@ direkt %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/map-green-direct-candidates-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/map-green-direct-candidates-1.png)<!-- -->
 
 Lessons:
 
@@ -646,7 +646,7 @@ direkt %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/map-afd-direct-candidates-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/map-afd-direct-candidates-1.png)<!-- -->
 
 Lessons:
 
@@ -672,7 +672,7 @@ direkt %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/map-linke-direct-candidates-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/map-linke-direct-candidates-1.png)<!-- -->
 
 Lessons:
 
@@ -1527,7 +1527,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/population-density-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/population-density-1.png)<!-- -->
 
 ## Density of Non-Germans
 
@@ -1541,7 +1541,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/density-non-Germans-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/density-non-Germans-1.png)<!-- -->
 
 ## Change in Population per 1000 Inhabitants
 
@@ -1554,7 +1554,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/change-populaton-wanderungssaldo-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/change-populaton-wanderungssaldo-1.png)<!-- -->
 
 ## Share of 18-24 Year Olds
 
@@ -1568,7 +1568,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/age-composition-young-people-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/age-composition-young-people-1.png)<!-- -->
 
 ## Share of 25-34 Year Olds
 
@@ -1582,7 +1582,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/age-composition-young-people-25-34-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/age-composition-young-people-25-34-1.png)<!-- -->
 
 ## Share of 35-59 Year Olds
 
@@ -1596,7 +1596,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/middle-age-35-59-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/middle-age-35-59-1.png)<!-- -->
 
 ## Share of 60-74 Year Olds
 
@@ -1610,7 +1610,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/oldies-60-74-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/oldies-60-74-1.png)<!-- -->
 
 ## Share of +75 Year Olds
 
@@ -1624,7 +1624,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/heavy-olides-75-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/heavy-olides-75-1.png)<!-- -->
 
 ## Density of Companies
 
@@ -1637,7 +1637,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/company-density-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/company-density-1.png)<!-- -->
 
 ## Density of Handwerksunternehmen
 
@@ -1650,7 +1650,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/density-of-handwerk-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/density-of-handwerk-1.png)<!-- -->
 
 ## Schulabgänger ohne Hauptschulabschluss
 
@@ -1664,7 +1664,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/share-without-hauptschulabschluss-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/share-without-hauptschulabschluss-1.png)<!-- -->
 
 ## Schulabgänger mit allgemeiner Reifer (Abitur)
 
@@ -1678,7 +1678,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/share-with-abitur-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/share-with-abitur-1.png)<!-- -->
 
 ## Disposable Income
 
@@ -1692,7 +1692,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/disposable-income-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/disposable-income-1.png)<!-- -->
 
 ## Regional BIP
 
@@ -1706,7 +1706,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/regional-bip-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/regional-bip-1.png)<!-- -->
 
 ## Unemployment Rate
 
@@ -1721,7 +1721,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/unemployment-general-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/unemployment-general-1.png)<!-- -->
 
 ## Unemployment Rate Among 55-64 Year Olds
 
@@ -1736,7 +1736,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/unemployment-oldies-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/unemployment-oldies-1.png)<!-- -->
 
 ## Arbeitslosengeld-II-Empfänger
 
@@ -1751,7 +1751,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/jsa-2-recipients-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/jsa-2-recipients-1.png)<!-- -->
 
 ## Ausländische Arbeitslosengeld-II-Empfänger
 
@@ -1766,7 +1766,7 @@ constituencies21 %>%
   theme_void()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/foreign-jsa-2-recipients-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/foreign-jsa-2-recipients-1.png)<!-- -->
 
 ## From Candidates to Representatives
 
@@ -1801,7 +1801,7 @@ mps21 %>%
   theme_bw() 
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/gender-balance-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/gender-balance-1.png)<!-- -->
 
 ``` r
 # plot 2, relative  
@@ -1821,7 +1821,7 @@ mps21 %>%
   theme_bw()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/gender-balance-2.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/gender-balance-2.png)<!-- -->
 
 ### Gender Balance by Status
 
@@ -1848,7 +1848,7 @@ mps21 %>%
   theme_bw() 
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/gender-balance-by-candidate-status-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/gender-balance-by-candidate-status-1.png)<!-- -->
 
 We can see that, among those who entered the Bundestag by winning their
 constituencies directly, roughly 75% are men. Those who entered via the
@@ -1880,7 +1880,7 @@ mps21 %>%
   theme_bw() 
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/candidate-status-by-gender-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/candidate-status-by-gender-1.png)<!-- -->
 
 ### Gender Balance by Party
 
@@ -1904,7 +1904,7 @@ mps21 %>%
   facet_wrap(~gruppenname1)
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/gender-by-party-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/gender-by-party-1.png)<!-- -->
 
 ``` r
 # relative 
@@ -1924,7 +1924,7 @@ mps21 %>%
   facet_wrap(~gruppenname1)
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/gender-by-party-2.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/gender-by-party-2.png)<!-- -->
 
 ### Gender Balance by Party and Type of Candidate
 
@@ -1950,7 +1950,7 @@ mps21 %>%
   facet_wrap(~gruppenname1)
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/gender-bal-cand-stat-party-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/gender-bal-cand-stat-party-1.png)<!-- -->
 
 ### Geburtjahr
 
@@ -1976,7 +1976,7 @@ mps21 %>%
   theme_bw()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/age-mps-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/age-mps-1.png)<!-- -->
 
 Let us try to create separate histograms for each party:
 
@@ -1996,7 +1996,7 @@ mps21 %>%
   facet_wrap(~gruppenname1)
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/age-distribution-by-party-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/age-distribution-by-party-1.png)<!-- -->
 
 The information in this graph can be expressed in a table:
 
@@ -2123,7 +2123,7 @@ mps21 %>%
   theme_bw()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/age-in-general-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/age-in-general-1.png)<!-- -->
 
 ``` r
 # proportions
@@ -2139,7 +2139,7 @@ mps21 %>%
   theme_bw()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/age-in-general-2.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/age-in-general-2.png)<!-- -->
 
 Next, let us look at Altersgruppe by type of candidacy:
 
@@ -2163,7 +2163,7 @@ mps21 %>%
   theme_bw()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/age-type-candidacy-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/age-type-candidacy-1.png)<!-- -->
 
 Do this plot by party:
 
@@ -2191,7 +2191,7 @@ mps21 %>%
   facet_wrap(~gruppenname1)
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/age-type-candidacy-by-party-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/age-type-candidacy-by-party-1.png)<!-- -->
 
 ## Academic MPs
 
@@ -2209,7 +2209,7 @@ mps21 %>%
   theme_bw()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/acamdemic-mps-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/acamdemic-mps-1.png)<!-- -->
 
 ## Academic MPs by Party
 
@@ -2229,4 +2229,4 @@ mps21 %>%
   theme_bw()
 ```
 
-![](btwkandidierende2021_some_code_files/figure-gfm/highly-academic-mps-by-party-1.png)<!-- -->
+![](btwkandidierende2021_analysis_files/figure-gfm/highly-academic-mps-by-party-1.png)<!-- -->
