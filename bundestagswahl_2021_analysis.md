@@ -1,6 +1,6 @@
 Bundestagswahl - 2021
 ================
-21 February 2023
+22 February 2023
 
 # Preliminaries
 
@@ -688,7 +688,6 @@ btw17_zweitstimmen_plot <- function(x){
     theme_void() +
     theme(plot.title = element_text(hjust = 0.5))
     print(plots)
-    ggsave(filename = paste("Figures/btw_17", nm[i], "plots.png", sep = "_"))
   }
 }
 # applying loop
@@ -718,7 +717,6 @@ btw21_zweitstimmen_plot <- function(x){
     theme_void() +
     theme(plot.title = element_text(hjust = 0.5))
     print(plots)
-    ggsave(filename = paste("Figures/btw_21", nm[i], "plots.png", sep = "_"))
   }
 }
 # applying loop
@@ -7689,7 +7687,6 @@ delta_loop <- function(x){
   theme(plot.title = element_text(hjust = 0.5),
         plot.caption = element_text(hjust = 0.5))
     print(plots)
-    ggsave(filename = paste("Figures/btw_21", lw[i], "delta_plots.png", sep = "_"))
   }
 }
 # apply loop
@@ -7720,7 +7717,6 @@ delta_21_13_loop <- function(x){
   theme(plot.title = element_text(hjust = 0.5),
         plot.caption = element_text(hjust = 0.5))
     print(plots)
-    ggsave(filename = paste("Figures/btw_21", lw[i], "delta_plots21_13.png", sep = "_"))
   }
 }
 
@@ -7759,7 +7755,6 @@ population_loop21 <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_log_pop_density", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 # loops
@@ -7780,7 +7775,6 @@ population_loop21_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_log_pop_density_ost_west", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 # apply loops
@@ -7813,7 +7807,6 @@ young_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_age_25_34", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west
@@ -7835,7 +7828,6 @@ young_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_age_25_34", db[i], "east_west.png", sep = "_"))
   }
 }
 # applying loops
@@ -7868,7 +7860,6 @@ oldies_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_age_60_74", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west
@@ -7890,7 +7881,6 @@ oldies_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_age_60_74", db[i], "east_west.png", sep = "_"))
   }
 }
 # applying loops
@@ -7921,7 +7911,6 @@ income_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_disposable_income", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west loop
@@ -7941,7 +7930,6 @@ income_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_disposable_income", db[i], "east_west.png", sep = "_"))
   }
 }
 ## applying loops 
@@ -7974,7 +7962,6 @@ unemployment_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_unemployment", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west loop
@@ -7997,7 +7984,6 @@ unemployment_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_unemployment", db[i], "east_west.png", sep = "_"))
   }
 }
 ## applying loops 
@@ -8028,7 +8014,6 @@ unemployment_benefit_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_unemployment_benefit", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west loop
@@ -8049,7 +8034,6 @@ unemployment_benefit_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_unemployment_benefit", db[i], "east_west.png", sep = "_"))
   }
 }
 ## applying loops 
@@ -8082,7 +8066,6 @@ unemployment_benefit_foreign_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_unemployment_benefit_foreign", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west loop
@@ -8105,7 +8088,6 @@ unemployment_benefit_foreign_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_unemployment_benefit_foreign", db[i], "east_west.png", sep = "_"))
   }
 }
 ## apply loops 
@@ -8138,7 +8120,6 @@ electro_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_electro", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west loop
@@ -8161,7 +8142,6 @@ electro_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_electro", db[i], "east_west.png", sep = "_"))
   }
 }
 ## applying loops 
@@ -8192,7 +8172,6 @@ company_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_companies", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west loop
@@ -8213,7 +8192,6 @@ company_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_companies", db[i], "east_west.png", sep = "_"))
   }
 }
 ## applying loops 
@@ -8246,7 +8224,6 @@ hauptschul_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_ohne_hauptschulabschluss", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west loop
@@ -8269,7 +8246,6 @@ hauptschul_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_ohne_hauptschulabschluss", db[i], "east_west.png", sep = "_"))
   }
 }
 ## apply loops
@@ -8302,7 +8278,6 @@ abitur_loop <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_abitur", db[i], "zweitstimmenanteil.png", sep = "_"))
   }
 }
 ## east-west loop
@@ -8325,7 +8300,6 @@ abitur_loop_east_west <- function(x){
   theme_bw() +
   theme(plot.title = element_text(hjust = 0.5))
   print(plots)
-  ggsave(filename = paste("Figures/btw_21_abitur", db[i], "east_west.png", sep = "_"))
   }
 }
 # apply loops
