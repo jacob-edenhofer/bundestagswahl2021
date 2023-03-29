@@ -383,7 +383,10 @@ datasummary_balance(~east_dummy,
                     data = table_east_west,
                     histogram = F,
                     title = "Comparing Eastern and Western Constituencies",
-                    output = "kableExtra")
+                    output = "dataframe") %>%
+  mutate(p = gsub("<", "&lt;", p)) %>%
+  rename("p.value" = p) %>%
+  kbl() 
 ```
 
 

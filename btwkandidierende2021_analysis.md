@@ -1,6 +1,6 @@
 Bundestagswahl-Kandidaten
 ================
-21 February 2023
+29 March 2023
 
 # Preliminaries
 
@@ -1133,58 +1133,34 @@ datasummary_balance(~east_dummy,
                     data = table_east_west,
                     histogram = F,
                     title = "Comparing Eastern and Western Constituencies",
-                    output = "kableExtra")
+                    output = "dataframe") %>%
+  mutate(p = gsub("<", "&lt;", p)) %>%
+  rename("p.value" = p) %>%
+  kbl() 
 ```
 
-<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
-<caption>
-Comparing Eastern and Western Constituencies
-</caption>
+<table>
 <thead>
-<tr>
-<th style="empty-cells: hide;border-bottom:hidden;" colspan="1">
-</th>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-East Germany (N=49)
-
-</div>
-
-</th>
-<th style="border-bottom:hidden;padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
-
-<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
-
-West Germany (N=250)
-
-</div>
-
-</th>
-<th style="empty-cells: hide;border-bottom:hidden;" colspan="2">
-</th>
-</tr>
 <tr>
 <th style="text-align:left;">
 </th>
-<th style="text-align:right;">
-Mean
+<th style="text-align:left;">
+East Germany (N=49) / Mean
 </th>
-<th style="text-align:right;">
-Std. Dev.
+<th style="text-align:left;">
+East Germany (N=49) / Std. Dev.
 </th>
-<th style="text-align:right;">
-Mean
+<th style="text-align:left;">
+West Germany (N=250) / Mean
 </th>
-<th style="text-align:right;">
-Std. Dev.
+<th style="text-align:left;">
+West Germany (N=250) / Std. Dev.
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;">
 Diff. in Means
 </th>
-<th style="text-align:right;">
-p
+<th style="text-align:left;">
+p.value
 </th>
 </tr>
 </thead>
@@ -1193,22 +1169,22 @@ p
 <td style="text-align:left;">
 Population per 1000 Inhabitants
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 242.85
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 27.39
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 243.48
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 29.33
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.62
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.89
 </td>
 </tr>
@@ -1216,68 +1192,68 @@ Population per 1000 Inhabitants
 <td style="text-align:left;">
 Ausländeranteil in Prozent
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 4.91
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2.08
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 13.40
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 5.20
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 8.48
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Bevölkerungsdichte (Einwohner je km2)
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 340.50
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 651.80
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1039.92
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1610.10
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 699.43
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Zu-/Abnahme d. Bevölkerung (Wanderungssaldo)
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 3.97
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 4.07
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 3.86
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2.42
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 -0.11
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 0.85
 </td>
 </tr>
@@ -1285,230 +1261,230 @@ Zu-/Abnahme d. Bevölkerung (Wanderungssaldo)
 <td style="text-align:left;">
 Anteil, 18-24 Jahre in Prozent
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 5.55
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.35
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 7.84
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.00
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2.29
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Anteil, 60-74 Jahre in Prozent
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 20.01
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2.43
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 16.71
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.72
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 -3.30
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Anteil, +75 Jahre in Prozent
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 14.11
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.43
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 11.12
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.11
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 -2.99
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Unternehmen je 1000 Einwohner
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 37.92
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 3.14
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 42.36
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 7.41
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 4.44
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Schulabgänger ohne Hauptschulabschluss in Prozent
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 9.09
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.87
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 6.36
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.66
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 -2.73
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Verfügbares Einkommen, Euro je Einwohner
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 20018.27
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 799.81
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 23319.61
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2468.31
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 3301.35
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Arbeitslosenquote, insgesamt
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 7.15
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.39
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 6.24
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2.41
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 -0.92
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Arbeitslosenquote, Frauen
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 6.38
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.27
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 5.77
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2.32
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 -0.61
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Arbeitslosenquote, Männer
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 7.86
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.54
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 6.65
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 2.51
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 -1.20
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 Arbeitslosenquote, 55-64 Jahre
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 7.89
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.39
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 6.56
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 1.95
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 -1.32
 </td>
-<td style="text-align:right;">
-\<0.01
+<td style="text-align:left;">
+&lt;0.01
 </td>
 </tr>
 </tbody>
